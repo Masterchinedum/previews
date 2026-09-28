@@ -1,0 +1,550 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Westbury Gingerbread Cottages · Westbury, Tasmania</title>
+<meta name="description" content="Six self-contained cottages in the village of Westbury, Northern Tasmania, each for your exclusive use. Hosts Amanda and Danny Taylor. Concept preview.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=IM+Fell+English+SC&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ginger:#8a4a22;      /* gingerbread brown */
+  --ginger-dk:#5e3016;
+  --ink:#33221a;         /* deep brown body text */
+  --ink-soft:#5b463a;
+  --cream:#f5ecda;       /* heritage cream */
+  --paper:#fbf6ec;
+  --card:#fffdf8;
+  --line:#e2d2b5;
+  --green:#264d33;       /* cottage-garden green */
+  --green-dk:#1b3a26;
+  --green-lt:#dfe8d6;
+  --berry:#9c2447;       /* berry accent */
+  --berry-dk:#7d1a37;
+  --serif:"EB Garamond", Garamond, "Times New Roman", serif;
+  --fell:"IM Fell English SC", "EB Garamond", Garamond, serif;
+  --sans:"Source Sans 3", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --wrap:1160px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--cream);color:var(--ink);font:400 1.0625rem/1.65 var(--sans);-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--berry)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--berry);outline-offset:3px;border-radius:2px}
+h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.1;color:var(--ink);margin:0}
+p{margin:0 0 1em}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 28px}
+.skip{position:absolute;left:-9999px;top:0}
+.skip:focus{left:12px;top:48px;background:var(--card);padding:8px 14px;z-index:99}
+
+/* concept banner */
+.concept{background:#2b1b12;color:#f5ecda;font:600 .8125rem/1.4 var(--sans);text-align:center;padding:8px 16px;letter-spacing:.01em}
+
+/* eyebrow + ornament */
+.eyebrow{font-family:var(--fell);font-size:1.0625rem;letter-spacing:.08em;color:var(--ginger);margin:0 0 .6rem;display:block}
+.orn{display:block;width:120px;height:18px;color:var(--ginger);margin:14px 0 0}
+.center{text-align:center}
+.center .orn{margin-left:auto;margin-right:auto}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:.55em;font:700 1rem/1 var(--sans);text-decoration:none;padding:15px 22px;border-radius:3px;border:2px solid transparent;transition:background .15s,color .15s,border-color .15s}
+.btn svg{width:18px;height:18px;flex:none}
+.btn-berry{background:var(--berry);color:#fff}
+.btn-berry:hover{background:var(--berry-dk)}
+.btn-line{border-color:var(--green);color:var(--green);background:transparent}
+.btn-line:hover{background:var(--green);color:#fff}
+.btn-cream{background:var(--cream);color:var(--green-dk)}
+.btn-cream:hover{background:#fff}
+
+/* header */
+.site-head{background:var(--paper);position:relative;z-index:5}
+.site-head .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;padding-top:14px;padding-bottom:14px}
+.logo img{width:230px;mix-blend-mode:multiply}
+.nav{display:flex;align-items:center;gap:26px}
+.nav a{color:var(--ink);text-decoration:none;font-weight:600;font-size:.97rem}
+.nav a:hover{color:var(--berry)}
+.nav .btn{padding:11px 18px;color:#fff}
+.nav .phone{color:var(--green);white-space:nowrap}
+/* scalloped valance, like verandah trim */
+.valance{height:13px;background:radial-gradient(circle at 13px 0,var(--paper) 12px,transparent 12.5px) 0 0/26px 13px repeat-x;position:relative;z-index:4;margin-bottom:-13px}
+.valance.brown{background-image:radial-gradient(circle at 13px 0,var(--ginger) 12px,transparent 12.5px)}
+
+/* hero */
+.hero{padding:70px 0 84px;position:relative;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1fr) 540px;gap:60px;align-items:start}
+.hero h1{font-size:clamp(2.3rem,4.4vw,3.5rem);letter-spacing:-.01em}
+.hero h1 em{font-style:italic;color:var(--ginger)}
+.letter{margin:28px 0 30px;max-width:34em;font-size:1.0625rem;color:var(--ink-soft)}
+.letter p:first-child::first-letter{font-family:var(--serif);float:left;font-size:3.6em;line-height:.82;padding:6px 10px 0 0;color:var(--berry)}
+.sig{font-family:var(--serif);font-style:italic;font-size:1.35rem;color:var(--ink);margin-top:6px}
+.sig small{display:block;font-family:var(--sans);font-style:normal;font-size:.85rem;color:var(--ink-soft);letter-spacing:.02em}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+
+.plates{position:relative;padding-bottom:80px;align-self:center}
+.plate{background:var(--card);padding:12px 12px 10px;border:1px solid var(--line);box-shadow:0 1px 0 rgba(0,0,0,.03),0 18px 40px -22px rgba(60,30,10,.45)}
+.plate img{width:100%;aspect-ratio:16/9;object-fit:cover}
+.plate figcaption{font-family:var(--serif);font-style:italic;font-size:.98rem;color:var(--ink-soft);padding:8px 2px 0;display:flex;justify-content:space-between;gap:10px}
+.plate figcaption b{font-family:var(--fell);font-style:normal;font-weight:400;color:var(--ginger);letter-spacing:.06em}
+figure{margin:0}
+.plate-main{max-width:540px}
+.plate-main figcaption{justify-content:flex-end;gap:14px}
+.plate-small{position:absolute;left:-40px;bottom:0;width:240px;transform:rotate(-2.2deg)}
+.plate-small figcaption{font-size:.85rem}
+
+/* facts ribbon */
+.ribbon{background:var(--ginger);color:#fbefdf;position:relative}
+.ribbon ul{list-style:none;margin:0;padding:22px 0;display:flex;justify-content:center;flex-wrap:wrap;gap:10px 0}
+.ribbon li{font-family:var(--serif);font-size:1.22rem;display:flex;align-items:center}
+.ribbon li+li::before{content:"";width:6px;height:6px;background:#e9c9a4;transform:rotate(45deg);margin:0 22px}
+.ribbon .valance{position:absolute;left:0;right:0;top:0;background-image:radial-gradient(circle at 13px 0,var(--cream) 12px,transparent 12.5px)}
+
+/* sections */
+section{scroll-margin-top:20px}
+.sec{padding:96px 0}
+.sec-head{max-width:640px;margin:0 auto 52px}
+.sec-head h2{font-size:clamp(2rem,3.6vw,2.9rem)}
+.sec-head p{margin-top:18px;color:var(--ink-soft);font-size:1.1rem}
+
+/* cottages */
+.cottages{background:var(--paper)}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:34px}
+.card{background:var(--card);border:1px solid var(--line);display:flex;flex-direction:column;box-shadow:0 14px 30px -24px rgba(60,30,10,.5)}
+.card>img{aspect-ratio:16/10;object-fit:cover;width:100%}
+.card-body{padding:22px 24px 26px;display:flex;flex-direction:column;flex:1}
+.card-top{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}
+.card h3{font-size:1.72rem;margin-top:2px}
+.meta{font-family:var(--fell);color:var(--ginger);font-size:1rem;letter-spacing:.05em}
+.sleeps{display:inline-block;margin-top:10px;font:700 .82rem/1 var(--sans);letter-spacing:.06em;text-transform:uppercase;color:var(--green);background:var(--green-lt);padding:6px 9px;border-radius:2px}
+.sign{width:84px;flex:none;mix-blend-mode:multiply;margin:-6px -6px 0 0}
+.feat{list-style:none;padding:0;margin:16px 0 0;color:var(--ink-soft);font-size:1rem}
+.feat li{position:relative;padding-left:20px;margin-top:7px}
+.feat li::before{content:"";position:absolute;left:2px;top:.62em;width:7px;height:7px;background:var(--berry);transform:rotate(45deg)}
+.note{margin-top:auto;padding-top:16px;font-family:var(--serif);font-style:italic;font-size:.98rem;color:var(--ink-soft);border-top:1px dashed var(--line)}
+.card .feat{margin-bottom:16px}
+.cottage-foot{text-align:center;margin-top:48px;color:var(--ink-soft)}
+.cottage-foot strong{color:var(--ink)}
+
+/* inside */
+.inside .wrap{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:72px;align-items:center}
+.mosaic{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.mosaic figure{background:var(--card);padding:8px;border:1px solid var(--line)}
+.mosaic img{aspect-ratio:4/3;object-fit:cover;width:100%}
+.mosaic figure:nth-child(2){transform:translateY(28px)}
+.mosaic figure:nth-child(4){transform:translateY(28px)}
+.mosaic figcaption{font-family:var(--serif);font-style:italic;font-size:.9rem;color:var(--ink-soft);padding:6px 2px 0}
+.inside h2{font-size:clamp(2rem,3.4vw,2.7rem)}
+.comforts{list-style:none;margin:26px 0 0;padding:0}
+.comforts li{display:grid;grid-template-columns:30px 1fr;gap:12px;padding:13px 0;border-bottom:1px solid var(--line)}
+.comforts li:last-child{border-bottom:0}
+.comforts svg{width:24px;height:24px;color:var(--ginger);margin-top:3px}
+.comforts b{font-family:var(--serif);font-weight:600;font-size:1.2rem;display:block;line-height:1.25;color:var(--ink)}
+.comforts span{color:var(--ink-soft);font-size:.98rem}
+.small-print{margin-top:18px;font-size:.92rem;color:var(--ink-soft)}
+
+/* explore */
+.explore{background:var(--paper)}
+.explore-top{display:grid;grid-template-columns:minmax(0,540px) minmax(0,1fr);gap:64px;align-items:center}
+.explore h3{font-size:1.7rem;margin-bottom:6px}
+.village{list-style:none;margin:14px 0 0;padding:0}
+.village li{padding:14px 0;border-bottom:1px solid var(--line)}
+.village li:last-child{border-bottom:0}
+.village b{font-family:var(--serif);font-weight:600;font-size:1.22rem;color:var(--ink)}
+.village span{display:block;color:var(--ink-soft);font-size:.98rem}
+.afield{margin-top:84px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:64px;align-items:center}
+.afield-intro{color:var(--ink-soft);margin:8px 0 4px}
+.post{position:relative;max-width:560px;width:100%;margin:0 auto;padding:34px 0 30px}
+.post::before{content:"";position:absolute;left:50%;top:10px;bottom:0;width:16px;margin-left:-8px;background:linear-gradient(90deg,#5e3016,#94562c 45%,#6d3a1a);border-radius:3px 3px 0 0}
+.post::after{content:"";position:absolute;left:50%;top:0;width:24px;height:16px;margin-left:-12px;background:#5e3016;border-radius:12px 12px 2px 2px}
+.board{position:relative;z-index:1;display:flex;flex-direction:column;justify-content:center;width:calc(50% + 10px);min-height:56px;margin:12px 0;color:#fbf4e6;font-family:var(--fell);font-size:1.18rem;letter-spacing:.03em;line-height:1.12;box-shadow:0 6px 10px -8px rgba(0,0,0,.5)}
+.board small{font-family:var(--sans);font-size:.78rem;font-weight:600;letter-spacing:.04em;opacity:.88;margin-top:3px}
+.board::after{content:"";position:absolute;top:50%;width:6px;height:6px;margin-top:-3px;border-radius:50%;background:rgba(0,0,0,.4)}
+.board.r{margin-left:calc(50% - 10px);padding:8px 34px 8px 24px;clip-path:polygon(0 0,calc(100% - 24px) 0,100% 50%,calc(100% - 24px) 100%,0 100%);transform:rotate(-1.4deg)}
+.board.r::after{left:7px}
+.board.l{padding:8px 24px 8px 36px;text-align:right;align-items:flex-end;clip-path:polygon(24px 0,100% 0,100% 100%,24px 100%,0 50%);transform:rotate(1.2deg)}
+.board.l::after{right:7px}
+.board.l:nth-child(odd){transform:rotate(-.8deg)}
+.board.g{background:var(--green)}
+.ground{position:absolute;left:50%;bottom:-5px;width:150px;height:12px;margin-left:-75px;border-radius:50%;background:radial-gradient(closest-side,rgba(38,77,51,.35),transparent)}
+.board.b{background:var(--ginger)}
+
+/* booking */
+.book{background:var(--green);color:#f1ead9;position:relative}
+.fence{display:block;width:100%;height:34px;color:var(--green);background:var(--paper)}
+.book .wrap{padding-top:70px;padding-bottom:96px}
+.book .eyebrow{color:#e7c9a0}
+.book h2{color:#fbf4e6;font-size:clamp(2.1rem,3.8vw,3rem)}
+.book .sec-head p{color:#d9e0d0}
+.book .orn{color:#e7c9a0}
+.ways{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:22px}
+.way{background:var(--green-dk);border:1px solid rgba(241,234,217,.18);padding:30px 28px;display:flex;flex-direction:column;gap:10px}
+.way.primary{background:var(--paper);color:var(--ink);border-color:transparent}
+.way h3{font-size:1.6rem;color:inherit}
+.way.primary h3{color:var(--ink)}
+.way p{margin:0;font-size:1rem;color:#d4dccb}
+.way.primary p{color:var(--ink-soft)}
+.way .big{font-family:var(--serif);font-size:1.75rem;color:#fbf4e6;text-decoration:none;line-height:1.2;word-break:break-word}
+.way .big:hover{text-decoration:underline}
+.way .email{font-size:1.4rem}
+.way .alt{font-size:.98rem;color:#d4dccb}
+.way .alt a{color:#fbf4e6}
+.way .btn{align-self:flex-start;margin-top:8px}
+.hosts{margin-top:52px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;border-top:1px solid rgba(241,234,217,.2);padding-top:30px;font-size:1rem;color:#d4dccb}
+.hosts b{font-family:var(--serif);font-weight:500;font-size:1.35rem;color:#fbf4e6;display:block}
+.hosts .find{max-width:32em}
+
+/* footer */
+.foot{background:#20170f;color:#cdbfa9;font-size:.92rem;padding:34px 0 40px}
+.foot .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px}
+.foot a{color:#f0dcc0}
+
+/* mobile call/book bar */
+.mbar{display:none}
+
+@media (max-width:1060px){
+  .hero .wrap{grid-template-columns:1fr;gap:48px}
+  .plates{max-width:560px;margin:0 auto;padding-bottom:60px}
+  .plate-small{left:auto;right:-10px;width:210px}
+  .grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .inside .wrap,.explore-top{grid-template-columns:1fr;gap:48px}
+    .ways{grid-template-columns:1fr}
+  .afield{grid-template-columns:1fr;gap:40px}
+  .nav a:not(.btn):not(.phone){display:none}
+}
+@media (max-width:640px){
+  body{font-size:1rem;padding-bottom:70px}
+  .wrap{padding:0 18px}
+  .concept{font-size:.75rem}
+  .logo img{width:176px}
+  .nav .phone{display:none}
+  .nav .btn{padding:10px 14px;font-size:.92rem}
+  .hero{padding:40px 0 56px}
+  .letter{margin:22px 0 24px}
+  .plates{padding-bottom:0;margin-top:0;order:-1}
+  .ctas .btn{width:100%;justify-content:center}
+  .plate-small{display:none}
+  .plate{padding:8px 8px 6px}
+  .plate figcaption{font-size:.9rem}
+  .ribbon ul{flex-direction:column;align-items:center;gap:4px;padding:26px 0 20px}
+  .ribbon li{font-size:1.1rem}
+  .ribbon li+li::before{display:none}
+  .sec{padding:64px 0}
+  .sec-head{margin-bottom:34px}
+  .grid{grid-template-columns:1fr;gap:26px}
+  .card-body{padding:18px 18px 20px}
+  .sign{width:76px}
+  .mosaic{gap:10px}
+  .mosaic figure{padding:5px}
+  .mosaic figure:nth-child(2),.mosaic figure:nth-child(4){transform:translateY(18px)}
+  .mosaic figcaption{font-size:.8rem}
+  .afield{margin-top:56px}
+  .board{font-size:1.02rem;min-height:50px}
+  .book .wrap{padding-top:52px;padding-bottom:64px}
+  .way{padding:24px 20px}
+  .way .big{font-size:1.5rem}
+  .way .email{font-size:1.3rem}
+  .way .btn{align-self:stretch;justify-content:center}
+  .mbar{display:grid;grid-template-columns:1fr 1fr;position:fixed;left:0;right:0;bottom:0;z-index:50;background:var(--paper);border-top:1px solid var(--line);box-shadow:0 -8px 20px -12px rgba(40,20,5,.35);padding:10px 12px calc(10px + env(safe-area-inset-bottom));gap:10px}
+  .mbar a{display:flex;align-items:center;justify-content:center;gap:8px;font:700 1rem/1 var(--sans);text-decoration:none;padding:14px 10px;border-radius:3px}
+  .mbar svg{width:18px;height:18px}
+  .mbar .call{border:2px solid var(--green);color:var(--green)}
+  .mbar .bk{background:var(--berry);color:#fff}
+}
+</style>
+</head>
+<body>
+<div class="concept" role="note">Concept preview prepared for Westbury Gingerbread Cottages by Claude (an AI). Not the official website.</div>
+<a class="skip" href="#main">Skip to content</a>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="orn" viewBox="0 0 120 18"><g fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"><path d="M2 9h38M80 9h38"/><path d="M40 9c6-7 12-7 14 0-2 7-8 7-14 0zM80 9c-6-7-12-7-14 0 2 7 8 7 14 0z"/></g><path d="M60 2l5 7-5 7-5-7z" fill="currentColor"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+    <symbol id="i-cal" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></g></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></g></symbol>
+  </defs>
+</svg>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Westbury Gingerbread Cottages, home"><img src="img/logo.jpg" width="500" height="141" alt="Westbury Gingerbread Cottages"></a>
+    <nav class="nav" aria-label="Main">
+      <a href="#cottages">Our cottages</a>
+      <a href="#inside">Inside</a>
+      <a href="#explore">Explore</a>
+      <a href="#book">Contact</a>
+      <a class="phone" href="tel:1800244662">Freecall 1800 244 662</a>
+      <a class="btn btn-berry" href="https://www.thebookingbutton.com.au/properties/westburygcdirect?&amp;currency=AUD" rel="noopener">Book online</a>
+    </nav>
+  </div>
+</header>
+<div class="valance" aria-hidden="true"></div>
+
+<main id="main">
+<section class="hero" id="top" aria-labelledby="hero-title">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">52 William Street · Westbury · Tasmania</span>
+      <h1 id="hero-title">Not just a room&nbsp;&mdash;<br> <em>a&nbsp;complete colonial cottage</em> for your exclusive&nbsp;use.</h1>
+      <div class="letter">
+        <p>Welcome to Westbury. Our six individual cottages are decorated with period furniture and memorabilia, and among them are the town&rsquo;s old bakehouse, the baker&rsquo;s shop and the baker&rsquo;s residence. Each has its own fully equipped kitchen and a cosy gas log fire, and each one is yours alone.</p>
+        <p>We&rsquo;ll have teas, coffees and home-baked goodies waiting for you on arrival.</p>
+        <div class="sig">Amanda &amp; Danny Taylor<small>Your hosts</small></div>
+      </div>
+      <div class="ctas">
+        <a class="btn btn-berry" href="https://www.thebookingbutton.com.au/properties/westburygcdirect?&amp;currency=AUD" rel="noopener"><svg aria-hidden="true"><use href="#i-cal"/></svg>Check availability &amp; book</a>
+        <a class="btn btn-line" href="tel:1800244662"><svg aria-hidden="true"><use href="#i-phone"/></svg>Freecall 1800 244 662</a>
+      </div>
+    </div>
+    <div class="plates">
+      <figure class="plate plate-main">
+        <img src="img/gingerbread-verandah.jpg" width="640" height="360" alt="The Gingerbread Cottage: an ochre weatherboard cottage with a striped verandah awning, topiary shrubs, a picket fence and its green hanging sign" fetchpriority="high">
+        <figcaption><span>The Gingerbread Cottage, c.1860</span><b>&middot; Plate I</b></figcaption>
+      </figure>
+      <figure class="plate plate-small">
+        <img src="img/apple-tree-verandah.jpg" width="640" height="360" alt="Hanging basket of pink flowers under an old apple tree beside the back verandah of Apple Tree Cottage" loading="lazy">
+        <figcaption>Apple Tree Cottage&rsquo;s back verandah</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<div class="ribbon">
+  <div class="valance" aria-hidden="true"></div>
+  <ul class="wrap" aria-label="At a glance">
+    <li>Six self-contained cottages</li>
+    <li>Sleeps up to 28 in total</li>
+    <li>Fully equipped kitchens</li>
+    <li>Free Wi-Fi</li>
+  </ul>
+</div>
+
+<section class="sec cottages" id="cottages" aria-labelledby="cottages-title">
+  <div class="wrap">
+    <header class="sec-head center">
+      <span class="eyebrow">Our cottages</span>
+      <h2 id="cottages-title">Six cottages, each its own&nbsp;home</h2>
+      <svg class="orn" aria-hidden="true"><use href="#orn"/></svg>
+      <p>Delightfully individual, the oldest dating from the 1850s. Choose one for two, or take several for the whole family &mdash; in total we can accommodate up to 28, yet every cottage is for your exclusive use.</p>
+    </header>
+
+    <div class="grid">
+      <article class="card">
+        <img src="img/gingerbread-garden.jpg" width="640" height="360" loading="lazy" alt="Brick path through a cottage garden of clipped hedges and roses to the Gingerbread Cottage verandah">
+        <div class="card-body">
+          <div class="card-top">
+            <div><span class="meta">c. 1860</span><h3>The Gingerbread Cottage</h3><span class="sleeps">Sleeps 2</span></div>
+            <img class="sign" src="img/sign-ginger.jpg" width="200" height="144" alt="" loading="lazy">
+          </div>
+          <ul class="feat">
+            <li>A two-room farm labourer&rsquo;s cottage, moved here from Whitemore and restored</li>
+            <li>Queen bedroom, gas log fire and a verandah overlooking a cottage garden</li>
+          </ul>
+          <p class="note">1997 statewide Keep Australia Beautiful Council award for Best Cultural/Heritage Preservation.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="img/old-bakehouse.jpg" width="640" height="360" loading="lazy" alt="The Old Bakehouse: a white two-storey weatherboard building with a steep gable and shingle-style trim under a blue sky">
+        <div class="card-body">
+          <div class="card-top">
+            <div><span class="meta">c. 1850</span><h3>The Old Bakehouse</h3><span class="sleeps">Sleeps up to 7</span></div>
+            <img class="sign" src="img/sign-bakehouse.jpg" width="200" height="144" alt="" loading="lazy">
+          </div>
+          <ul class="feat">
+            <li>The town bakery until the 1970s &mdash; the kitchen-dining room was the baker&rsquo;s oven</li>
+            <li>Two storeys, three bedrooms and a large lounge with a gas log fire</li>
+          </ul>
+          <p class="note">Please note: the stairs to the upstairs bedrooms are narrow and steep.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="img/corner-cottage.jpg" width="640" height="360" loading="lazy" alt="The Corner Cottage: a pale weatherboard cottage on a street corner with round clipped shrubs along the footpath">
+        <div class="card-body">
+          <div class="card-top">
+            <div><span class="meta">c. 1850</span><h3>The Corner Cottage</h3><span class="sleeps">Sleeps up to 6</span></div>
+            <img class="sign" src="img/sign-corner.jpg" width="200" height="144" alt="" loading="lazy">
+          </div>
+          <ul class="feat">
+            <li>The original baker&rsquo;s shop, open as such until the 1970s</li>
+            <li>Two queen bedrooms, a double sofa bed, spa bathroom and full laundry</li>
+          </ul>
+          <p class="note">Converted into colonial accommodation in 2003.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="img/servants-quarters.jpg" width="640" height="360" loading="lazy" alt="The Servant's Quarters: a white brick cottage with a red chimney, green window trim and ivy climbing one end">
+        <div class="card-body">
+          <div class="card-top">
+            <div><span class="meta">c. 1850</span><h3>Servant&rsquo;s Quarters</h3><span class="sleeps">Sleeps 2</span></div>
+            <img class="sign" src="img/sign-servants.jpg" width="200" height="144" alt="" loading="lazy">
+          </div>
+          <ul class="feat">
+            <li>Once the baker&rsquo;s residence</li>
+            <li>Four-poster queen bed, gas log fire and a BBQ courtyard</li>
+          </ul>
+          <p class="note">Built as a two-storey brick house; the upper level was removed in the 1930s.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="img/apple-tree-cottage.jpg" width="640" height="360" loading="lazy" alt="Apple Tree Cottage: a cream weatherboard worker's cottage with a green roof behind a green picket fence">
+        <div class="card-body">
+          <div class="card-top">
+            <div><span class="meta">c. 1860</span><h3>Apple Tree Cottage</h3><span class="sleeps">Sleeps up to 4</span></div>
+            <img class="sign" src="img/sign-appletree.jpg" width="200" height="144" alt="" loading="lazy">
+          </div>
+          <ul class="feat">
+            <li>A quaint little worker&rsquo;s cottage with a queen and a twin bedroom</li>
+            <li>Back verandah onto a leafy garden with old apple trees and a giant bay tree</li>
+          </ul>
+          <p class="note">The place to relax after a busy day in the Meander Valley.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="img/bungalow-lounge.jpg" width="640" height="360" loading="lazy" alt="The Bungalow's lounge: a white leather sofa beside a gas log fire with a timber mantel against warm terracotta walls">
+        <div class="card-body">
+          <div class="card-top">
+            <div><span class="meta">c. 1920</span><h3>The Bungalow</h3><span class="sleeps">Sleeps up to 6</span></div>
+            <img class="sign" src="img/sign-bungalow.jpg" width="200" height="144" alt="" loading="lazy">
+          </div>
+          <ul class="feat">
+            <li>A three-bedroom 1920s house with a balcony overlooking large gardens</li>
+            <li>Help yourself to fresh eggs from the chooks and seasonal fruit from the trees</li>
+          </ul>
+          <p class="note">Well-behaved outside dogs welcome by prior arrangement.</p>
+        </div>
+      </article>
+    </div>
+    <p class="cottage-foot">Every cottage: <strong>fully equipped kitchen &middot; period furniture &middot; free Wi-Fi &middot; off-street parking</strong></p>
+  </div>
+</section>
+
+<section class="sec inside" id="inside" aria-labelledby="inside-title">
+  <div class="wrap">
+    <div class="mosaic">
+      <figure><img src="img/gas-log-fire.jpg" width="640" height="360" loading="lazy" alt="Close-up of a glowing gas log fire set into an old brick wall"><figcaption>A gas log fire in every cottage</figcaption></figure>
+      <figure><img src="img/gingerbread-bedroom.jpg" width="640" height="360" loading="lazy" alt="Queen bed with a pink floral quilt and lamps against timber-lined walls in the Gingerbread Cottage"><figcaption>The Gingerbread Cottage</figcaption></figure>
+      <figure><img src="img/bakehouse-kitchen.jpg" width="640" height="360" loading="lazy" alt="Long timber dining table set with placemats in the Old Bakehouse kitchen"><figcaption>The Old Bakehouse kitchen</figcaption></figure>
+      <figure><img src="img/bakehouse-courtyard.jpg" width="640" height="360" loading="lazy" alt="Wrought-iron table and chairs in a sunny courtyard beside white weatherboards"><figcaption>Courtyard at the Old Bakehouse</figcaption></figure>
+    </div>
+    <div>
+      <span class="eyebrow">Inside every cottage</span>
+      <h2 id="inside-title">Cosy, comfortable and completely your own</h2>
+      <svg class="orn" aria-hidden="true"><use href="#orn"/></svg>
+      <ul class="comforts">
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M12 22c4 0 7-2.7 7-6.6 0-3.2-2-5.4-3.6-7.2-.3 1.8-1.2 3-2.4 3.4.5-3.4-.8-6.6-3.5-9.6-.4 3.6-2.4 5.8-3.9 7.8C4.500 11.300 5 13.200 5 15.400 5 19.300 8 22 12 22z"/></svg><div><b>A cosy gas log fire</b><span>In the lounge of every cottage.</span></div></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11h16v2a8 8 0 0 1-16 0z"/><path d="M8 7c0-1.5 1-1.5 1-3M12 7c0-1.5 1-1.5 1-3M16 7c0-1.5 1-1.5 1-3"/></g></svg><div><b>Fully equipped kitchens</b><span>Cook for yourselves, at your own pace.</span></div></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11c0-4 4-7 9-7s9 3 9 7H3z"/><path d="M4 11v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-6"/></g></svg><div><b>A welcome on arrival</b><span>A selection of teas and coffees, and home-baked &ldquo;goodies&rdquo;.</span></div></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="13" rx="6" ry="8"/><path d="M12 9v3"/></g></svg><div><b>Breakfast provisions, if you like</b><span>Add them when you book: bacon, eggs, tomatoes, cereals, juice, home-baked bread and homemade jams, replenished each day.</span></div></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5a10 10 0 0 1 14 0M8.5 16a5 5 0 0 1 7 0M2 9a15 15 0 0 1 20 0"/><circle cx="12" cy="19.5" r=".8" fill="currentColor"/></g></svg><div><b>Free Wi-Fi</b><span>Plus TV, DVD player, radio/CD, courtyard BBQ and off-street parking.</span></div></li>
+      </ul>
+      <p class="small-print">We are a strictly non-smoking establishment.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec explore" id="explore" aria-labelledby="explore-title">
+  <div class="wrap">
+    <header class="sec-head center">
+      <span class="eyebrow">Explore from Westbury</span>
+      <h2 id="explore-title">The perfect base for Northern&nbsp;Tasmania</h2>
+      <svg class="orn" aria-hidden="true"><use href="#orn"/></svg>
+      <p>The quaint little village of Westbury was established in the 1820s as a garrison town. It sits at the centre of Northern Tasmania, just 20 minutes from Launceston.</p>
+    </header>
+
+    <div class="explore-top">
+      <figure class="plate">
+        <img src="img/westbury-aerial.jpg" width="570" height="335" loading="lazy" alt="Aerial view of Westbury: a stone church and tree-lined green in the foreground, the village rooftops beyond and mountains on the horizon">
+        <figcaption><span>Westbury from the air</span><b>Plate II</b></figcaption>
+      </figure>
+      <div>
+        <h3>In the village</h3>
+        <ul class="village">
+          <li><b>The Village Green &amp; Town Common</b><span>Stroll on &ldquo;a little slice of old England&rdquo;.</span></li>
+          <li><b>St Andrews Church</b><span>Opposite the Village Green; the foundation stone was laid in 1836.</span></li>
+          <li><b>The Westbury Maze</b><span>A traditional hedge maze of 3,000 bushes, with paths over a kilometre long.</span></li>
+          <li><b>Pearn&rsquo;s Steam World</b><span>Over 100 steam engines, from trains to agricultural machinery.</span></li>
+          <li><b>Fitzpatricks Inn</b><span>Westbury&rsquo;s first hotel, opened in 1833.</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="afield">
+      <div class="post" role="img" aria-label="A fingerpost signpost pointing east to Launceston (20 minutes) and the Tamar wineries, and west to Devonport and the ferry (40 minutes), Cradle Mountain, the Mole Creek Caves and the Northwest">
+        <span class="board r g">Launceston<small>20 minutes</small></span>
+        <span class="board r b">The Tamar wineries</span>
+        <span class="board l g">Devonport &amp; the ferry<small>40 minutes</small></span>
+        <span class="board l b">Cradle Mountain</span>
+        <span class="board l g">Mole Creek Caves</span>
+        <span class="board l b">The Northwest</span>
+        <span class="ground" aria-hidden="true"></span>
+      </div>
+      <div>
+        <h3>Further afield</h3>
+        <p class="afield-intro">Westbury is the perfect base from which to explore Launceston, Devonport, the Tamar wineries, Cradle Mountain, the Mole Creek Caves and the Northwest.</p>
+        <ul class="village">
+          <li><b>Mole Creek Karst National Park</b><span>Take a guided tour of King Solomon&rsquo;s Cave and marvel at the glow worms in Marakoopa Cave.</span></li>
+          <li><b>The Great Western Tiers</b><span>A World Heritage Area, popular for its walks, waterfalls, historic homes and gardens.</span></li>
+          <li><b>Deloraine</b><span>A major arts and crafts centre, with galleries and antique shops.</span></li>
+          <li><b>The Cream of Tasmania tour</b><span>Between Deloraine and Devonport: The House of Anvers, Ashgrove Farm Cheese, Christmas Hills Raspberry Farm and The Honey Farm.</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="book" id="book" aria-labelledby="book-title">
+  <svg class="fence" viewBox="0 0 1200 34" preserveAspectRatio="none" aria-hidden="true"><defs><pattern id="pk" width="24" height="34" patternUnits="userSpaceOnUse"><path d="M6 34V8l6-7 6 7v26z" fill="currentColor"/></pattern></defs><rect width="1200" height="34" fill="url(#pk)"/><rect y="18" width="1200" height="4" fill="currentColor"/></svg>
+  <div class="wrap">
+    <header class="sec-head center">
+      <span class="eyebrow">Come and stay</span>
+      <h2 id="book-title">Book your cottage</h2>
+      <svg class="orn" aria-hidden="true"><use href="#orn"/></svg>
+      <p>Book online, or call or email Amanda and Danny directly.</p>
+    </header>
+    <div class="ways">
+      <div class="way primary">
+        <h3>Book online</h3>
+        <p>Choose your dates and book directly on our online booking page.</p>
+        <a class="btn btn-berry" href="https://www.thebookingbutton.com.au/properties/westburygcdirect?&amp;currency=AUD" rel="noopener"><svg aria-hidden="true"><use href="#i-cal"/></svg>Check availability &amp; book</a>
+      </div>
+      <div class="way">
+        <h3>Call us</h3>
+        <a class="big" href="tel:1800244662" aria-label="Freecall 1800 244 662">Freecall 1800&nbsp;244&nbsp;662</a>
+        <span class="alt">Local call <a href="tel:+61363931140">(03) 6393 1140</a></span>
+      </div>
+      <div class="way">
+        <h3>Email us</h3>
+        <a class="big email" href="mailto:info@westburycottages.com.au">info@<wbr>westburycottages.com.au</a>
+        
+      </div>
+    </div>
+    <div class="hosts">
+      <div><b>Amanda &amp; Danny Taylor</b>Westbury Gingerbread Cottages<br>52 William Street, Westbury, Tasmania 7303</div>
+      <div class="find"><b>Finding us</b>From the main intersection by the stone church, continue down William Street past the supermarket and post office. We&rsquo;re just before the next intersection, on the right-hand corner.</div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <span>&copy; Westbury Gingerbread Cottages &middot; 52 William Street, Westbury, Tasmania 7303 &middot; <a href="https://www.facebook.com/WestburyGingerbreadCottages" rel="noopener">Facebook</a></span>
+    <span>Concept preview by Claude (an AI). Not the official website.</span>
+  </div>
+</footer>
+
+<nav class="mbar" aria-label="Quick contact">
+  <a class="call" href="tel:1800244662"><svg aria-hidden="true"><use href="#i-phone"/></svg>Freecall</a>
+  <a class="bk" href="https://www.thebookingbutton.com.au/properties/westburygcdirect?&amp;currency=AUD" rel="noopener"><svg aria-hidden="true"><use href="#i-cal"/></svg>Book online</a>
+</nav>
+</body>
+</html>

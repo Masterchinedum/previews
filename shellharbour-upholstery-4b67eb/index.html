@@ -1,0 +1,576 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Shellharbour Upholstery | Adam Golosky, Certified Upholsterer</title>
+<meta name="description" content="Shellharbour Upholstery: domestic furniture, antique, marine, automotive and commercial upholstery. Adam brings the fabric samples to you. Free quotes on (02) 4256 8526.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sea:#0d5c85;
+  --sea-deep:#0a3450;
+  --sea-ink:#0f2d44;
+  --sea-foam:#d7ebf2;
+  --foam:#fbf8f1;
+  --sand:#f3e6cf;
+  --sand-2:#e8d6b6;
+  --sand-line:#d8c19b;
+  --coral:#c8393a;
+  --blush:#e9a8a3;
+  --sage:#9cb5a3;
+  --ochre:#d69c3c;
+  --lilac:#a391b8;
+  --tape:#f4c64f;
+  --ink:#1c3347;
+  --muted:#4d6275;
+  --white:#fff;
+  --display:"Young Serif", "DM Serif Display", Georgia, serif;
+  --body:"Figtree", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --r:14px;
+  --wrap:1180px;
+  --weave:repeating-linear-gradient(0deg, rgba(255,255,255,.09) 0 1px, transparent 1px 4px),
+          repeating-linear-gradient(90deg, rgba(0,0,0,.07) 0 1px, transparent 1px 4px);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+body{margin:0;background:var(--foam);color:var(--ink);font:400 1.0625rem/1.6 var(--body);overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:var(--sea)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--ochre);outline-offset:3px;border-radius:6px}
+h1,h2,h3{font-family:var(--display);font-weight:400;color:var(--sea-deep);line-height:1.08;margin:0;letter-spacing:-.01em}
+p{margin:0 0 1em}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 24px}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* concept banner */
+.concept{background:#fff3c9;color:#3b2f06;font:500 .8125rem/1.4 var(--body);text-align:center;padding:8px 16px;border-bottom:1px solid #e8d38a}
+.skip{position:absolute;left:-999px;top:0}
+.skip:focus{left:12px;top:44px;z-index:99;background:#fff;padding:8px 12px}
+
+/* header */
+.top{background:var(--sand)}
+.top .wrap{display:flex;align-items:center;gap:24px;padding-top:16px;padding-bottom:14px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--sea-deep);margin-right:auto}
+.brand svg{width:104px;height:auto;flex:none}
+.brand b{display:block;font:400 1.3rem/1.1 var(--display)}
+.brand small{display:block;font:600 .75rem/1.3 var(--body);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-top:3px}
+.nav{display:flex;gap:22px}
+.nav a{color:var(--sea-ink);text-decoration:none;font-weight:600;font-size:.95rem;padding:4px 0;border-bottom:2px dashed transparent}
+.nav a:hover{border-bottom-color:var(--sea)}
+.call-pill{display:inline-flex;align-items:center;gap:8px;background:var(--sea-deep);color:#fff;text-decoration:none;font-weight:700;padding:10px 18px;border-radius:999px;white-space:nowrap}
+.call-pill:hover{background:var(--sea)}
+.call-pill svg{width:18px;height:18px}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:10px;font:700 1.02rem/1 var(--body);text-decoration:none;padding:17px 24px;border-radius:12px;position:relative;transition:transform .15s ease}
+.btn:hover{transform:translateY(-2px)}
+.btn svg{width:20px;height:20px;flex:none}
+.btn-sea{background:var(--sea);color:#fff;box-shadow:0 6px 0 var(--sea-deep)}
+.btn-sea::after{content:"";position:absolute;inset:5px;border:1.5px dashed rgba(255,255,255,.55);border-radius:8px;pointer-events:none}
+.btn-line{background:#fff;color:var(--sea-deep);box-shadow:inset 0 0 0 2px var(--sea-deep)}
+
+/* ---------- HERO ---------- */
+.hero{background:var(--sand);position:relative;overflow:hidden;padding:36px 0 120px}
+.hero::before{content:"";position:absolute;inset:0;background:
+  radial-gradient(circle at 85% 20%, rgba(255,255,255,.55), transparent 45%),
+  repeating-linear-gradient(90deg, rgba(120,90,40,.035) 0 1px, transparent 1px 5px);pointer-events:none}
+.hero .wrap{display:grid;grid-template-columns:1.02fr 1fr;gap:40px;align-items:center;position:relative}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font:700 .8rem/1.2 var(--body);letter-spacing:.1em;text-transform:uppercase;color:var(--sea);margin-bottom:22px}
+.eyebrow::before{content:"";width:34px;height:0;border-top:2px dashed var(--sea)}
+.hero h1{font-size:clamp(2.7rem,5.6vw,4.7rem);margin-bottom:34px}
+.hero h1 em{font-style:normal;color:var(--coral);position:relative;white-space:nowrap}
+.hero h1 em svg{position:absolute;left:0;right:0;bottom:-.16em;width:100%;height:.26em;overflow:visible}
+.lede{font-size:1.2rem;line-height:1.55;color:var(--sea-ink);max-width:33em;margin-bottom:30px}
+.lede strong{font-weight:700}
+.cta-row{display:flex;flex-wrap:wrap;gap:16px;margin-bottom:34px}
+.houses{display:flex;flex-wrap:wrap;align-items:center;gap:8px 10px;font-size:.9rem;color:var(--muted)}
+.houses span.l{flex-basis:100%;font-weight:600;font-size:.85rem;letter-spacing:.02em}
+.chip{display:inline-flex;align-items:center;gap:7px;background:#fff;border-radius:6px;padding:6px 10px 6px 8px;font-weight:600;color:var(--sea-ink);box-shadow:0 1px 0 rgba(0,0,0,.08)}
+.chip::before{content:"";width:12px;height:16px;border-radius:2px;background:var(--c,var(--sea));background-image:var(--weave)}
+
+.hero-art{position:relative;width:100%;max-width:540px;aspect-ratio:540/610;justify-self:center}
+.fan{position:absolute;right:9%;top:8%;width:38%;height:64%}
+.fan div{position:absolute;inset:0;border-radius:10px;background-color:var(--c);background-image:var(--weave);transform-origin:50% 100%;box-shadow:-6px 8px 18px rgba(10,52,80,.18)}
+.fan div::after{content:"";position:absolute;inset:7px;border:1.5px dashed rgba(255,255,255,.6);border-radius:6px}
+.fan span{position:absolute;right:13px;top:22px;writing-mode:vertical-rl;font:700 .78rem/1 var(--body);letter-spacing:.16em;text-transform:uppercase;color:#fff;z-index:1}
+.fan div:nth-child(1){--c:var(--sea);z-index:4;transform:translateX(-40%) rotate(-1deg)}
+.fan div:nth-child(2){--c:var(--coral);z-index:3;transform:translateX(-22%) rotate(3.5deg)}
+.fan div:nth-child(3){--c:var(--sage);z-index:2;transform:translateX(-4%) rotate(8deg)}
+.fan div:nth-child(4){--c:var(--ochre);z-index:1;transform:translateX(14%) rotate(12.5deg)}
+.fan div:nth-child(3) span{color:#18332a}
+.fan div:nth-child(4) span{color:#3b2a08}
+
+.after{position:absolute;left:3%;top:0;width:60%;z-index:5;background:#fff;padding:12px 12px 44px;border-radius:6px;box-shadow:0 22px 44px rgba(10,52,80,.22);transform:rotate(-1.5deg)}
+.after img{width:100%;aspect-ratio:2/3;object-fit:cover;border-radius:2px}
+.after figcaption{position:absolute;left:44%;right:14px;bottom:13px;font:500 .8rem/1.3 var(--body);color:var(--muted);text-align:right}
+.tag{position:absolute;display:inline-block;background:var(--foam);color:var(--sea-deep);font:700 .75rem/1 var(--body);letter-spacing:.14em;text-transform:uppercase;padding:8px 12px 8px 22px;border-radius:3px 6px 6px 3px;clip-path:polygon(10px 0,100% 0,100% 100%,10px 100%,0 50%);box-shadow:0 2px 6px rgba(0,0,0,.14)}
+.tag::before{content:"";position:absolute;left:9px;top:50%;width:6px;height:6px;margin-top:-3px;border-radius:50%;background:var(--sand-2);box-shadow:inset 0 0 0 1.5px rgba(0,0,0,.25)}
+.after .tag{top:26px;right:-14px;background:var(--coral);color:#fff}
+.after .tag::before{background:#fff}
+.before{position:absolute;left:-2%;bottom:3%;z-index:6;width:36%;background:#fff;padding:9px 9px 34px;border-radius:5px;box-shadow:0 14px 30px rgba(10,52,80,.25);transform:rotate(-6deg)}
+.before img{width:100%;aspect-ratio:1;object-fit:cover}
+.before .tag{left:10px;bottom:6px;position:absolute;background:transparent;box-shadow:none;clip-path:none;padding:0;color:var(--muted)}
+.before .tag::before{display:none}
+.arrow{position:absolute;left:31%;bottom:27%;width:15%;z-index:7;color:#fff;filter:drop-shadow(0 1px 2px rgba(0,0,0,.45));transform:rotate(-8deg)}
+
+.hero-wave{position:absolute;left:0;right:0;bottom:-1px;height:90px;width:100%}
+
+/* tape measure */
+.tape{position:relative;height:42px;background-color:var(--tape);
+  background-image:
+    linear-gradient(90deg,var(--sea-deep) 2px,transparent 2px),
+    linear-gradient(90deg,rgba(10,52,80,.85) 1.5px,transparent 1.5px),
+    linear-gradient(90deg,rgba(10,52,80,.6) 1px,transparent 1px),
+    linear-gradient(180deg,rgba(255,255,255,.35),transparent 30%,transparent 70%,rgba(0,0,0,.08));
+  background-size:80px 56%,40px 40%,8px 24%,100% 100%;
+  background-repeat:repeat-x,repeat-x,repeat-x,no-repeat;
+  background-position:0 0,0 0,0 0,0 0;
+  box-shadow:0 3px 0 rgba(10,52,80,.18);
+  display:flex;overflow:hidden;counter-reset:cm;font:700 .8rem/1 var(--body);color:var(--sea-deep)}
+.tape i{flex:0 0 80px;font-style:normal;padding:0 0 5px 5px;align-self:flex-end;counter-increment:cm}
+.tape i::before{content:counter(cm)}
+.tape i:first-child::before{content:""}
+
+/* section heads */
+section{scroll-margin-top:20px}
+.sec{padding:96px 0}
+.kicker{display:inline-flex;align-items:center;gap:10px;font:700 .8rem/1 var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--sea);margin-bottom:16px}
+.kicker::before{content:"";width:26px;border-top:2px dashed currentColor}
+.h2{font-size:clamp(2.1rem,4vw,3.3rem)}
+.sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:32px;margin-bottom:44px}
+.sec-head p{max-width:30em;color:var(--muted);margin:0}
+
+/* ---------- SERVICES (swatch book) ---------- */
+.book{display:grid;grid-template-columns:repeat(5,1fr);gap:20px;list-style:none;margin:0;padding:0}
+.swatch{position:relative;background:#fff;border-radius:12px 12px 0 0;display:flex;flex-direction:column;
+  --zz:14px;
+  -webkit-mask:linear-gradient(#000 0 0) top/100% calc(100% - var(--zz)/2) no-repeat,conic-gradient(from -45deg at bottom,#0000,#000 1deg 89deg,#0000 90deg) bottom/var(--zz) calc(var(--zz)/2) repeat-x;
+          mask:linear-gradient(#000 0 0) top/100% calc(100% - var(--zz)/2) no-repeat,conic-gradient(from -45deg at bottom,#0000,#000 1deg 89deg,#0000 90deg) bottom/var(--zz) calc(var(--zz)/2) repeat-x;
+  filter:drop-shadow(0 1px 0 rgba(0,0,0,.05))}
+.swatch .face{position:relative;aspect-ratio:4/5;border-radius:12px 12px 0 0;overflow:hidden;background-color:var(--c);background-image:var(--weave)}
+.swatch .face img{width:100%;height:100%;object-fit:cover}
+.swatch .face::after{content:"";position:absolute;inset:9px;border:1.5px dashed rgba(255,255,255,.75);border-radius:7px;pointer-events:none}
+.swatch .hole{position:absolute;left:14px;top:14px;width:22px;height:22px;border-radius:50%;background:var(--foam);box-shadow:inset 0 0 0 4px #c7ccd1,inset 0 0 0 5px #9aa3ab,0 1px 1px rgba(255,255,255,.6);z-index:2}
+.swatch .face svg{position:absolute;inset:18% 12% 22%;width:76%;height:60%;color:#fff}
+.swatch .info{padding:16px 18px 30px;border-top:6px solid var(--c)}
+.swatch .no{font:700 .72rem/1 var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.swatch h3{font-size:1.5rem;margin:8px 0 8px}
+.swatch p{font-size:.95rem;line-height:1.5;color:var(--muted);margin:0}
+.also{margin-top:36px;display:flex;flex-wrap:wrap;align-items:center;gap:10px}
+.also b{font-weight:700;color:var(--sea-deep);margin-right:6px}
+.also .chip{background:var(--sand)}
+
+/* ---------- HOW IT WORKS ---------- */
+.how{background:var(--sea);color:#eaf4f8;position:relative;overflow:hidden}
+.how::before{content:"";position:absolute;inset:0;background-image:var(--weave);opacity:.6;pointer-events:none}
+.how .wrap{position:relative}
+.how h2{color:#fff}
+.how .kicker{color:var(--tape)}
+.how .sec-head p{color:#cfe3ec}
+.how .tape{margin:0 -24px 0;transform:rotate(-.6deg)}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;list-style:none;padding:0;margin:0;counter-reset:step}
+.step{position:relative;background:var(--foam);color:var(--ink);border-radius:14px;padding:44px 28px 30px;margin-top:34px}
+.step::before{content:"";position:absolute;inset:8px;border:1.5px dashed var(--sand-line);border-radius:9px;pointer-events:none}
+.step .pin{position:absolute;top:-34px;left:28px;width:2px;height:40px;background:var(--sea-deep)}
+.step .pin::before{content:"";position:absolute;top:-6px;left:-6px;width:14px;height:14px;border-radius:50%;background:var(--coral);box-shadow:0 0 0 3px #fff}
+.step .n{position:absolute;top:-22px;right:24px;width:58px;height:58px;border-radius:50%;background:var(--tape);color:var(--sea-deep);display:grid;place-items:center;font:400 1.7rem/1 var(--display);box-shadow:0 4px 0 rgba(10,52,80,.25)}
+.step h3{font-size:1.6rem;margin-bottom:12px}
+.step p{color:var(--muted);font-size:1rem}
+.step p:last-child{margin-bottom:0}
+.step a{font-weight:700;color:var(--sea-deep)}
+.mini-book{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:14px}
+.mini-book span{position:relative;display:block;padding:18px 10px 8px;border-radius:6px;background-color:var(--c);background-image:var(--weave);color:#fff;font:700 .78rem/1.2 var(--body);letter-spacing:.04em}
+.mini-book span::after{content:"";position:absolute;inset:4px;border:1px dashed rgba(255,255,255,.6);border-radius:4px}
+.mini-book span.dk{color:#1d2b22}
+
+/* ---------- WORK ---------- */
+.work{background:var(--sand)}
+.grid-work{columns:4 240px;column-gap:20px}
+.grid-work figure{break-inside:avoid;margin:0 0 20px;background:#fff;padding:10px 10px 0;border-radius:8px;box-shadow:0 1px 0 rgba(0,0,0,.06),0 10px 20px -12px rgba(10,52,80,.3);position:relative}
+.grid-work img{width:100%;border-radius:3px}
+.grid-work figcaption{display:flex;gap:10px;align-items:baseline;padding:11px 4px 13px;font-size:.9rem;line-height:1.35;color:var(--ink)}
+.grid-work figcaption b{flex:none;font:700 .7rem/1 var(--body);letter-spacing:.12em;color:var(--coral)}
+.work-note{margin-top:20px;color:var(--muted);font-size:.95rem}
+
+/* ---------- ADAM ---------- */
+.adam .wrap{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start}
+.adam .intro p{font-size:1.1rem;color:var(--sea-ink);max-width:32em}
+.label{position:relative;display:inline-block;margin:10px 0 30px;background:var(--sea-deep);color:#fff;padding:18px 44px;text-align:center;border-radius:3px;box-shadow:0 12px 24px -10px rgba(10,52,80,.5)}
+.label::before{content:"";position:absolute;inset:6px;border:1.5px dashed rgba(255,255,255,.55)}
+.label::after{content:"";position:absolute;top:0;bottom:0;left:14px;right:14px;border-left:2px dotted rgba(244,198,79,.9);border-right:2px dotted rgba(244,198,79,.9)}
+.label b{display:block;font:400 1.55rem/1.1 var(--display);letter-spacing:.06em;text-transform:uppercase}
+.label span{display:block;font:600 .76rem/1.5 var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--tape)}
+.label span:nth-of-type(1){margin-top:8px}
+.best{border-left:4px solid var(--coral);padding:4px 0 4px 20px;font:400 1.35rem/1.4 var(--display);color:var(--sea-deep);margin:28px 0 0}
+
+.timeline{position:relative;list-style:none;margin:0;padding:0 0 0 76px}
+.timeline::before{content:"";position:absolute;left:0;top:0;bottom:0;width:44px;background-color:var(--tape);
+  background-image:linear-gradient(180deg,var(--sea-deep) 2px,transparent 2px),linear-gradient(180deg,rgba(10,52,80,.8) 1.5px,transparent 1.5px),linear-gradient(180deg,rgba(10,52,80,.55) 1px,transparent 1px);
+  background-size:56% 80px,40% 40px,24% 8px;background-repeat:repeat-y;border-radius:4px;box-shadow:3px 0 0 rgba(10,52,80,.15)}
+.timeline li{position:relative;padding:4px 0 34px}
+.timeline li:last-child{padding-bottom:6px}
+.timeline li::before{content:"";position:absolute;left:-40px;top:14px;width:26px;border-top:2px dashed var(--sea-deep)}
+.timeline li::after{content:"";position:absolute;left:-16px;top:9px;width:12px;height:12px;border-radius:50%;background:var(--coral);box-shadow:0 0 0 3px var(--foam)}
+.timeline .yr{display:block;font:400 1.9rem/1 var(--display);color:var(--coral);margin-bottom:6px}
+.timeline .yr.sm{font-size:1.25rem;color:var(--sea)}
+.timeline p{margin:0;color:var(--sea-ink)}
+
+/* ---------- QUOTE CTA ---------- */
+.quote{padding:0 0 100px}
+.quote-card{position:relative;overflow:hidden;background:var(--sea-deep);color:#e6f1f6;border-radius:22px;padding:64px 56px;display:grid;grid-template-columns:1.3fr 1fr;gap:40px;align-items:center}
+.quote-card::before{content:"";position:absolute;inset:12px;border:1.5px dashed rgba(255,255,255,.35);border-radius:14px;pointer-events:none}
+.quote-card h2{color:#fff;font-size:clamp(2.1rem,4vw,3.2rem);margin-bottom:16px}
+.quote-card p{font-size:1.1rem;max-width:30em}
+.big-phone{display:inline-block;font:400 clamp(2rem,4.4vw,3.2rem)/1 var(--display);color:var(--tape);text-decoration:none;margin:8px 0 18px;border-bottom:3px dashed rgba(244,198,79,.5);padding-bottom:6px}
+.big-phone:hover{border-bottom-color:var(--tape)}
+.quote-card .mail{color:#fff;font-weight:600}
+.stack{position:relative;height:260px}
+.stack div{position:absolute;left:50%;top:50%;width:170px;height:220px;margin:-110px 0 0 -85px;border-radius:10px;background-color:var(--c);background-image:var(--weave);box-shadow:0 14px 30px rgba(0,0,0,.3)}
+.stack div::after{content:"";position:absolute;inset:8px;border:1.5px dashed rgba(255,255,255,.55);border-radius:6px}
+.stack div:nth-child(1){--c:var(--lilac);transform:rotate(-16deg) translate(-70px,8px)}
+.stack div:nth-child(2){--c:var(--sage);transform:rotate(-6deg) translate(-26px,0)}
+.stack div:nth-child(3){--c:var(--ochre);transform:rotate(5deg) translate(22px,-4px)}
+.stack div:nth-child(4){--c:var(--coral);transform:rotate(15deg) translate(70px,6px);display:grid;place-items:center;text-align:center;color:#fff;font:400 1.35rem/1.15 var(--display);padding:20px}
+
+/* footer */
+.foot{background:var(--sand-2);color:var(--sea-ink);padding:40px 0 44px;font-size:.95rem}
+.foot .wrap{display:flex;flex-wrap:wrap;gap:24px 48px;align-items:center;justify-content:space-between}
+.foot .brand svg{width:78px}
+.foot address{font-style:normal;line-height:1.7}
+.foot a{color:var(--sea-deep);font-weight:600}
+.foot .fine{flex-basis:100%;font-size:.82rem;color:#4b5a66;border-top:1.5px dashed var(--sand-line);padding-top:18px;margin:0}
+
+/* mobile call bar */
+.callbar{display:none}
+
+/* ---------- responsive ---------- */
+@media (max-width:1060px){
+  .book{grid-template-columns:repeat(3,1fr)}
+  .nav{display:none}
+}
+@media (max-width:900px){
+  .hero .wrap,.adam .wrap,.quote-card{grid-template-columns:1fr}
+  .hero{padding:24px 0 96px}
+  .hero-art{max-width:460px;margin-top:10px}
+  .steps{grid-template-columns:1fr;gap:10px}
+  .sec-head{flex-direction:column;align-items:flex-start;gap:14px}
+  .adam .wrap{gap:40px}
+  .stack{height:230px}
+}
+@media (max-width:640px){
+  body{font-size:1rem;padding-bottom:78px}
+  .wrap{padding:0 16px}
+  .top .wrap{gap:12px;padding-top:12px;padding-bottom:12px}
+  .brand svg{width:68px}
+  .brand b{font-size:1.08rem}
+  .brand small{font-size:.66rem}
+  .top .call-pill{display:none}
+  .hero h1{font-size:2.55rem}
+  .fan{right:16%;width:36%}
+  .fan span{right:9px;font-size:.7rem}
+  .lede{font-size:1.08rem}
+  .cta-row .btn{flex:1 1 100%;justify-content:center}
+  .sec{padding:68px 0}
+  .book{grid-template-columns:1fr 1fr;gap:14px}
+  .book li:last-child{grid-column:1/-1}
+  .book li:last-child .face{aspect-ratio:16/8}
+  .book li:last-child .face svg{inset:14% 26% 16%;width:48%;height:70%}
+  .swatch h3{font-size:1.25rem}
+  .swatch .info{padding:12px 13px 24px}
+  .swatch p{font-size:.88rem}
+  .grid-work{columns:2;column-gap:12px}
+  .grid-work figure{margin-bottom:12px;padding:7px 7px 0}
+  .grid-work figcaption{font-size:.8rem;flex-direction:column;gap:4px;padding:9px 2px 10px}
+  .step{padding:40px 22px 24px}
+  .quote{padding-bottom:64px}
+  .quote-card{padding:44px 24px 36px;border-radius:18px}
+  .stack{height:200px}
+  .stack div{width:130px;height:170px;margin:-85px 0 0 -65px}
+  .stack div:nth-child(1){transform:rotate(-16deg) translate(-56px,8px)}
+  .stack div:nth-child(4){transform:rotate(15deg) translate(56px,6px);font-size:1.1rem}
+  .timeline{padding-left:62px}
+  .timeline::before{width:36px}
+  .timeline li::before{left:-34px;width:22px}
+  .label{padding:16px 34px}
+  .label b{font-size:1.3rem}
+  .callbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:50;gap:8px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(251,248,241,.96);border-top:2px dashed var(--sand-line);box-shadow:0 -6px 20px rgba(10,52,80,.12)}
+  .callbar a{flex:1;display:flex;align-items:center;justify-content:center;gap:8px;min-height:50px;border-radius:12px;font-weight:700;text-decoration:none}
+  .callbar .c{flex:2.2;background:var(--sea);color:#fff}
+  .callbar .e{background:#fff;color:var(--sea-deep);box-shadow:inset 0 0 0 2px var(--sea-deep)}
+  .callbar svg{width:19px;height:19px}
+}
+</style>
+</head>
+<body>
+<div class="concept" role="note">Concept preview prepared for Shellharbour Upholstery by Claude (an AI). Not the official website.</div>
+<a class="skip" href="#main">Skip to content</a>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></g></symbol>
+    <symbol id="badge" viewBox="0 0 200 118">
+      <defs>
+        <radialGradient id="bg-g" cx="45%" cy="35%" r="75%"><stop offset="0" stop-color="#2358a8"/><stop offset="1" stop-color="#0b2d63"/></radialGradient>
+        <path id="arc-top" d="M38 64 A62 36 0 0 1 162 64"/>
+        <path id="arc-bot" d="M38 56 A62 30 0 0 0 162 56"/>
+      </defs>
+      <ellipse cx="100" cy="59" rx="97" ry="56" fill="#dfe6ee"/>
+      <ellipse cx="100" cy="59" rx="92" ry="51.5" fill="url(#bg-g)"/>
+      <ellipse cx="100" cy="59" rx="84" ry="44" fill="none" stroke="#fff" stroke-width="1.6" stroke-dasharray="4 3" opacity=".75"/>
+      <text font-family="Young Serif, Georgia, serif" font-size="13.5" fill="#fff" letter-spacing="1"><textPath href="#arc-top" startOffset="50%" text-anchor="middle">SHELLHARBOUR</textPath></text>
+      <text font-family="Young Serif, Georgia, serif" font-size="13.5" fill="#fff" letter-spacing="1"><textPath href="#arc-bot" startOffset="50%" text-anchor="middle" dominant-baseline="hanging">UPHOLSTERY</textPath></text>
+      <g transform="translate(100 60)" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M0 12 L-15 -4 Q0 -20 15 -4 Z" fill="#f4c64f" stroke="#fff"/>
+        <path d="M0 12 L-8 -11 M0 12 L0 -13 M0 12 L8 -11" stroke="#0b2d63" stroke-width="1.4"/>
+        <path d="M-4 12 h8 v3 h-8 z" fill="#f4c64f"/>
+      </g>
+      <circle cx="30" cy="59" r="2.4" fill="#f4c64f"/><circle cx="170" cy="59" r="2.4" fill="#f4c64f"/>
+    </symbol>
+  </defs>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Shellharbour Upholstery, home">
+      <svg viewBox="0 0 200 118" aria-hidden="true"><use href="#badge"/></svg>
+      <span><b>Shellharbour Upholstery</b><small>Over 20 years experience</small></span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#services">Services</a>
+      <a href="#how">How it works</a>
+      <a href="#work">Our work</a>
+      <a href="#adam">Meet Adam</a>
+    </nav>
+    <a class="call-pill" href="tel:+61242568526"><svg aria-hidden="true"><use href="#i-phone"/></svg>(02) 4256 8526</a>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero" id="top" aria-labelledby="hero-h">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Free quotes &middot; Servicing Shellharbour &amp; the Illawarra</p>
+      <h1 id="hero-h">We bring the fabric samples <em>to you.<svg viewBox="0 0 200 12" preserveAspectRatio="none" aria-hidden="true"><path d="M2 8 Q50 1 100 6 T198 5" fill="none" stroke="currentColor" stroke-width="3" stroke-dasharray="9 6" stroke-linecap="round"/></svg></em></h1>
+      <p class="lede">Adam Golosky is a certified upholsterer, marine &amp; automotive trimmer, and has run his own business since 1992. <strong>He comes to you with a large variety of fabrics to choose from</strong> and helps with colour and any other advice you need.</p>
+      <div class="cta-row">
+        <a class="btn btn-sea" href="tel:+61242568526"><svg aria-hidden="true"><use href="#i-phone"/></svg>Call (02) 4256 8526</a>
+        <a class="btn btn-line" href="mailto:shellharbourup@hotmail.com?subject=Quote%20Request"><svg aria-hidden="true"><use href="#i-mail"/></svg>Email for a free quote</a>
+      </div>
+      <div class="houses"><span class="l">Fabrics from leading manufacturers:</span>
+        <span class="chip" style="--c:var(--sea)">Warwick</span>
+        <span class="chip" style="--c:var(--coral)">Wortley Group</span>
+        <span class="chip" style="--c:var(--sage)">Zepel Fabrics</span>
+        <span class="chip" style="--c:var(--ochre)">Nolans</span>
+      </div>
+    </div>
+
+    <div class="hero-art">
+      <div class="fan" aria-hidden="true">
+        <div><span>Warwick</span></div>
+        <div><span>Wortley</span></div>
+        <div><span>Zepel</span></div>
+        <div><span>Nolans</span></div>
+      </div>
+      <figure class="after" style="margin:0">
+        <img src="img/red-tub-chair-after.jpg" width="400" height="600" alt="The same tub chair after re-upholstery: rebuilt and covered in bright red fabric, with a deep rounded back and castors.">
+        <span class="tag">After</span>
+        <figcaption>Same chair, before &amp; after</figcaption>
+      </figure>
+      <svg class="arrow" viewBox="0 0 100 60" aria-hidden="true"><path d="M4 50 C30 52 60 40 88 12" fill="none" stroke="currentColor" stroke-width="3" stroke-dasharray="7 5" stroke-linecap="round"/><path d="M72 10 L90 10 L88 28" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <figure class="before" style="margin:0">
+        <img src="img/red-tub-chair-before.jpg" width="200" height="200" alt="The tub chair before: stripped back to a worn timber frame with old green padding showing.">
+        <span class="tag">Before</span>
+      </figure>
+    </div>
+  </div>
+  <svg class="hero-wave" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0 50 C180 20 320 70 520 48 S880 10 1060 40 1320 64 1440 36 V90 H0Z" fill="#9fc9d9" opacity=".55"/>
+    <path d="M0 64 C200 40 360 84 560 62 S900 30 1080 56 1320 76 1440 54 V90 H0Z" fill="#fbf8f1"/>
+    <path d="M0 64 C200 40 360 84 560 62 S900 30 1080 56 1320 76 1440 54" fill="none" stroke="#0d5c85" stroke-width="2" stroke-dasharray="10 8" opacity=".45"/>
+  </svg>
+</section>
+
+<section class="sec" id="services" aria-labelledby="svc-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <p class="kicker">Services</p>
+        <h2 class="h2" id="svc-h">What I can re-cover</h2>
+      </div>
+      <p>Free quotes for all upholstery types, including domestic furniture, antiques, marine, automotive and commercial.</p>
+    </div>
+
+    <ul class="book">
+      <li class="swatch" style="--c:var(--lilac)">
+        <div class="face"><span class="hole" aria-hidden="true"></span>
+          <img src="img/check-wingback-ottoman.jpg" width="400" height="600" loading="lazy" alt="Wingback armchair and matching ottoman re-covered in a cream fabric with a blue window-pane check.">
+        </div>
+        <div class="info"><span class="no">No. 01</span><h3>Furniture</h3><p>Domestic lounges, armchairs and ottomans, plus children's furniture.</p></div>
+      </li>
+      <li class="swatch" style="--c:var(--blush)">
+        <div class="face"><span class="hole" aria-hidden="true"></span>
+          <img src="img/buttoned-velvet-chair.jpg" width="400" height="600" loading="lazy" alt="Deep-buttoned chair back in dusty pink velvet, set in a carved dark timber frame.">
+        </div>
+        <div class="info"><span class="no">No. 02</span><h3>Antiques</h3><p>Antique upholstery by a certified upholsterer with a 4-year apprenticeship behind him.</p></div>
+      </li>
+      <li class="swatch" style="--c:var(--sea)">
+        <div class="face"><span class="hole" aria-hidden="true"></span>
+          <svg viewBox="0 0 160 130" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="34" y="28" width="92" height="30" rx="10"/><path d="M42 43 h76" stroke-dasharray="5 5" stroke-width="2"/>
+            <rect x="30" y="58" width="100" height="18" rx="7"/>
+            <path d="M12 76 H148 L130 102 H30 Z"/>
+            <path d="M8 114 q12 -8 24 0 t24 0 t24 0 t24 0 t24 0 t24 0" stroke-width="2.5"/>
+          </svg>
+        </div>
+        <div class="info"><span class="no">No. 03</span><h3>Marine</h3><p>Marine trimming from a certified marine trimmer.</p></div>
+      </li>
+      <li class="swatch" style="--c:var(--coral)">
+        <div class="face"><span class="hole" aria-hidden="true"></span>
+          <svg viewBox="0 0 160 130" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="66" y="6" width="34" height="20" rx="8"/><path d="M76 26 v6 M90 26 v6"/>
+            <path d="M62 32 h44 q8 0 6 10 l-12 56 h-40 l4 -58 q0 -8 -2 -8z"/>
+            <path d="M68 44 l-4 46 M84 40 l-8 52" stroke-dasharray="5 5" stroke-width="2"/>
+            <path d="M52 98 h72 q12 0 12 12 v4 H52 q-10 0 -10 -8 t10 -8z"/>
+            <path d="M60 114 v10 M124 114 v10"/>
+          </svg>
+        </div>
+        <div class="info"><span class="no">No. 04</span><h3>Automotive</h3><p>Automotive trimming, including motor bike seats.</p></div>
+      </li>
+      <li class="swatch" style="--c:var(--ochre)">
+        <div class="face"><span class="hole" aria-hidden="true"></span>
+          <svg viewBox="0 0 160 130" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 30 h132 v44 H14z"/>
+            <path d="M58 30 v44 M102 30 v44" stroke-dasharray="5 5" stroke-width="2"/>
+            <circle cx="36" cy="52" r="2.5" fill="currentColor"/><circle cx="80" cy="52" r="2.5" fill="currentColor"/><circle cx="124" cy="52" r="2.5" fill="currentColor"/>
+            <path d="M8 74 h144 v20 H8z"/>
+            <path d="M16 94 v18 M144 94 v18"/>
+          </svg>
+        </div>
+        <div class="info"><span class="no">No. 05</span><h3>Commercial</h3><p>Commercial upholstery, with free quotes like every other job.</p></div>
+      </li>
+    </ul>
+
+    <div class="also"><b>Also on the list:</b>
+      <span class="chip" style="--c:var(--coral)">Motor bike seats</span>
+      <span class="chip" style="--c:var(--ochre)">Horse floats</span>
+      <span class="chip" style="--c:var(--blush)">Children's furniture</span>
+      <span class="chip" style="--c:var(--sea)">Trailer covers</span>
+    </div>
+  </div>
+</section>
+
+<section class="sec how" id="how" aria-labelledby="how-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <p class="kicker">How it works</p>
+        <h2 class="h2" id="how-h">Three steps, and Adam comes to you</h2>
+      </div>
+      <p>&ldquo;We wish to provide you with the most convenient service. Therefore we come to you.&rdquo;</p>
+    </div>
+    <div class="tape" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    <ol class="steps">
+      <li class="step"><span class="pin" aria-hidden="true"></span><span class="n" aria-hidden="true">1</span>
+        <h3>Call for a free quote</h3>
+        <p>Phone <a href="tel:+61242568526">(02) 4256 8526</a> to arrange a free quote, or <a href="mailto:shellharbourup@hotmail.com?subject=Quote%20Request">email a quote request</a>.</p>
+        <p>Domestic furniture, antiques, marine, automotive or commercial: all upholstery types are quoted free.</p>
+      </li>
+      <li class="step"><span class="pin" aria-hidden="true"></span><span class="n" aria-hidden="true">2</span>
+        <h3>Adam brings the samples</h3>
+        <p>He comes to you with a large variety of fabric from leading manufacturers, and helps with colour and any other advice or options you need.</p>
+        <div class="mini-book" aria-label="Fabric manufacturers">
+          <span style="--c:var(--sea)">Warwick</span>
+          <span style="--c:var(--coral)">Wortley Group</span>
+          <span class="dk" style="--c:var(--sage)">Zepel Fabrics</span>
+          <span class="dk" style="--c:var(--ochre)">Nolans</span>
+        </div>
+      </li>
+      <li class="step"><span class="pin" aria-hidden="true"></span><span class="n" aria-hidden="true">3</span>
+        <h3>The job gets done</h3>
+        <p>Your piece is re-covered in the fabric you chose, by a certified upholsterer with over 20 years experience.</p>
+        <p>The same quality workmanship and dependability Adam has been known for since he started his own business in 1992.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section class="sec work" id="work" aria-labelledby="work-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <p class="kicker">From Adam's gallery</p>
+        <h2 class="h2" id="work-h">Samples of our work</h2>
+      </div>
+      <p>Classic, retro and outdoor pieces, all re-covered by Shellharbour Upholstery.</p>
+    </div>
+    <div class="grid-work">
+      <figure><img src="img/striped-chaise.jpg" width="600" height="400" loading="lazy" alt="Chaise longue with a carved timber frame, re-covered in cream striped fabric with piping and a matching bolster cushion."><figcaption><b>No. 06</b>Chaise longue in cream stripe, with bolster</figcaption></figure>
+      <figure><img src="img/lilac-armchair.jpg" width="400" height="600" loading="lazy" alt="Armchair with white timber arms and legs, re-covered in soft lilac fabric."><figcaption><b>No. 07</b>Armchair in lilac with white timber arms</figcaption></figure>
+      <figure><img src="img/red-swivel-pair.jpg" width="600" height="400" loading="lazy" alt="Pair of retro egg-shaped swivel chairs on chrome star bases, re-covered in bright red."><figcaption><b>No. 08</b>A pair of red swivel tub chairs</figcaption></figure>
+      <figure><img src="img/sage-armchair-pair.jpg" width="600" height="400" loading="lazy" alt="Pair of retro armchairs with sage green buttoned backs and seats, framed in white."><figcaption><b>No. 09</b>Retro armchairs in sage and white</figcaption></figure>
+      <figure><img src="img/carved-frame-armchair.jpg" width="400" height="600" loading="lazy" alt="Carved dark timber armchair with its seat, back and arm pads re-covered in white."><figcaption><b>No. 10</b>Carved timber armchair in white</figcaption></figure>
+      <figure><img src="img/striped-outdoor-settees.jpg" width="600" height="400" loading="lazy" alt="Two wrought-iron settees with black and white striped cushions and patterned scatter cushions, on a verandah."><figcaption><b>No. 11</b>Black-and-white striped settees</figcaption></figure>
+      <figure><img src="img/ochre-sofa.jpg" width="600" height="400" loading="lazy" alt="Two-seater sofa with rolled arms, re-covered in a golden tan fabric."><figcaption><b>No. 12</b>Two-seater in golden tan</figcaption></figure>
+      <figure><img src="img/cream-sofa-cane-sides.jpg" width="600" height="400" loading="lazy" alt="Three-seater sofa with dark timber frame and cane side panels, with cream cushions."><figcaption><b>No. 13</b>Three-seater with cane sides, in cream</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="sec adam" id="adam" aria-labelledby="adam-h">
+  <div class="wrap">
+    <div class="intro">
+      <p class="kicker">Meet Adam</p>
+      <h2 class="h2" id="adam-h">The upholsterer who comes to your door</h2>
+      <div class="label"><b>Adam Golosky</b><span>Sole trader</span><span>Certified upholsterer</span><span>Marine &amp; automotive trimmer</span></div>
+      <p>Adam did a 4-year apprenticeship, then gained valuable experience working in Sydney, Colorado in the USA and London, England, before starting his own upholstery business in Brookvale in 1992.</p>
+      <p>In 2006 Adam and his wife moved to the South Coast and formed Shellharbour Upholstery. Adam continues servicing his Brookvale customers as well as his clientele within the Illawarra.</p>
+      <p class="best">His many long-standing, satisfied customers have proved to be his best advertising.</p>
+    </div>
+    <ol class="timeline" aria-label="Adam's career">
+      <li><span class="yr sm">Apprenticeship</span><p>Four years learning the trade.</p></li>
+      <li><span class="yr sm">Sydney &middot; Colorado &middot; London</span><p>Valuable experience working in Australia, the USA and England.</p></li>
+      <li><span class="yr">1992</span><p>Starts his own upholstery business in Brookvale. It thrives on a hardworking, friendly attitude, quality workmanship and dependability.</p></li>
+      <li><span class="yr">2006</span><p>Moves to the South Coast and forms Shellharbour Upholstery.</p></li>
+      <li><span class="yr sm">Brookvale &amp; the Illawarra</span><p>Servicing long-standing Brookvale customers and clientele within the Illawarra.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="quote" id="quote" aria-labelledby="quote-h">
+  <div class="wrap">
+    <div class="quote-card">
+      <div>
+        <h2 id="quote-h">Free quotes for all upholstery types</h2>
+        <p>Domestic furniture, antiques, marine, automotive and commercial. Call Adam to arrange yours, and he'll bring the fabrics to you.</p>
+        <a class="big-phone" href="tel:+61242568526">(02) 4256 8526</a>
+        <p style="margin:0">or email <a class="mail" href="mailto:shellharbourup@hotmail.com?subject=Quote%20Request">shellharbourup@hotmail.com</a></p>
+      </div>
+      <div class="stack" aria-hidden="true"><div></div><div></div><div></div><div>Your fabric here</div></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Shellharbour Upholstery, back to top">
+      <svg viewBox="0 0 200 118" aria-hidden="true"><use href="#badge"/></svg>
+      <span><b>Shellharbour Upholstery</b><small>Adam Golosky &middot; Sole trader</small></span>
+    </a>
+    <address>Albion Park, NSW<br>Phone <a href="tel:+61242568526">(02) 4256 8526</a><br>Email <a href="mailto:shellharbourup@hotmail.com">shellharbourup@hotmail.com</a></address>
+    <p class="fine">Concept preview by Claude (an AI) for Shellharbour Upholstery. Not the official website. All photos are from shellharbourupholstery.com.au.</p>
+  </div>
+</footer>
+
+<nav class="callbar" aria-label="Quick contact">
+  <a class="c" href="tel:+61242568526"><svg aria-hidden="true"><use href="#i-phone"/></svg>Call Adam for a free quote</a>
+  <a class="e" href="mailto:shellharbourup@hotmail.com?subject=Quote%20Request" aria-label="Email Shellharbour Upholstery"><svg aria-hidden="true"><use href="#i-mail"/></svg>Email</a>
+</nav>
+</body>
+</html>

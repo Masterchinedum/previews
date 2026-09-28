@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Swansea Backpackers · Flashpackers of Tasmania's East Coast</title>
+<meta name="description" content="Concept homepage for Swansea Backpackers, 98 Tasman Highway, Swansea, Tasmania: dorms, doubles, twins and family rooms beside the Bark Mill & Tavern, your base for Freycinet and Wineglass Bay.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=DM+Sans:opsz,wght@9..40,400..700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sand:#f7f0e4;
+  --sand-2:#efe3cf;
+  --paper:#fffdf8;
+  --ink:#15303c;
+  --ink-soft:#43585f;
+  --sea:#0e5a78;
+  --sea-deep:#0b3547;
+  --sea-mist:#d5e9ef;
+  --granite:#b84c26;
+  --granite-hot:#d9693b;
+  --granite-pink:#f2c6ae;
+  --gum:#4f7461;
+  --gum-pale:#dfeae1;
+  --brick:#651e13;
+  --radius:18px;
+  --shadow:0 18px 40px -18px rgba(21,48,60,.45);
+  --display:"Bricolage Grotesque", "Avenir Next", "Segoe UI", system-ui, sans-serif;
+  --body:"DM Sans", "Helvetica Neue", Arial, system-ui, sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--sand);color:var(--ink);font:400 1.0625rem/1.6 var(--body);}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3{font-family:var(--display);line-height:1.05;margin:0;letter-spacing:-.02em;font-weight:750}
+p{margin:0 0 1rem}
+.wrap{width:min(1180px,100% - 2rem);margin-inline:auto}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+:focus-visible{outline:3px solid var(--granite-hot);outline-offset:3px;border-radius:6px}
+
+/* concept banner */
+.concept{background:#222;color:#fff;font-size:.875rem;text-align:center;padding:.55rem 1rem;line-height:1.4}
+
+.skip{position:absolute;left:1rem;top:-4rem;background:var(--ink);color:#fff;padding:.6rem 1rem;border-radius:8px;z-index:50}
+.skip:focus{top:3rem}
+
+/* header */
+.top{padding:1.1rem 0}
+.top .wrap{display:flex;align-items:center;gap:1.5rem;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:.75rem;text-decoration:none}
+.brand svg{flex:none}
+.brand b{display:block;font:800 1.3rem/1 var(--display);letter-spacing:-.02em}
+.brand small{display:block;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);margin-top:.25rem}
+.nav{display:flex;gap:1.6rem;align-items:center}
+.nav a{text-decoration:none;font-weight:600;font-size:.97rem}
+.nav a:not(.btn):hover{color:var(--granite)}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:.55rem;padding:.85rem 1.25rem;border-radius:999px;font:700 1rem/1 var(--body);text-decoration:none;border:2px solid transparent;transition:transform .15s ease, background .15s ease}
+.btn svg{width:20px;height:20px;flex:none}
+.btn:hover{transform:translateY(-2px)}
+.btn-granite{background:var(--granite);color:#fff}
+.btn-granite:hover{background:#a3401d}
+.btn-sea{background:var(--sea);color:#fff}
+.btn-sea:hover{background:var(--sea-deep)}
+.btn-line{border-color:currentColor;color:var(--ink);background:transparent}
+.btn-sm{padding:.6rem 1rem;font-size:.92rem}
+
+/* hero */
+.hero{position:relative;padding:2.5rem 0 7.5rem;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,620px);gap:3rem;align-items:center}
+.eyebrow{display:inline-flex;align-items:center;gap:.5rem;font-size:.8rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gum)}
+.eyebrow::before{content:"";width:28px;height:2px;background:currentColor}
+.hero h1{font-size:clamp(2.6rem,5.2vw,4.3rem);margin:.9rem 0 1.3rem}
+.hero h1 em{font-style:normal;color:var(--granite);position:relative;white-space:nowrap}
+.hero h1 em svg{position:absolute;left:0;right:0;bottom:-.18em;width:100%;height:.3em}
+.lede{font-size:1.18rem;color:var(--ink-soft);max-width:34rem}
+.cta-row{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.7rem}
+.fine{font-size:.9rem;color:var(--ink-soft);margin-top:1rem}
+
+.postcards{position:relative;padding-bottom:11.5rem}
+.postcard{background:var(--paper);padding:10px 10px 0;border-radius:6px;box-shadow:var(--shadow);transform:rotate(-1.6deg)}
+.postcard img{border-radius:2px;width:100%;aspect-ratio:723/266;object-fit:cover}
+.postcard figcaption{display:flex;justify-content:space-between;font-size:.82rem;color:var(--ink-soft);padding:.55rem .2rem .6rem}
+.polaroid{position:absolute;left:3%;bottom:0;width:min(236px,42%);background:var(--paper);padding:9px 9px 34px;box-shadow:var(--shadow);transform:rotate(4deg);border-radius:4px}
+.polaroid img{aspect-ratio:4/3;object-fit:cover;width:100%}
+.polaroid figcaption{position:absolute;left:0;right:0;bottom:8px;text-align:center;font:600 .85rem var(--display);color:var(--ink-soft)}
+.stamp{position:absolute;right:8%;bottom:1.5rem;width:128px;height:128px;transform:rotate(-9deg)}
+
+.hero-sea{position:absolute;left:0;right:0;bottom:-1px;height:90px;color:var(--sea)}
+.hero-sea svg{width:100%;height:100%;display:block}
+
+/* ribbon */
+.ribbon{background:var(--sea);color:#fff;padding:.5rem 0 2.6rem}
+.ribbon ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem}
+.ribbon li{display:flex;gap:.8rem;align-items:flex-start;font-weight:500;line-height:1.35}
+.ribbon svg{width:30px;height:30px;flex:none;color:var(--granite-pink)}
+
+/* sections */
+section{scroll-margin-top:1rem}
+.sec{padding:5.5rem 0}
+.sec-head{max-width:46rem;margin-bottom:2.8rem}
+.sec-head h2{font-size:clamp(2.1rem,4.2vw,3.3rem);margin:.7rem 0 1rem}
+.sec-head p{font-size:1.1rem;color:var(--ink-soft)}
+
+/* rooms */
+.rooms{display:grid;grid-template-columns:repeat(3,1fr);gap:1.6rem}
+.room{background:var(--paper);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column;box-shadow:0 1px 0 rgba(21,48,60,.08), 0 12px 30px -20px rgba(21,48,60,.5)}
+.room-img{position:relative}
+.room-img img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.tag{position:absolute;left:14px;top:14px;background:var(--paper);color:var(--ink);font:700 .78rem/1 var(--body);letter-spacing:.1em;text-transform:uppercase;padding:.5rem .7rem;border-radius:999px}
+.room-body{padding:1.5rem 1.5rem 1.6rem;display:flex;flex-direction:column;flex:1}
+.room h3{font-size:1.65rem;margin-bottom:.45rem}
+.sleeps{font-weight:700;color:var(--granite);font-size:.95rem;margin-bottom:.9rem}
+.chips{display:flex;flex-wrap:wrap;gap:.4rem;margin:0 0 1rem;padding:0;list-style:none}
+.chips li{background:var(--gum-pale);color:#2d4d3d;border-radius:999px;padding:.3rem .7rem;font-size:.85rem;font-weight:600}
+.ticks{list-style:none;margin:0 0 1.4rem;padding:0;display:grid;gap:.45rem;font-size:.98rem}
+.ticks li{display:flex;gap:.6rem}
+.ticks li::before{content:"";flex:none;width:18px;height:18px;margin-top:.2rem;border-radius:50%;background:var(--sea-mist) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M5.5 10.5l3 3 6-7' fill='none' stroke='%230e5a78' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/14px no-repeat}
+.room .btn{margin-top:auto;align-self:flex-start}
+.kid-note{background:var(--granite-pink);color:#4a1d0c;border-radius:12px;padding:.8rem 1rem;font-size:.93rem;margin:0 0 1.4rem}
+.kid-note b{font-family:var(--display)}
+.inset{margin:0 0 1.4rem;display:flex;gap:.9rem;align-items:center;background:var(--sand);border-radius:12px;padding:.5rem}
+.inset img{width:96px;aspect-ratio:4/3;object-fit:cover;border-radius:8px}
+.inset figcaption{font-size:.88rem;color:var(--ink-soft)}
+.inset b{display:block;color:var(--ink);font-family:var(--display);font-size:1rem}
+.room-split{display:grid;gap:.9rem;margin-bottom:1.2rem}
+.room-split div{border-left:3px solid var(--granite-pink);padding-left:.8rem}
+.room-split b{display:block;font-family:var(--display);font-size:1.1rem}
+.room-split span{font-size:.95rem;color:var(--ink-soft)}
+.rooms-note{margin-top:1.8rem;display:grid;grid-template-columns:auto 1fr;gap:1rem 1.2rem;align-items:center;background:var(--sand-2);border-radius:var(--radius);padding:1.2rem 1.5rem}
+.rooms-note svg{width:40px;height:40px;color:var(--gum)}
+.rooms-note p{margin:0}
+
+/* facilities */
+.facilities{background:var(--paper)}
+.icons{list-style:none;margin:0 0 3rem;padding:0;display:grid;grid-template-columns:repeat(5,1fr);gap:1rem}
+.icons li{background:var(--sand);border-radius:16px;padding:1.2rem 1rem;display:flex;flex-direction:column;gap:.7rem;font-weight:600;line-height:1.3}
+.icons li span{display:block;font-weight:400;font-size:.88rem;color:var(--ink-soft);margin-top:.2rem}
+.icons .ic{width:48px;height:48px;border-radius:14px;display:grid;place-items:center;background:var(--sea-mist);color:var(--sea)}
+.icons li:nth-child(3n+2) .ic{background:var(--granite-pink);color:#8a3515}
+.icons li:nth-child(3n) .ic{background:var(--gum-pale);color:var(--gum)}
+.icons .ic svg{width:26px;height:26px}
+.mosaic{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.mosaic figure{margin:0;position:relative;border-radius:14px;overflow:hidden;height:250px}
+.mosaic figure.wide{grid-column:span 2}
+.mosaic img{width:100%;height:100%;object-fit:cover}
+.mosaic figcaption{position:absolute;left:12px;bottom:12px;background:rgba(255,253,248,.94);color:var(--ink);font-size:.85rem;font-weight:700;padding:.35rem .65rem;border-radius:999px}
+.access{background:var(--sea);color:#fff;border-radius:14px;padding:1.4rem;display:flex;flex-direction:column;justify-content:space-between;min-height:250px}
+.access svg{width:44px;height:44px;color:var(--granite-pink)}
+.access p{margin:0;font-size:1.05rem;line-height:1.4}
+.access b{display:block;font:700 1.45rem/1.1 var(--display);margin-bottom:.4rem}
+
+/* guestbook */
+.guestbook{background:var(--sand-2)}
+.guestbook .wrap{display:grid;grid-template-columns:minmax(0,420px) minmax(0,1fr);gap:4rem;align-items:center}
+.gb-photo{position:relative}
+.gb-photo figure{margin:0;background:var(--paper);padding:10px 10px 14px;box-shadow:var(--shadow);transform:rotate(-2.5deg);border-radius:4px}
+.gb-photo img{width:100%;aspect-ratio:16/10;object-fit:cover;object-position:38% 50%}
+.gb-photo figcaption{text-align:center;font:600 .92rem var(--display);color:var(--ink-soft);margin-top:.7rem}
+.gb-photo .second{position:absolute;right:-24px;bottom:-40px;width:58%;transform:rotate(5deg);padding:8px 8px 30px}
+.gb-photo .second img{aspect-ratio:1/1;object-fit:cover;object-position:35% 50%}
+.gb-photo .second figcaption{font-size:.8rem;margin-top:.45rem}
+.quotes{display:grid;gap:1.6rem;margin:1.6rem 0 0;padding:0;list-style:none}
+.quotes blockquote{margin:0;font:600 clamp(1.25rem,2.1vw,1.6rem)/1.25 var(--display);letter-spacing:-.01em}
+.quotes blockquote::before{content:"\201C";color:var(--granite);margin-right:.1em}
+.quotes blockquote::after{content:"\201D";color:var(--granite);margin-left:.05em}
+.quotes cite{display:block;font:500 .95rem var(--body);color:var(--ink-soft);margin-top:.45rem;font-style:normal}
+.gb-src{font-size:.85rem;color:var(--ink-soft);margin-top:1.6rem}
+
+/* freycinet */
+.freycinet{background:var(--sea-deep);color:#fff;position:relative;padding-top:7rem}
+.freycinet .ridge{position:absolute;top:-1px;left:0;right:0;height:120px;color:var(--sand-2)}
+.freycinet .ridge svg{width:100%;height:100%;display:block}
+.freycinet .eyebrow{color:var(--granite-pink)}
+.freycinet .sec-head p{color:#cfe0e6}
+.fz{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:3rem;align-items:center}
+.fz-photos{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.fz-photos figure{margin:0;position:relative;border-radius:14px;overflow:hidden}
+.fz-photos figure:first-child{grid-column:span 2}
+.fz-photos img{width:100%;aspect-ratio:3/2;object-fit:cover}
+.fz-photos figure:first-child img{aspect-ratio:600/400}
+.fz-photos figcaption{position:absolute;left:10px;bottom:10px;background:rgba(11,53,71,.85);color:#fff;font-size:.82rem;font-weight:600;padding:.3rem .6rem;border-radius:999px}
+.big-stat{border-bottom:1px solid rgba(255,255,255,.18);padding-bottom:1.8rem;margin-bottom:1.8rem}
+.big-stat b{display:block;font:800 clamp(4rem,9vw,6.5rem)/.9 var(--display);color:var(--granite-pink);letter-spacing:-.04em}
+.big-stat p{font-size:1.15rem;margin:.8rem 0 0;max-width:26rem}
+.nearby-wrap{margin-top:3.5rem}
+.nearby-wrap h3{font-size:1.5rem;margin-bottom:1.2rem}
+.nearby{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+.nearby li{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:1.1rem 1.1rem 1.2rem;display:flex;flex-direction:column;gap:.4rem}
+.nearby b{font:700 .85rem var(--body);letter-spacing:.08em;text-transform:uppercase;color:var(--granite-pink)}
+.nearby strong{font-family:var(--display);font-size:1.15rem}
+.btn-paper-sea{background:var(--paper);color:var(--sea-deep)}
+.btn-paper-sea:hover{background:#fff}
+.nearby strong{display:block;font-weight:700}
+.nearby span{color:#cfe0e6;font-size:.95rem}
+.fz-note{color:#cfe0e6;font-size:.88rem;margin-top:1.2rem}
+.quote-site{border-left:3px solid var(--granite-hot);padding-left:1rem;font-size:1.12rem;color:#e6f0f3;margin:0 0 1.6rem}
+
+/* location */
+.loc .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:3.5rem;align-items:center}
+.addr{background:var(--paper);border-radius:var(--radius);padding:1.5rem;margin:1.6rem 0;display:grid;gap:1rem;box-shadow:0 12px 30px -22px rgba(21,48,60,.6)}
+.addr-row{display:flex;gap:.9rem;align-items:flex-start}
+.addr-row svg{width:24px;height:24px;color:var(--granite);flex:none;margin-top:.15rem}
+.addr-row p{margin:0}
+.addr-row a{font-weight:600}
+.loc-photos{position:relative;min-height:470px}
+.loc-photos figure{margin:0;position:absolute;background:var(--paper);padding:9px 9px 34px;box-shadow:var(--shadow);border-radius:4px}
+.loc-photos figcaption{position:absolute;left:0;right:0;bottom:8px;text-align:center;font:600 .85rem var(--display);color:var(--ink-soft)}
+.loc-photos .a{top:0;right:0;width:78%;transform:rotate(2deg)}
+.loc-photos .a figcaption{text-align:right;padding-right:14px}
+.loc-photos .b{bottom:0;left:0;width:62%;transform:rotate(-3deg)}
+.pill-list{display:flex;flex-wrap:wrap;gap:.5rem;list-style:none;padding:0;margin:0}
+.pill-list li{background:var(--gum-pale);color:#2d4d3d;border-radius:999px;padding:.4rem .8rem;font-size:.9rem;font-weight:600}
+
+/* book */
+.book{padding:0 0 6rem}
+.book-card{background:var(--granite);color:#fff;border-radius:28px;overflow:hidden;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);position:relative}
+.book-copy{padding:3.4rem 3.2rem}
+.book-copy .eyebrow{color:#fff3ec}
+.book-copy h2{font-size:clamp(2.3rem,4.6vw,3.6rem);margin:.8rem 0 1rem}
+.book-copy p{font-size:1.1rem;color:#fff3ec;max-width:30rem}
+.book .btn-paper{background:var(--paper);color:var(--ink)}
+.book .btn-paper:hover{background:#fff}
+.book .btn-ghost{border-color:#fff;color:#fff}
+.book .btn-ghost:hover{background:rgba(255,255,255,.12)}
+.sign{display:flex;align-items:center;gap:.8rem;margin-top:2rem;font-size:.95rem;color:#ffe9de}
+.sign b{font:700 1.15rem var(--display);color:#fff;display:block}
+.book-img{display:flex;align-items:center;justify-content:center;padding:2.5rem 2.5rem 2.5rem 0}
+.book-img figure{margin:0;background:var(--paper);padding:10px 10px 0;border-radius:6px;box-shadow:0 24px 50px -20px rgba(60,15,0,.6);transform:rotate(2deg);width:100%;max-width:560px}
+.book-img img{width:100%;aspect-ratio:723/266;object-fit:cover;border-radius:2px}
+.book-img figcaption{font-size:.82rem;color:var(--ink-soft);padding:.5rem .2rem .6rem}
+
+/* footer */
+footer{background:var(--brick);color:#f5e6e1;padding:3.2rem 0 2.2rem;font-size:.95rem}
+footer .wrap{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:2rem}
+footer h3{font:700 .8rem var(--body);letter-spacing:.14em;text-transform:uppercase;color:#f1b9a6;margin-bottom:.8rem}
+footer p{margin:0 0 .4rem}
+footer a{color:#fff}
+footer ul{list-style:none;margin:0;padding:0;display:grid;gap:.35rem}
+footer .brand b{color:#fff}
+footer .brand small{color:#f1b9a6}
+.foot-base{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.18);padding-top:1.3rem;font-size:.82rem;color:#e9cfc6}
+
+/* sticky mobile bar */
+.mbar{display:none}
+
+@media (max-width:1020px){
+  .icons{grid-template-columns:repeat(3,1fr)}
+  .nearby{grid-template-columns:repeat(3,1fr)}
+  .ribbon ul{grid-template-columns:repeat(2,1fr)}
+  .nav a:not(.btn){display:none}
+}
+@media (max-width:900px){
+  .hero .wrap,.guestbook .wrap,.fz,.loc .wrap,.book-card{grid-template-columns:1fr}
+  .hero{padding-top:1.2rem}
+  .rooms{grid-template-columns:1fr;max-width:560px}
+  .mosaic{grid-template-columns:1fr 1fr}
+  .mosaic figure{height:200px}
+  .access{min-height:200px}
+  .guestbook .wrap{gap:4.5rem}
+  .gb-photo{max-width:380px}
+  .book-img{padding:0 1.5rem 2.2rem;order:2}
+  footer .wrap{grid-template-columns:1fr 1fr}
+}
+@media (max-width:640px){
+  body{font-size:1rem;padding-bottom:76px}
+  .wrap{width:calc(100% - 2rem)}
+  .top .nav{display:none}
+  .brand b{font-size:1.15rem}
+  .hero{padding-bottom:5.5rem}
+  .hero h1{font-size:2.55rem}
+  .lede{font-size:1.06rem}
+  .hero .wrap{gap:2rem}
+  .postcards{padding-bottom:7.5rem}
+  .polaroid{width:44%;left:0;padding:7px 7px 28px}
+  .polaroid figcaption{font-size:.78rem;bottom:6px}
+  .postcard{padding:7px 7px 0}
+  .postcard figcaption{font-size:.72rem;padding:.4rem .1rem .5rem}
+  .stamp{width:84px;height:84px;right:-6px;top:-38px;bottom:auto}
+  .postcards{margin-top:1.5rem}
+  .addr-long{display:none}
+  .freycinet{padding-top:5.5rem}
+  .freycinet .ridge{height:64px}
+  .hero-sea{height:56px}
+  .ribbon ul{grid-template-columns:1fr;gap:1rem}
+  .sec{padding:4rem 0}
+  .sec-head{margin-bottom:2rem}
+  .icons{grid-template-columns:1fr 1fr;gap:.7rem}
+  .icons li{padding:1rem .9rem}
+  .mosaic{grid-template-columns:1fr 1fr;gap:8px}
+  .mosaic figure{height:150px}
+  .mosaic figure.wide{grid-column:auto}
+  .mosaic figure.wide:first-child{grid-column:span 2;height:180px}
+  .mosaic .access{grid-column:span 2;min-height:0;gap:1rem}
+  .mosaic figcaption{font-size:.78rem;left:8px;bottom:8px}
+  .rooms-note{grid-template-columns:1fr}
+  .nearby{grid-template-columns:1fr}
+  .loc-photos{min-height:340px}
+  .book-copy{padding:2.2rem 1.5rem}
+  .book-card{border-radius:22px}
+  .cta-row .btn{flex:1 1 auto;justify-content:center}
+  footer .wrap{grid-template-columns:1fr}
+  .mbar{display:grid;grid-template-columns:1fr 1fr;gap:.5rem;position:fixed;left:0;right:0;bottom:0;z-index:40;padding:.6rem .75rem calc(.6rem + env(safe-area-inset-bottom));background:rgba(255,253,248,.97);border-top:1px solid rgba(21,48,60,.12);box-shadow:0 -8px 24px -12px rgba(21,48,60,.35)}
+  .mbar .btn{justify-content:center;padding:.9rem .5rem}
+}
+</style>
+</head>
+<body>
+<div class="concept" role="note">Concept preview prepared for Swansea Backpackers by Claude (an AI). Not the official website.</div>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- reusable symbols -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 3.5h3.2l1.6 4-2 1.3a11 11 0 0 0 5.4 5.4l1.3-2 4 1.6V17a2.5 2.5 0 0 1-2.7 2.5A15.5 15.5 0 0 1 2.5 6.2 2.5 2.5 0 0 1 5 3.5z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.9"/><path d="M3.5 7l8.5 6 8.5-6" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.2a7 7 0 0 1 14 0C19 14.8 12 21 12 21z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/><circle cx="12" cy="9.8" r="2.5" fill="none" stroke="currentColor" stroke-width="1.9"/></symbol>
+    <symbol id="i-hazards" viewBox="0 0 120 40"><path d="M0 40V33c8-1 12-5 17-6 5-9 12-15 20-14 7 1 10 8 14 9 4-5 9-8 15-6 5 2 6 7 9 8 5-7 12-15 21-14 8 1 11 10 14 12 4-1 7-1 10 1v17z" fill="currentColor"/></symbol>
+  </defs>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#main" aria-label="Swansea Backpackers, back to top">
+      <svg width="48" height="48" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="23" fill="#0e5a78"/><circle cx="33" cy="15" r="4.5" fill="#f2c6ae"/><use href="#i-hazards" x="4" y="17" width="40" height="13.5" style="color:#d9693b"/><path d="M4 33c4 0 4-2.4 8-2.4s4 2.4 8 2.4 4-2.4 8-2.4 4 2.4 8 2.4 4-2.4 8-2.4" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"/><path d="M8 38.5c3.5 0 3.5-2 7-2s3.5 2 7 2 3.5-2 7-2 3.5 2 7 2" fill="none" stroke="#d5e9ef" stroke-width="1.6" stroke-linecap="round"/></svg>
+      <span><b>Swansea Backpackers</b><small>Flashpackers of Tasmania</small></span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#rooms">Rooms</a>
+      <a href="#facilities">Facilities</a>
+      <a href="#freycinet">Freycinet</a>
+      <a href="#location">Location</a>
+      <a class="btn btn-sea btn-sm" href="tel:+61466405424"><svg aria-hidden="true"><use href="#i-phone"/></svg>Call to book</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- HERO -->
+<section class="hero" aria-labelledby="hero-title">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Swansea · East Coast of Tasmania</span>
+      <h1 id="hero-title">Flashpacking on<br> <em>Great Oyster Bay<svg viewBox="0 0 200 12" preserveAspectRatio="none" aria-hidden="true"><path d="M2 8c16 0 16-5 32-5s16 5 32 5 16-5 32-5 16 5 32 5 16-5 32-5 16 5 32 5" fill="none" stroke="#d9693b" stroke-width="3" stroke-linecap="round"/></svg></em>.</h1>
+      <p class="lede">A purpose-built, architect-designed lodge beside the historic Swansea Bark Mill and Tavern. Walk to Swansea's beaches and shops, then drive on to Freycinet and Wineglass Bay.</p>
+      <div class="cta-row">
+        <a class="btn btn-granite" href="tel:+61466405424"><svg aria-hidden="true"><use href="#i-phone"/></svg>Call to book</a>
+        <a class="btn btn-line" href="mailto:info@swanseabackpackers.com.au?subject=Booking%20enquiry&amp;body=Hi%20Chris%2C%0A%0AArriving%3A%20%0ANights%3A%20%0AGuests%3A%20%0ARoom%20type%20(dorm%20%2F%20double%20%2F%20twin%20%2F%20family)%3A%20%0A%0AThanks!"><svg aria-hidden="true"><use href="#i-mail"/></svg>Email to book</a>
+      </div>
+      <p class="fine">Dorms, doubles, twins and family rooms. All linen, doonas, pillows and towels included.</p>
+    </div>
+
+    <div class="postcards">
+      <figure class="postcard">
+        <img src="img/lodge-front.jpg" width="723" height="266" alt="The Swansea Backpackers lodge: a modern timber and steel building with a tall sign reading Swansea Backpackers, a gravel forecourt and an old wooden cart wheel in front." fetchpriority="high">
+        <figcaption><span></span><span><span class="addr-long">98 Tasman Highway, </span>Swansea TAS 7190</span></figcaption>
+      </figure>
+      <figure class="polaroid">
+        <img src="img/guests-dinner.jpg" width="600" height="400" alt="A group of guests sharing dinner around a long timber table in the hostel dining room." loading="lazy">
+        <figcaption>Dinner, hostel style</figcaption>
+      </figure>
+      <svg class="stamp" viewBox="0 0 140 140" role="img" aria-label="Stamp: Swansea, Tasmania, East Coast">
+        <defs><path id="stampCircle" d="M70 70m-49 0a49 49 0 1 1 98 0a49 49 0 1 1-98 0"/></defs>
+        <circle cx="70" cy="70" r="66" fill="#fffdf8"/>
+        <circle cx="70" cy="70" r="62" fill="none" stroke="#b84c26" stroke-width="2" stroke-dasharray="3 4"/>
+        <circle cx="70" cy="70" r="36" fill="#d5e9ef"/>
+        <use href="#i-hazards" x="36" y="56" width="68" height="23" style="color:#b84c26"/>
+        <path d="M40 84c5 0 5-3 10-3s5 3 10 3 5-3 10-3 5 3 10 3 5-3 10-3 5 3 10 3" fill="none" stroke="#0e5a78" stroke-width="2.2" stroke-linecap="round"/>
+        <text font-family="DM Sans, Arial, sans-serif" font-weight="700" font-size="11.5" letter-spacing="2.6" fill="#15303c"><textPath href="#stampCircle">SWANSEA · TASMANIA · EAST COAST ·</textPath></text>
+      </svg>
+    </div>
+  </div>
+  <div class="hero-sea" aria-hidden="true">
+    <svg viewBox="0 0 1440 90" preserveAspectRatio="none"><path d="M0 50c120 0 120-26 240-26s120 26 240 26 120-26 240-26 120 26 240 26 120-26 240-26 120 26 240 26v40H0z" fill="currentColor"/><path d="M0 64c120 0 120-18 240-18s120 18 240 18 120-18 240-18 120 18 240 18 120-18 240-18 120 18 240 18" fill="none" stroke="#f2c6ae" stroke-width="2" opacity=".6"/></svg>
+  </div>
+</section>
+
+<!-- RIBBON -->
+<div class="ribbon">
+  <div class="wrap">
+    <ul>
+      <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 19V7M3 14h18v5M21 14v-2.5A2.5 2.5 0 0 0 18.5 9H11v5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><rect x="5" y="10" width="4" height="4" rx="1.2" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>Linen, doonas, pillows &amp; towels on every bed</li>
+      <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2.5 9a14 14 0 0 1 19 0M5.5 12.5a9.5 9.5 0 0 1 13 0M8.6 15.8a5 5 0 0 1 6.8 0" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="12" cy="19.2" r="1.3" fill="currentColor"/></svg>Free WiFi</li>
+      <li><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-pin"/></svg>Next door to the Bark Mill &amp; Tavern</li>
+      <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 7v5l3.2 2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>55 minutes' drive to Freycinet &amp; Wineglass Bay</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ROOMS -->
+<section class="sec" id="rooms" aria-labelledby="rooms-title">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Rooms</span>
+      <h2 id="rooms-title">Pick your bed</h2>
+      <p>Affordable, safe and comfortable beds for backpackers, families, groups and workers touring Tasmania. Every rate includes all linen, doonas, pillows and towels.</p>
+    </div>
+
+    <div class="rooms">
+      <article class="room">
+        <div class="room-img">
+          <img src="img/dorm-6-bed.jpg" width="640" height="480" alt="A six-bed dorm with three sets of silver metal bunks, each made up with a patchwork doona." loading="lazy">
+          <span class="tag">Dorms</span>
+        </div>
+        <div class="room-body">
+          <h3>Dorm beds</h3>
+          <p class="sleeps">4-bed and 6-bed bunk rooms</p>
+          <ul class="chips" aria-label="Dorm options"><li>Mixed</li><li>Female</li><li>Male</li></ul>
+          <ul class="ticks">
+            <li>Bunk-style beds</li>
+            <li>Clothes rack and luggage space</li>
+            <li>All linen and towels included</li>
+          </ul>
+          <figure class="inset"><img src="img/dorm-4-bed.jpg" width="640" height="480" alt="A four-bed dorm with two sets of metal bunks and patchwork doonas." loading="lazy"><figcaption><b>4-bed dorm</b>Pictured above: a 6-bed dorm</figcaption></figure>
+          <a class="btn btn-sea btn-sm" href="mailto:info@swanseabackpackers.com.au?subject=Booking%20enquiry%20-%20dorm%20bed&amp;body=Hi%20Chris%2C%0A%0AArriving%3A%20%0ANights%3A%20%0ABeds%20needed%3A%20%0ADorm%20(mixed%20%2F%20female%20%2F%20male)%3A%20%0A%0AThanks!"><svg aria-hidden="true"><use href="#i-mail"/></svg>Ask about a dorm bed</a>
+        </div>
+      </article>
+
+      <article class="room">
+        <div class="room-img">
+          <img src="img/room-double-bunks.jpg" width="640" height="480" alt="A private room with a double bed on a black iron frame and a set of metal bunks beside it." loading="lazy">
+          <span class="tag">Private</span>
+        </div>
+        <div class="room-body">
+          <h3>Doubles &amp; twins</h3>
+          <div class="room-split">
+            <div><b>Double room</b><span>1 double bed + 2 bunk-style beds · sleeps&nbsp;4</span></div>
+            <div><b>Twin room</b><span>1 double bed + 1 single bed · sleeps&nbsp;3</span></div>
+          </div>
+          <ul class="ticks">
+            <li>Luggage space and clothes hanging rack</li>
+            <li>Linen and towels included</li>
+            <li>Shared bathroom and kitchen in the hostel</li>
+          </ul>
+          <a class="btn btn-sea btn-sm" href="mailto:info@swanseabackpackers.com.au?subject=Booking%20enquiry%20-%20double%20or%20twin%20room&amp;body=Hi%20Chris%2C%0A%0AArriving%3A%20%0ANights%3A%20%0AGuests%3A%20%0ADouble%20or%20twin%3A%20%0A%0AThanks!"><svg aria-hidden="true"><use href="#i-mail"/></svg>Ask about a double or twin</a>
+        </div>
+      </article>
+
+      <article class="room">
+        <div class="room-img">
+          <img src="img/room-family.jpg" width="600" height="400" alt="A family room with a bed covered in a bright patchwork doona and a bunk bed against the wall." loading="lazy">
+          <span class="tag">Families</span>
+        </div>
+        <div class="room-body">
+          <h3>Family room</h3>
+          <p class="sleeps">1 queen bed + 2 bunk-style beds · sleeps&nbsp;4</p>
+          <ul class="ticks">
+            <li>Luggage space and clothes hanging rack</li>
+            <li>All linen and towels included</li>
+            <li>Shared bathroom and kitchen in the hostel</li>
+          </ul>
+          <p class="kid-note"><b>Bringing the kids?</b> There are child rates for the bunks. Just tell us their ages when you enquire.</p>
+          <a class="btn btn-sea btn-sm" href="mailto:info@swanseabackpackers.com.au?subject=Booking%20enquiry%20-%20family%20room&amp;body=Hi%20Chris%2C%0A%0AArriving%3A%20%0ANights%3A%20%0AAdults%3A%20%0AChildren%3A%20%0A%0AThanks!"><svg aria-hidden="true"><use href="#i-mail"/></svg>Ask about the family room</a>
+        </div>
+      </article>
+    </div>
+
+    <div class="rooms-note">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 18.5 12 5l9 13.5zM12 5v13.5M8.5 18.5 12 13l3.5 5.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+      <p><strong>Rolling in with a van, RV or tent?</strong> There are also sites for caravans, RVs/motorhomes and tents, both unpowered and a limited number of powered sites. Call or email for current rates. Arriving after 10pm? A late check-in fee applies, so let us know your ETA.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FACILITIES -->
+<section class="sec facilities" id="facilities" aria-labelledby="fac-title">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Facilities</span>
+      <h2 id="fac-title">Room to cook, play and unwind</h2>
+      <p>Built as a backpackers from the ground up, with big shared spaces for the long evenings after a day on the coast.</p>
+    </div>
+
+    <ul class="icons">
+      <li><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2.5 9a14 14 0 0 1 19 0M5.5 12.5a9.5 9.5 0 0 1 13 0M8.6 15.8a5 5 0 0 1 6.8 0" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="12" cy="19.2" r="1.3" fill="currentColor"/></svg></span><div>Free WiFi<span>Bring your laptop</span></div></li>
+      <li><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11h16v5.5A3.5 3.5 0 0 1 16.5 20h-9A3.5 3.5 0 0 1 4 16.5zM2 11h2M20 11h2M9 4.5c-.8.9-.8 1.9 0 2.8M12.5 4.5c-.8.9-.8 1.9 0 2.8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div>Large shared kitchen<span>Well equipped</span></div></li>
+      <li><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4.5" width="18" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8 20h8M12 16.5V20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span><div>Dining room with TV<span>Plus a breakfast bar</span></div></li>
+      <li><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="11" r="3.6" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="9.9" r="1" fill="currentColor"/><circle cx="12" cy="12.2" r="1.2" fill="currentColor"/></svg></span><div>Lounge &amp; pool table<span>TV, DVDs and board games</span></div></li>
+      <li><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2.5 10 12 4l9.5 6M5 9v11M19 9v11M8 15.5h8M9 15.5V20M15 15.5V20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div>Covered deck<span>With garden and outdoor seating</span></div></li>
+      <li><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="13" r="4.2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M7.5 6.5h1.5M11 6.5h1" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span><div>Laundry<span>Washing machine and dryer</span></div></li>
+      <li><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="5.8" cy="16" r="3.6" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="18.2" cy="16" r="3.6" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M5.8 16 9.5 9h6l2.7 7M9.5 9l3 7h-6.7M8.3 6.5h3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div>Bike racks<span>Secure and undercover</span></div></li>
+      <li><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="3.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M9.5 17V7.5h3.3a2.8 2.8 0 0 1 0 5.6H9.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div>Car parking<span>Plenty of it</span></div></li>
+      <li><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5.5" y="3" width="13" height="18" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M9.5 3v2h5V3M8.5 10h7M8.5 13.5h7M8.5 17h4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span><div>Seasonal work register<span>For working travellers</span></div></li>
+      <li><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M7.8 13.8c1 1.6 2.4 2.4 4.2 2.4s3.2-.8 4.2-2.4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="9" cy="9.8" r="1.1" fill="currentColor"/><circle cx="15" cy="9.8" r="1.1" fill="currentColor"/></svg></span><div>Sense of humour<span>Included, no extra charge</span></div></li>
+    </ul>
+
+    <div class="mosaic">
+      <figure class="wide"><img src="img/dining-kitchen.jpg" width="723" height="266" alt="The open-plan dining area: a red feature wall with a breakfast bar and stools, tables and chairs beyond, and the kitchen counter on the right." loading="lazy"><figcaption>Dining room &amp; breakfast bar</figcaption></figure>
+      <figure><img src="img/games-room.jpg" width="600" height="400" alt="A full-size pool table with balls racked, in a bright lounge with couches." loading="lazy"><figcaption>Games room</figcaption></figure>
+      <figure><img src="img/kitchen.jpg" width="600" height="400" alt="A long shared kitchen with white cupboards, several ovens and stovetops and a red wall at the far end." loading="lazy"><figcaption>Kitchen</figcaption></figure>
+      <figure class="wide"><img src="img/common-room.jpg" width="600" height="400" alt="The high-ceilinged common room with exposed steel trusses, timber tables and dark lounges." loading="lazy"><figcaption>Common room</figcaption></figure>
+      <figure><img src="img/deck-garden.jpg" width="600" height="450" alt="A timber deck with picnic tables on a green lawn, shaded by a big gum tree beside the lodge." loading="lazy"><figcaption>Deck &amp; garden</figcaption></figure>
+      <div class="access"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="4.2" r="1.8" fill="currentColor"/><path d="M12 7.5V13h5l2.2 5.5M12 10h4M8.8 10.4a5.6 5.6 0 1 0 7.2 7.8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><p><b>Wheelchair access</b> throughout the building, including dedicated bathroom facilities.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- GUEST BOOK -->
+<section class="sec guestbook" aria-labelledby="gb-title">
+  <div class="wrap">
+    <div class="gb-photo">
+      <figure><img src="img/cyclists.jpg" width="723" height="266" alt="Two touring cyclists in helmets standing with their loaded bikes on the lawn outside the lodge rooms." loading="lazy"><figcaption>Cycle tourers welcome: secure, undercover bike racks</figcaption></figure>
+    </div>
+    <div>
+      <span class="eyebrow">From the guest book</span>
+      <h2 id="gb-title" style="font-size:clamp(2.1rem,4.2vw,3.3rem);margin-top:.7rem">What guests wrote</h2>
+      <ul class="quotes">
+        <li><blockquote>Relaxation, that is what this place is about! Whether you have just had a long drive, or just returned from Wineglass Bay. Top spot.</blockquote><cite>Carl, UK</cite></li>
+        <li><blockquote>It's like staying in a friend's place.</blockquote><cite>Rachel and Carly, Sydney</cite></li>
+        <li><blockquote>Peaceful country views, close to the pub!!</blockquote><cite>Amanda, Scott &amp; Connor, Hobart</cite></li>
+      </ul>
+      <p class="gb-src">Guest book entries from 2008, as published on the Swansea Backpackers website.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FREYCINET -->
+<section class="sec freycinet" id="freycinet" aria-labelledby="fz-title">
+  <div class="ridge" aria-hidden="true">
+    <svg viewBox="0 0 1440 120" preserveAspectRatio="none"><path d="M0 0h1440v58c-60 2-90 12-130 14-40-26-80-50-130-46-44 4-58 34-80 38-24-18-54-26-86-16-26 8-32 26-52 30-40-26-78-58-128-54-52 4-66 44-86 52-22-10-44-10-66 0-60-2-80 26-140 30-48-30-88-44-128-40-38 4-54 30-78 34-40-6-70-26-116-20-60 8-90 20-220 22z" fill="currentColor"/></svg>
+  </div>
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Out and about</span>
+      <h2 id="fz-title">Your base for Freycinet &amp; Wineglass Bay</h2>
+      <p>Swansea sits on the shores of Great Oyster Bay, on Tasmania's East Coast touring route, right in the middle of the coast.</p>
+    </div>
+
+    <div class="fz">
+      <div class="fz-photos">
+        <figure><img src="img/wineglass-bay.jpg" width="600" height="400" alt="Wineglass Bay from above: a curving white beach and deep blue water framed by forested granite mountains." loading="lazy"><figcaption>Wineglass Bay</figcaption></figure>
+        <figure><img src="img/coles-bay.jpg" width="600" height="400" alt="Pink granite peaks rising behind still water and an old timber jetty at Coles Bay." loading="lazy"><figcaption>Coles Bay</figcaption></figure>
+        <figure><img src="img/hazards-beach.jpg" width="600" height="400" alt="Hazards Beach: turquoise water, a white sand shore and a mountain on the horizon." loading="lazy"><figcaption>Hazards Beach</figcaption></figure>
+      </div>
+
+      <div>
+        <div class="big-stat">
+          <b>55<span style="font-size:.4em;letter-spacing:0"> min</span></b>
+          <p>From Swansea to Freycinet National Park and Wineglass Bay. Coles Bay, the gateway to the park, is the same drive.</p>
+        </div>
+        <p class="quote-site">The famous Freycinet Peninsula, the Hazards and other national parks, with waterfalls and walks that will astound, are all within easy driving distance.</p>
+        <a class="btn btn-paper-sea" href="mailto:info@swanseabackpackers.com.au?subject=Booking%20enquiry%20-%20Freycinet%20trip"><svg aria-hidden="true"><use href="#i-mail"/></svg>Plan your Freycinet stay</a>
+      </div>
+    </div>
+    <div class="nearby-wrap">
+        <h3>Closer to Swansea</h3>
+        <ul class="nearby">
+          <li><b>7 km south</b><div><strong>Spiky Bridge</strong><span>An old convict bridge built in 1843.</span></div></li>
+          <li><b>14 km south</b><div><strong>Mayfield Beach</strong><span>Three Arch Bridge, a safe swimming beach and a popular fishing spot.</span></div></li>
+          <li><b>20 min</b><div><strong>Dolphin Sands</strong><span>Kilometres of white sandy beaches.</span></div></li>
+          <li><b>35 min north</b><div><strong>Bicheno</strong><span>Native wildlife at East Coast Nature World.</span></div></li>
+          <li><b>Local</b><div><strong>Kate's Berry Farm</strong><span>Panoramic views over Great Oyster Bay.</span></div></li>
+        </ul>
+        <p class="fz-note">Times and distances as listed by Swansea Backpackers. Maria Island National Park, Lake Leak and the historic towns of Ross and Campbell Town are also within reach. Ask Chris for ideas when you check in.</p>
+    </div>
+  </div>
+</section>
+
+<!-- LOCATION -->
+<section class="sec loc" id="location" aria-labelledby="loc-title">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Where we are</span>
+      <h2 id="loc-title" style="font-size:clamp(2.1rem,4.2vw,3.3rem);margin:.7rem 0 1rem">Right next door to the Bark Mill &amp; Tavern</h2>
+      <p style="font-size:1.1rem;color:var(--ink-soft)">We're beside the historic Swansea Bark Mill and Tavern, which has a modern bar, a bottle shop and a restaurant with wood-fired pizzas. Swansea's beaches and shops are an easy walk away.</p>
+
+      <div class="addr">
+        <div class="addr-row"><svg aria-hidden="true"><use href="#i-pin"/></svg><p><strong>98 Tasman Highway, Swansea TAS 7190</strong><br>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=-42.121205%2C148.069549">Open in Google Maps</a> <span style="color:var(--ink-soft);font-size:.9rem">(GPS −42.121205, 148.069549)</span></p></div>
+        <div class="addr-row"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="11" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M3 11h18M7 16v2.5M17 16v2.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="7" cy="13.5" r=".9" fill="currentColor"/><circle cx="17" cy="13.5" r=".9" fill="currentColor"/></svg><p><strong>Coming by coach?</strong> Tassie Link runs a regular service to and from Hobart and will do a courtesy pick-up and drop-off on request when you book your ticket.</p></div>
+      </div>
+
+      <ul class="pill-list" aria-label="Handy for">
+        <li>Swansea beaches</li><li>Shops</li><li>Wood-fired pizza next door</li><li>Secure bike racks</li><li>Ample parking</li>
+      </ul>
+    </div>
+
+    <div class="loc-photos">
+      <figure class="a"><img src="img/swansea-sunrise.jpg" width="600" height="400" alt="Sunrise over Great Oyster Bay at Swansea, the sky gold and orange above dark rocks and water." loading="lazy"><figcaption>Swansea sunrise</figcaption></figure>
+      <figure class="b"><img src="img/swansea-jetty.jpg" width="600" height="400" alt="The timber Swansea jetty stretching out over clear, calm water under a blue sky." loading="lazy"><figcaption>Swansea jetty</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- BOOK -->
+<section class="book" id="book" aria-labelledby="book-title">
+  <div class="wrap">
+    <div class="book-card">
+      <div class="book-copy">
+        <span class="eyebrow">Bookings</span>
+        <h2 id="book-title">Tell us your dates. We'll sort your bed.</h2>
+        <p>Call for same-day bookings, or email your arrival date, number of nights, number of guests and the room you're after, and we'll come back to you with availability and rates.</p>
+        <div class="cta-row">
+          <a class="btn btn-paper" href="tel:+61466405424"><svg aria-hidden="true"><use href="#i-phone"/></svg>Call +61 466 405 424</a>
+          <a class="btn btn-ghost" href="mailto:info@swanseabackpackers.com.au?subject=Booking%20enquiry&amp;body=Hi%20Chris%2C%0A%0AArriving%3A%20%0ANights%3A%20%0AGuests%3A%20%0ARoom%20type%20(dorm%20%2F%20double%20%2F%20twin%20%2F%20family)%3A%20%0A%0AThanks!"><svg aria-hidden="true"><use href="#i-mail"/></svg>Email to book</a>
+        </div>
+        <div class="sign">
+          <svg width="44" height="44" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="23" fill="#fffdf8"/><use href="#i-hazards" x="6" y="18" width="36" height="12" style="color:#b84c26"/><path d="M6 33c4 0 4-2.4 8-2.4s4 2.4 8 2.4 4-2.4 8-2.4 4 2.4 8 2.4 4-2.4 4-2.4" fill="none" stroke="#0e5a78" stroke-width="2" stroke-linecap="round"/></svg>
+          <div><b>Chris MacGregor</b>Owner / Manager, Swansea Backpackers</div>
+        </div>
+      </div>
+      <div class="book-img">
+        <figure><img src="img/east-coast-sunrise.jpg" width="723" height="266" alt="The sun rising between orange granite headlands on a calm east coast bay." loading="lazy"><figcaption>Sunrise on the east coast</figcaption></figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <a class="brand" href="#main" aria-label="Swansea Backpackers, back to top">
+        <svg width="44" height="44" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="23" fill="#fffdf8"/><circle cx="33" cy="15" r="4.5" fill="#f2c6ae"/><use href="#i-hazards" x="4" y="17" width="40" height="13.5" style="color:#b84c26"/><path d="M4 33c4 0 4-2.4 8-2.4s4 2.4 8 2.4 4-2.4 8-2.4 4 2.4 8 2.4 4-2.4 8-2.4" fill="none" stroke="#0e5a78" stroke-width="2" stroke-linecap="round"/></svg>
+        <span><b>Swansea Backpackers</b><small>Flashpackers of Tasmania</small></span>
+      </a>
+    </div>
+    <div>
+      <h3>Find us</h3>
+      <p>98 Tasman Highway<br>Swansea TAS 7190<br>Tasmania, Australia</p>
+    </div>
+    <div>
+      <h3>Book</h3>
+      <p><a href="tel:+61466405424">+61 466 405 424</a></p>
+      <p><a href="mailto:info@swanseabackpackers.com.au?subject=Booking%20enquiry">info@swanseabackpackers.com.au</a></p>
+    </div>
+    <div>
+      <h3>Explore</h3>
+      <ul><li><a href="#rooms">Rooms</a></li><li><a href="#facilities">Facilities</a></li><li><a href="#freycinet">Freycinet &amp; Wineglass Bay</a></li><li><a href="#location">Location</a></li></ul>
+    </div>
+    <p class="foot-base">Photos: Swansea Backpackers. This page is a concept preview prepared by Claude (an AI) and is not the official Swansea Backpackers website.</p>
+  </div>
+</footer>
+
+<nav class="mbar" aria-label="Quick booking">
+  <a class="btn btn-granite" href="tel:+61466405424"><svg aria-hidden="true"><use href="#i-phone"/></svg>Call to book</a>
+  <a class="btn btn-sea" href="mailto:info@swanseabackpackers.com.au?subject=Booking%20enquiry"><svg aria-hidden="true"><use href="#i-mail"/></svg>Email to book</a>
+</nav>
+</body>
+</html>
