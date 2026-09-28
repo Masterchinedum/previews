@@ -1,54 +1,656 @@
 <!doctype html>
-<html lang="en"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en-NZ">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<title>Boutique Dog Grooming | Dog groomer in Mount Eden, Auckland</title>
-<meta name="description" content="Gentle, expert dog grooming in Mount Eden">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<title>Boutique Dog Grooming · Mount Eden, Auckland</title>
+<meta name="description" content="Professional pampering for pedigrees and pooches. A modern, purpose-designed dog grooming salon at 611 Mount Eden Road, Auckland. Phone (09) 630 8847.">
+<meta name="theme-color" content="#0f4744">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=Figtree:wght@400;500;600;700&family=Caveat:wght@600&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/carlos.jpg">
 <style>
-:root{--bg:#f6f8f4;--ink:#1d2a22;--accent:#2f8f5b;--soft:#e9f3ec;--dark:#1d2a22;--muted:#5f646b}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 Inter,system-ui,sans-serif}
-a{color:inherit}.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
-.preview{background:#111;color:#eee;font-size:13px;text-align:center;padding:8px 16px}
-header{position:sticky;top:0;background:var(--bg);border-bottom:1px solid rgba(0,0,0,.07);z-index:5}
-header .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:12px}
-.logo{font-weight:800;font-size:19px;letter-spacing:-.02em;text-decoration:none}
-.btn{display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600;padding:12px 20px;border-radius:10px;white-space:nowrap}
-.btn.ghost{background:transparent;color:var(--ink);border:1.5px solid rgba(0,0,0,.18)}
-.hero{padding:72px 0 64px;background:linear-gradient(180deg,var(--soft),var(--bg))}
-.hero h1{font-size:clamp(34px,6vw,58px);line-height:1.05;letter-spacing:-.03em;margin:12px 0 16px;font-weight:800;max-width:14ch}
-.hero p{font-size:19px;color:var(--muted);max-width:52ch;margin:0 0 28px}
-.since{display:inline-block;font-size:13px;font-weight:600;color:var(--accent);background:#fff;border:1px solid rgba(0,0,0,.06);padding:4px 10px;border-radius:99px}
-.herogrid{display:grid;grid-template-columns:1.4fr 1fr;gap:40px;align-items:center}
-.facts{background:#fff;border:1px solid rgba(0,0,0,.07);border-radius:18px;padding:26px;box-shadow:0 20px 40px -24px rgba(0,0,0,.25)}
-.facts h3{margin:0 0 12px;font-size:18px}.facts ul{list-style:none;padding:0;margin:0 0 14px}
-.facts li{padding:8px 0 8px 26px;border-bottom:1px solid rgba(0,0,0,.06);position:relative}
-.facts li::before{content:"";position:absolute;left:2px;top:15px;width:12px;height:7px;border-left:2.5px solid var(--accent);border-bottom:2.5px solid var(--accent);transform:rotate(-45deg)}
-.facts p{color:var(--muted);font-size:15px;margin:0 0 16px}.facts .btn{width:100%;justify-content:center}
-.ctas{display:flex;gap:12px;flex-wrap:wrap}
-section{padding:64px 0}section.alt{background:#fff}h2{font-size:clamp(26px,4vw,36px);letter-spacing:-.02em;margin:0 0 24px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
-.svc{background:#fff;border:1px solid rgba(0,0,0,.07);border-radius:14px;padding:22px}
-.svc h3{margin:0 0 6px;font-size:18px}.svc p{margin:0;color:var(--muted);font-size:15px}
-.about{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}.about p{color:var(--muted)}
-.pics{display:grid;grid-template-columns:1fr 1fr;gap:10px}.pics img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px}
-.pics img:first-child{grid-column:1/-1}
-.contact{display:grid;grid-template-columns:1fr 1fr;gap:40px}.contact a{color:var(--accent);font-weight:600}
-table{border-collapse:collapse;width:100%}td{padding:8px 0;border-bottom:1px solid rgba(0,0,0,.07)}td:last-child{text-align:right;color:var(--muted)}
-footer{background:var(--dark);color:rgba(255,255,255,.75);padding:28px 0;font-size:14px}
-.callbar{display:none}
-@media(max-width:720px){.herogrid{grid-template-columns:1fr}.about,.contact{grid-template-columns:1fr}.hero{padding:48px 0}header .btn{display:none}
-.callbar{display:flex;position:fixed;bottom:12px;left:12px;right:12px;justify-content:center;box-shadow:0 8px 24px rgba(0,0,0,.2)}body{padding-bottom:72px}}
-</style></head><body>
+:root{
+  --cream:#fbf5ec;--cream-2:#f5eadb;--paper:#fffaf3;
+  --teal:#0f4744;--teal-2:#175f5a;--teal-3:#e3efec;
+  --ink:#1d2927;--muted:#56625f;
+  --blush:#f6d5d2;--blush-2:#fbe8e5;--rose:#c23f68;--rose-soft:#e98aa6;
+  --line:rgba(15,71,68,.16);
+  --r:22px;
+  --serif:"Fraunces",Georgia,"Times New Roman",serif;
+  --sans:"Figtree",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --hand:"Caveat","Bradley Hand",cursive;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font:17px/1.62 var(--sans);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.08;letter-spacing:-.015em;margin:0;font-variation-settings:"SOFT" 50}
+p{margin:0}
+.wrap{max-width:1160px;margin:0 auto;padding:0 20px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.preview{background:#1d2927;color:#f3ede4;font-size:13px;line-height:1.4;text-align:center;padding:8px 16px}
+
+/* ---------- header ---------- */
+.top{padding:18px 0 0}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;line-height:1}
+.brand svg{flex:none}
+.brand b{display:block;font:italic 600 27px/1 var(--serif);color:var(--rose);letter-spacing:-.01em}
+.brand small{display:block;font:700 10.5px/1 var(--sans);letter-spacing:.24em;text-transform:uppercase;color:var(--teal);margin-top:5px}
+.nav{display:none;gap:26px;font-weight:500;font-size:15px}
+.nav a{text-decoration:none;color:var(--muted)}
+.nav a:hover{color:var(--teal)}
+.chip{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-weight:700;font-size:15px;color:var(--teal);border:1.5px solid var(--teal);border-radius:999px;padding:9px 15px;white-space:nowrap}
+.chip:hover{background:var(--teal);color:var(--cream)}
+.chip .num{display:none}
+
+/* ---------- buttons ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--teal);color:#fff;text-decoration:none;font-weight:700;font-size:16.5px;padding:15px 24px;border-radius:999px;box-shadow:0 2px 0 #0a3230,0 10px 24px -12px rgba(15,71,68,.7);transition:transform .15s}
+.btn:hover{transform:translateY(-1px)}
+.btn.alt{background:transparent;color:var(--teal);box-shadow:none;border:1.5px solid var(--line);font-weight:600}
+.btn.alt:hover{border-color:var(--teal)}
+
+/* ---------- hero ---------- */
+.hero{position:relative;padding:34px 0 64px}
+.hero .wrap{display:grid;gap:40px}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--teal-2)}
+.eyebrow svg{color:var(--rose)}
+.hero h1{font-size:clamp(2.55rem,9.6vw,4.7rem);margin:16px 0 18px;font-weight:600;line-height:1.02}
+.hero h1 em{font-style:italic;color:var(--rose);font-weight:500}
+.hero h1 .amp{font-style:italic;font-weight:500;color:var(--teal-2)}
+.lede{font-size:18.5px;color:#3d4a47;max-width:34em}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin:28px 0 26px}
+.actions .btn,.find .links .btn{width:100%}
+.facts{display:flex;flex-wrap:wrap;gap:8px 22px;font-size:14.5px;color:var(--muted);padding:0;margin:0;list-style:none}
+.facts li{display:flex;align-items:center;gap:8px}
+.facts svg{color:var(--rose);flex:none}
+
+.frame{position:relative;width:min(calc(100% - 20px),400px);margin:0 auto;aspect-ratio:1/1.1}
+.frame .ghost{position:absolute;inset:0;transform:translate(16px,14px);border-radius:999px 999px 30px 30px;background:var(--blush)}
+.frame .arch{position:absolute;inset:0;border-radius:999px 999px 30px 30px;overflow:hidden;background:var(--cream-2);box-shadow:0 30px 60px -30px rgba(15,71,68,.45)}
+.frame .arch img{width:100%;height:100%;object-fit:cover;object-position:45% 50%}
+.frame .snips{position:absolute;left:-26px;top:22%;width:118px;color:var(--teal);transform:rotate(-24deg)}
+.frame .trail{position:absolute;right:-8px;top:-18px;width:86px;color:var(--rose-soft)}
+.frame .tag{position:absolute;left:-6px;bottom:34px;background:var(--paper);border-radius:14px;padding:8px 14px 6px;box-shadow:0 12px 28px -14px rgba(0,0,0,.35);transform:rotate(-4deg);font:600 26px/1 var(--hand);color:var(--teal)}
+.frame .tag span{display:block;font:600 11px/1.2 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:2px}
+.seal{position:absolute;right:-14px;bottom:-22px;width:112px;height:112px;color:var(--teal)}
+.seal .spin{transform-origin:50% 50%;animation:spin 28s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+@media (prefers-reduced-motion:reduce){.seal .spin{animation:none}html{scroll-behavior:auto}}
+
+/* scallop awning edge */
+.scallop{height:22px;background:radial-gradient(circle at 16px 0,var(--from) 15.5px,transparent 16.5px) 0 0/32px 22px repeat-x;background-color:var(--to)}
+
+/* ---------- welcome ---------- */
+.welcome{background:var(--blush-2);padding:56px 0 64px;text-align:center;position:relative}
+.welcome .kicker{font:600 30px/1 var(--hand);color:var(--rose)}
+.welcome blockquote{margin:14px auto 0;max-width:22em;font:500 clamp(1.55rem,5.2vw,2.5rem)/1.22 var(--serif);letter-spacing:-.01em;color:var(--teal)}
+.welcome blockquote em{font-style:italic;color:var(--rose)}
+.welcome p.sub{margin:20px auto 0;max-width:36em;color:#4b5654;font-size:16.5px}
+
+/* ---------- section headings ---------- */
+.sec{padding:84px 0}
+.label{display:inline-flex;align-items:center;gap:10px;font-size:12.5px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--rose)}
+.label::before{content:"";width:26px;height:1.5px;background:currentColor}
+.sec h2{font-size:clamp(2.1rem,7vw,3.4rem);margin:12px 0 16px}
+.sec h2 em{font-style:italic;font-weight:500;color:var(--rose)}
+.intro{color:var(--muted);max-width:33em;font-size:17.5px}
+
+/* ---------- services menu ---------- */
+.menu-grid{display:grid;gap:44px}
+.menu-side .blob{position:relative;margin:34px auto 0;width:min(100%,380px)}
+.menu-side .blob img{width:100%;aspect-ratio:1/1;object-fit:cover;object-position:50% 45%;border-radius:58% 42% 50% 50%/48% 52% 48% 52%}
+.menu-side .blob .tag{position:absolute;right:4px;bottom:18px;background:var(--paper);border-radius:14px;padding:6px 14px 4px;transform:rotate(5deg);font:600 25px/1 var(--hand);color:var(--teal);box-shadow:0 12px 28px -14px rgba(0,0,0,.35)}
+.menu-card{background:var(--paper);border:1px solid var(--line);border-radius:28px;padding:10px 22px 24px;position:relative}
+.menu-card::before{content:"";position:absolute;inset:8px;border:1px dashed rgba(194,63,104,.3);border-radius:22px;pointer-events:none}
+.menu-card h3.title{font:italic 600 15px/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--teal-2);text-align:center;padding:22px 0 6px}
+.menu-card h3.title span{font-style:normal}
+.svc{display:grid;grid-template-columns:52px 1fr;gap:4px 16px;padding:22px 0;border-bottom:1px dotted rgba(15,71,68,.3)}
+.svc:last-of-type{border-bottom:0}
+.svc svg{grid-row:span 2;width:52px;height:52px}
+.svc .head{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px}
+.svc h3{font-size:22.5px;font-weight:600}
+.svc .for{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#a3305a;background:var(--blush-2);border-radius:999px;padding:3px 10px}
+.svc p{color:var(--muted);font-size:16px}
+.menu-foot{margin-top:6px;padding:18px 18px 0;border-top:1.5px solid var(--teal);text-align:center;font-size:15.5px;color:var(--muted)}
+.menu-foot a{color:var(--teal);font-weight:700;text-decoration-color:var(--rose-soft);text-underline-offset:3px}
+
+/* ---------- visit steps ---------- */
+.visit{background:var(--teal);color:#eef5f3;position:relative;overflow:hidden}
+.visit .label{color:#f2a7bd}
+.visit h2 em{color:var(--blush)}
+.visit .intro{color:#bcd3cf}
+.steps{list-style:none;margin:48px 0 0;padding:0;display:grid;gap:18px;position:relative;counter-reset:s}
+.step{position:relative;display:grid;grid-template-columns:96px 1fr;gap:18px;align-items:start;padding:22px 0}
+.step .art{width:96px;height:96px;border-radius:50%;background:#175e59;display:grid;place-items:center;color:var(--cream);position:relative}
+.step .art svg{width:66px;height:66px}
+.step .n{position:absolute;top:-6px;left:-4px;width:34px;height:34px;border-radius:50%;background:var(--blush);color:var(--teal);font:italic 700 18px/34px var(--serif);text-align:center}
+.step h3{font-size:26px;color:#fff;margin:8px 0 8px}
+.step p{color:#c9dcd8;font-size:16.5px}
+.step p b{color:#fff;font-weight:600}
+.steps-wrap{position:relative}
+.visit-head{display:grid;gap:18px}
+.visit .aside{font:600 27px/1.2 var(--hand);color:var(--blush);max-width:15em;transform:rotate(-2deg)}
+.visit .aside svg{display:none}
+.steps-wrap .path{display:none}
+.visit .note{margin-top:34px;display:flex;align-items:center;gap:12px;font-size:15px;color:#bcd3cf;border-top:1px solid rgba(255,255,255,.14);padding-top:22px}
+.visit .note svg{color:var(--rose-soft);flex:none}
+
+/* ---------- rooms ---------- */
+.rooms-grid{display:grid;gap:48px;align-items:center}
+.windows{display:grid;grid-template-columns:1.1fr .9fr;gap:14px;align-items:end;position:relative}
+.win{border-radius:999px 999px 18px 18px;overflow:hidden;border:6px solid var(--paper);box-shadow:0 20px 40px -24px rgba(15,71,68,.55);background:var(--cream-2)}
+.win img{width:100%;height:100%;object-fit:cover}
+.win.a{aspect-ratio:3/4}
+.win.a img{object-position:40% 50%}
+.win.b{aspect-ratio:3/4.4;margin-bottom:38px}
+.win.b img{object-position:78% 50%}
+.windows .gate{position:absolute;left:50%;bottom:-22px;transform:translateX(-50%);background:var(--rose);color:#fff;font:600 13px/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;padding:10px 16px;border-radius:999px;white-space:nowrap;box-shadow:0 10px 20px -10px rgba(194,63,104,.8)}
+.ticks{list-style:none;padding:0;margin:26px 0 0;display:grid;gap:14px}
+.ticks li{display:grid;grid-template-columns:30px 1fr;gap:12px;align-items:start;font-size:16.5px}
+.ticks li svg{width:30px;height:30px;color:var(--rose)}
+.ticks b{font-weight:600;color:var(--ink)}
+.ticks span{color:var(--muted)}
+
+.tour{margin-top:84px}
+.tour-head{display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:10px 30px;margin-bottom:26px}
+.tour-head h3{font-size:clamp(1.6rem,5vw,2.2rem)}
+.tour-head h3 em{font-style:italic;font-weight:500;color:var(--rose)}
+.tour-head p{color:var(--muted);font-size:15.5px;max-width:28em}
+.snaps{display:grid;grid-auto-flow:column;grid-auto-columns:78%;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:10px 20px 24px;margin:0 -20px;scrollbar-width:none}
+.snaps::-webkit-scrollbar{display:none}
+.snap{scroll-snap-align:center;background:var(--paper);padding:10px 10px 14px;border-radius:6px;box-shadow:0 14px 30px -18px rgba(29,41,39,.45);margin:0}
+.snap img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:3px}
+.snap figcaption{font:600 22px/1.15 var(--hand);color:var(--teal);padding:10px 4px 0}
+.snap figcaption small{display:block;font:400 14px/1.45 var(--sans);color:var(--muted);margin-top:4px}
+
+/* ---------- clients wall ---------- */
+.clients{background:var(--cream-2);position:relative}
+.clients .head{text-align:center;max-width:640px;margin:0 auto}
+.clients .head .label::after{content:"";width:26px;height:1.5px;background:currentColor}
+.board{list-style:none;padding:0;margin:44px 0 0;display:grid;grid-template-columns:repeat(2,1fr);gap:22px 16px}
+.pol{background:#fff;padding:8px 8px 4px;box-shadow:0 12px 26px -14px rgba(29,41,39,.5);position:relative}
+.pol img{width:100%;aspect-ratio:1/1;object-fit:cover}
+.pol span{display:block;text-align:center;font:600 24px/1.5 var(--hand);color:var(--teal)}
+.pol::before{content:"";position:absolute;top:-9px;left:50%;width:54px;height:18px;margin-left:-27px;background:rgba(246,213,210,.85);transform:rotate(-3deg)}
+.board li:nth-child(4n+1){transform:rotate(-2.4deg)}
+.board li:nth-child(4n+2){transform:rotate(1.8deg) translateY(10px)}
+.board li:nth-child(4n+3){transform:rotate(1.2deg)}
+.board li:nth-child(4n+4){transform:rotate(-1.6deg) translateY(8px)}
+.clients .fb{text-align:center;margin-top:44px;font-size:16px;color:var(--muted)}
+.clients .fb a{color:var(--teal);font-weight:700;text-underline-offset:3px;text-decoration-color:var(--rose-soft)}
+
+/* ---------- hours + location ---------- */
+.visit-us{display:grid;gap:30px}
+.hours{background:#23302e;border-radius:18px;padding:14px;box-shadow:0 0 0 8px #b98b5e,0 0 0 10px #8f6641,0 30px 50px -24px rgba(0,0,0,.6);margin:10px 10px 0}
+.hours .felt{background:#1f2b29 repeating-linear-gradient(180deg,transparent 0 13px,rgba(0,0,0,.35) 13px 14px,rgba(255,255,255,.04) 14px 15px);border-radius:8px;padding:26px 20px 22px;color:#f7f1e8;font-family:var(--sans)}
+.hours h3{font:700 15px/1 var(--sans);letter-spacing:.32em;text-transform:uppercase;text-align:center;color:#f7f1e8;margin-bottom:18px}
+.hours h3 span{color:var(--rose-soft)}
+.hours dl{margin:0;display:grid;gap:4px}
+.hours .row{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:9px 12px;border-radius:6px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;font-size:15px}
+.hours dt{display:flex;align-items:center;gap:10px}
+.hours dd{margin:0;text-align:right}
+.hours .off{color:#9fb0ac}
+.hours .today{background:rgba(233,138,166,.18);box-shadow:inset 0 0 0 1.5px var(--rose-soft)}
+.hours .today dt::after{content:"today";font:600 20px/1 var(--hand);letter-spacing:0;text-transform:none;color:var(--rose-soft)}
+.hours .fine{margin-top:16px;text-align:center;font-size:12.5px;letter-spacing:.2em;text-transform:uppercase;color:#c9d6d3}
+
+.shopsnap{margin:34px auto 0;width:min(100%,340px);background:#fff;padding:10px 10px 4px;box-shadow:0 16px 30px -16px rgba(29,41,39,.5);transform:rotate(-2deg);position:relative}
+.shopsnap::before{content:"";position:absolute;top:-10px;left:50%;width:70px;height:20px;margin-left:-35px;background:rgba(246,213,210,.9);transform:rotate(3deg)}
+.shopsnap img{width:100%}
+.shopsnap figcaption{text-align:center;font:600 24px/1.6 var(--hand);color:var(--teal)}
+.visitline{color:var(--muted);font-size:16px;margin:-8px 0 20px}
+.park .nts{display:block;opacity:.7;font-size:13px;margin-top:2px}
+.find-sec{padding-bottom:64px}
+.find{background:var(--paper);border:1px solid var(--line);border-radius:28px;overflow:hidden}
+.find .body{padding:24px 22px 26px}
+.find h3{font-size:28px}
+.find address{font-style:normal;font-size:18px;margin:8px 0 18px;color:var(--ink)}
+.park{border-radius:18px;background:var(--teal-3);padding:14px 14px 10px;margin:0 0 20px}
+.park svg{width:100%;height:auto;display:block}
+.park figcaption{font-size:14.5px;color:#34504c;padding:8px 4px 2px}
+.park figcaption b{color:var(--teal)}
+.find .links{display:flex;flex-wrap:wrap;gap:10px}
+.hours .fine{line-height:1.7}
+
+/* ---------- CTA ---------- */
+.cta{padding:0 0 90px}
+.cta-box{position:relative;background:var(--blush);border-radius:36px;padding:44px 24px 0;overflow:hidden;text-align:center}
+.cta-box::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 12px 12px,rgba(194,63,104,.10) 2px,transparent 2.5px) 0 0/24px 24px;pointer-events:none}
+.cta-box > *{position:relative;z-index:1}
+.cta h2{font-size:clamp(2.2rem,8vw,3.8rem);color:var(--teal)}
+.cta h2 em{font-style:italic;font-weight:500;color:var(--rose)}
+.cta p{margin:14px auto 0;max-width:30em;color:#4a4a4a;font-size:17px}
+.bigtel{display:inline-block;margin:24px 0 8px;font:600 clamp(2.1rem,9.5vw,3.6rem)/1 var(--serif);color:var(--teal);text-decoration:none;letter-spacing:-.01em;border-bottom:3px solid var(--rose);padding-bottom:6px}
+.bigtel:hover{color:var(--rose)}
+.cta .mail{display:block;margin-top:14px;font-size:16px;color:#4a4a4a}
+.cta .mail a{color:var(--teal);font-weight:600;word-break:break-word}
+.audrey{width:170px;margin:26px auto 0;position:relative;transform:translateX(20px)}
+.audrey img{width:100%}
+.audrey figcaption{position:absolute;left:-84px;top:40%;font:600 26px/1 var(--hand);color:var(--teal);transform:rotate(-8deg)}
+.audrey figcaption svg{display:block;margin:4px 0 0 34px;color:var(--teal)}
+
+/* ---------- footer ---------- */
+footer{background:var(--teal);color:#cfe0dc;padding:50px 0 110px;font-size:15px}
+footer .grid{display:grid;gap:28px}
+footer .brand b{color:var(--blush)}
+footer .brand small{color:#9dc0ba}
+footer h4{font:700 12px/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:#f2a7bd;margin:0 0 12px}
+footer a{color:#fff;text-underline-offset:3px}
+footer p{line-height:1.7}
+footer .small{margin-top:36px;padding-top:20px;border-top:1px solid rgba(255,255,255,.14);font-size:13px;color:#9dc0ba}
+
+/* ---------- sticky mobile call ---------- */
+.callbar{position:fixed;left:12px;right:12px;bottom:12px;z-index:50;display:flex;align-items:center;justify-content:center;gap:10px;background:var(--rose);color:#fff;text-decoration:none;font-weight:700;font-size:16.5px;padding:15px 18px;border-radius:999px;box-shadow:0 14px 30px -10px rgba(120,20,55,.6),0 0 0 4px rgba(251,245,236,.9)}
+.callbar small{font-weight:500;opacity:.9}
+
+/* ---------- ≥ 600 ---------- */
+@media (min-width:600px){
+  .wrap{padding:0 32px}
+  .board{grid-template-columns:repeat(4,1fr);gap:28px 22px}
+  .snaps{grid-auto-columns:46%;margin:0 -32px;padding:10px 32px 24px}
+}
+/* ---------- ≥ 900 ---------- */
+@media (min-width:900px){
+  .nav{display:flex}
+  .chip .num{display:inline}
+  .chip .word{display:none}
+  .top{padding-top:26px}
+  .hero{padding:48px 0 80px}
+  .hero .wrap{grid-template-columns:1.1fr .9fr;align-items:center;gap:56px}
+  .frame{margin-right:24px}
+  .sec{padding:120px 0}
+  .welcome{padding:84px 0 92px}
+  .menu-grid{grid-template-columns:.85fr 1.15fr;gap:72px;align-items:start}
+  .menu-side{position:sticky;top:40px}
+  .menu-side .blob{margin:40px 0 0}
+  .menu-card{padding:14px 44px 32px}
+  .svc{grid-template-columns:60px 1fr;gap:4px 24px;padding:26px 0}
+  .svc svg{width:60px;height:60px}
+  .steps{grid-template-columns:repeat(3,1fr);gap:40px;margin-top:64px}
+  .step{grid-template-columns:1fr;padding:0}
+  .step .art{width:132px;height:132px;margin-bottom:10px}
+  .step .art svg{width:86px;height:86px}
+  .step .n{width:40px;height:40px;font-size:21px;line-height:40px}
+  .step:nth-of-type(2){margin-top:46px}
+  .visit-head{grid-template-columns:1.3fr .7fr;align-items:end;gap:40px}
+  .visit .aside{font-size:32px;margin-bottom:-30px;position:relative}
+  .visit .aside svg{display:block;position:absolute;left:-66px;bottom:-34px;color:var(--rose-soft);transform:rotate(6deg)}
+  .step{z-index:1}
+  .visit{padding-bottom:88px}
+  .find-sec{padding-bottom:72px}
+  .steps-wrap .path{display:block;position:absolute;left:0;width:100%;top:0;height:200px;color:rgba(246,213,210,.45);pointer-events:none}
+  .rooms-grid{grid-template-columns:1fr 1fr;gap:80px}
+  .snaps{grid-auto-flow:row;grid-template-columns:repeat(4,1fr);overflow:visible;margin:0;padding:0}
+  .snap:nth-child(odd){transform:rotate(-1.4deg)}
+  .snap:nth-child(even){transform:rotate(1.2deg) translateY(14px)}
+  .board{grid-template-columns:repeat(4,1fr);gap:40px 34px;max-width:960px;margin-left:auto;margin-right:auto}
+  .visit-us{grid-template-columns:1fr 1fr;gap:64px;align-items:start}
+  .actions .btn,.find .links .btn{width:auto}
+  .hours{margin:10px 0 0 10px}
+  .shopsnap{margin:56px 0 0 40px}
+  .hours .felt{padding:34px 34px 28px}
+  .hours .row{font-size:17px;padding:11px 16px}
+  .find{display:grid;grid-template-columns:1fr}
+  .find .body{padding:30px 36px 36px}
+  .cta-box{padding:70px 70px 0;display:grid;grid-template-columns:1fr 300px;text-align:left;gap:40px;align-items:end}
+  .cta-box .copy{padding-bottom:70px}
+  .cta p{margin-left:0}
+  .audrey{width:220px;margin:0 0 0 auto;transform:none}
+  .audrey figcaption{left:-96px;top:34%}
+  footer .grid{grid-template-columns:1.4fr 1fr 1fr 1fr}
+  footer{padding-bottom:50px}
+  .callbar{display:none}
+}
+@media (min-width:1100px){
+  .board li:nth-child(n){transform:none}
+  .board li:nth-child(odd){transform:rotate(-2deg)}
+  .board li:nth-child(even){transform:rotate(1.6deg) translateY(12px)}
+}
+</style>
+</head>
+<body>
 <div class="preview">Concept preview prepared for Boutique Dog Grooming by Claude (an AI). Not the official website.</div>
-<header><div class="wrap"><a class="logo" href="#">Boutique Dog Grooming</a><a class="btn" href="tel:096308847">Call (09) 630 8847</a></div></header>
-<div class="hero"><div class="wrap herogrid"><div>
-<h1>Gentle, expert dog grooming in Mount Eden</h1>
-<p>Full grooms, baths and breed cuts for dogs of every size. Drop off, grab a coffee on Mount Eden Road, and pick up a happy dog.</p>
-<div class="ctas"><a class="btn" href="tel:096308847">Call now</a><a class="btn ghost" href="#services">Our services</a></div>
-</div><aside class="facts"><h3>Boutique Dog Grooming</h3><ul><li>Full groom &amp; styling</li><li>Baths for all sizes</li><li>De-matting &amp; breed cuts</li><li>Comfortable waiting rooms</li></ul><p>Serving Mount Eden, Auckland</p><a class="btn" href="tel:096308847">(09) 630 8847</a></aside></div></div>
-<section id="services"><div class="wrap"><h2>What we do</h2><div class="grid"><div class="svc"><h3>Full groom &amp; styling</h3><p>Pedigrees and crossbreeds, styled the way you like.</p></div><div class="svc"><h3>Baths for all sizes</h3><p>Purpose-built bathing facilities, from toy breeds to big dogs.</p></div><div class="svc"><h3>De-matting &amp; breed cuts</h3><p>Cavoodles, poodle crosses, bichons and more.</p></div><div class="svc"><h3>Comfortable waiting rooms</h3><p>Secure, bright rooms with beds while your dog waits.</p></div></div></div></section><section class="alt"><div class="wrap about"><div><h2>About Boutique Dog Grooming</h2><p>A local grooming salon on Mount Eden Road with secure, bright waiting rooms and free parking on-site and at the rear.</p></div></div></section><section id="contact"><div class="wrap contact"><div><h2>Get in touch</h2><p><strong>Visit</strong><br><a href="https://www.google.com/maps/search/?api=1&query=Boutique+Dog+Grooming+611+Mount+Eden+Road,+Mount+Eden,+Auckland+1024+Auckland">611 Mount Eden Road, Mount Eden, Auckland 1024</a></p><p><strong>Call</strong><br><a href="tel:096308847">(09) 630 8847</a></p><p><strong>Email</strong><br><a href="mailto:info@boutiquedoggrooming.co.nz">info@boutiquedoggrooming.co.nz</a></p></div><div><h3>Hours</h3><table><tr><td>Mon</td><td>Closed</td></tr><tr><td>Tue–Fri</td><td>9am – 5pm</td></tr><tr><td>Sat</td><td>9am – 4pm</td></tr><tr><td>Sun</td><td>Closed</td></tr></table></div></div></section>
-<footer><div class="wrap">&copy; Boutique Dog Grooming &middot; Mount Eden, Auckland</div></footer>
-<a class="btn callbar" href="tel:096308847">Call (09) 630 8847</a>
-</body></html>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="paw" viewBox="0 0 32 32"><ellipse cx="16" cy="21.5" rx="7.2" ry="6.2"/><ellipse cx="7" cy="13.5" rx="3.1" ry="3.8" transform="rotate(-18 7 13.5)"/><ellipse cx="12.6" cy="8" rx="3.1" ry="4"/><ellipse cx="19.4" cy="8" rx="3.1" ry="4"/><ellipse cx="25" cy="13.5" rx="3.1" ry="3.8" transform="rotate(18 25 13.5)"/></symbol>
+    <symbol id="phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 3.5h3.2l1.6 4.2-2.1 1.4a11.5 11.5 0 0 0 7.2 7.2l1.4-2.1 4.2 1.6V19a1.8 1.8 0 0 1-1.9 1.8C10.4 20.3 3.7 13.6 3.2 5.4A1.8 1.8 0 0 1 5 3.5z"/></symbol>
+    <symbol id="scissors" viewBox="0 0 120 60"><g fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"><circle cx="17" cy="15" r="10.5"/><circle cx="17" cy="45" r="10.5"/><path d="M26.5 20.5 113 39M26.5 39.5 113 21"/></g><circle cx="71" cy="30" r="3" fill="currentColor"/></symbol>
+  </defs>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Boutique Dog Grooming, home">
+      <svg width="40" height="40" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="19" fill="#fbe8e5" stroke="#c23f68" stroke-width="1.5"/><use href="#paw" x="9" y="8.5" width="22" height="22" fill="#c23f68"/></svg>
+      <span><b>Boutique</b><small>Dog Grooming</small></span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#services">Services</a>
+      <a href="#visit">How a visit works</a>
+      <a href="#rooms">The salon</a>
+      <a href="#find">Hours &amp; parking</a>
+    </nav>
+    <a class="chip" href="tel:+6496308847"><svg width="17" height="17" aria-hidden="true"><use href="#phone"/></svg><span class="word">Call</span><span class="num">(09) 630 8847</span></a>
+  </div>
+</header>
+
+<main id="top">
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow"><svg width="16" height="16" fill="currentColor" aria-hidden="true"><use href="#paw"/></svg>611 Mount Eden Road &middot; Auckland</span>
+      <h1>Professional pampering for <em>pedigrees</em> <span class="amp">&amp;</span> <em>pooches</em>.</h1>
+      <p class="lede">A modern, purpose-designed grooming salon in the beautiful inner-city suburb of Mount Eden, where your precious pup is treated like a star in a safe and healthy environment.</p>
+      <div class="actions">
+        <a class="btn" href="tel:+6496308847"><svg width="19" height="19" aria-hidden="true"><use href="#phone"/></svg>Call to book (09) 630 8847</a>
+        <a class="btn alt" href="#visit">How a visit works</a>
+      </div>
+      <ul class="facts">
+        <li><svg width="15" height="15" fill="currentColor" aria-hidden="true"><use href="#paw"/></svg>Open Tuesday to Saturday</li>
+        <li><svg width="15" height="15" fill="currentColor" aria-hidden="true"><use href="#paw"/></svg>Free parking at the door &amp; out back</li>
+      </ul>
+    </div>
+    <div class="frame">
+      <div class="ghost" aria-hidden="true"></div>
+      <div class="arch"><img src="img/carlos.jpg" width="450" height="390" alt="Carlos, a scruffy tan terrier, grinning with his tongue out on a blue grooming table beside a green brush"></div>
+      <svg class="snips" viewBox="0 0 120 60" aria-hidden="true"><use href="#scissors"/></svg>
+      <svg class="trail" viewBox="0 0 86 110" fill="currentColor" aria-hidden="true"><use href="#paw" x="44" y="80" width="22" height="22" transform="rotate(-18 55 91)"/><use href="#paw" x="16" y="52" width="20" height="20" transform="rotate(-24 26 62)"/><use href="#paw" x="48" y="24" width="18" height="18" transform="rotate(-14 57 33)"/><use href="#paw" x="22" y="0" width="16" height="16" transform="rotate(-24 30 8)"/></svg>
+      <div class="tag"><span>Lovely client</span>Carlos</div>
+      <svg class="seal" viewBox="0 0 120 120" aria-hidden="true">
+        <circle cx="60" cy="60" r="56" fill="#fffaf3"/>
+        <g class="spin"><path id="sealpath" d="M60 60m-41 0a41 41 0 1 1 82 0a41 41 0 1 1-82 0" fill="none"/><text font-family="Figtree,sans-serif" font-weight="700" font-size="10.6" letter-spacing="3.1" fill="currentColor"><textPath href="#sealpath">MOUNT EDEN &#183; DOG GROOMING &#183; </textPath></text></g>
+        <use href="#paw" x="45" y="44" width="30" height="30" fill="#c23f68"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<div class="scallop" style="--from:var(--cream);--to:var(--blush-2)" aria-hidden="true"></div>
+
+<!-- WELCOME -->
+<section class="welcome" aria-labelledby="welcome-h">
+  <div class="wrap">
+    <p class="kicker" id="welcome-h">Welcome to our salon!</p>
+    <blockquote>We promise professional care, attention and the <em>highest standards of skill and hygiene</em> throughout the grooming process.</blockquote>
+    <p class="sub">Every dog is groomed with state-of-the-art equipment and the very latest, highest-quality grooming tools, in a salon purpose-designed for dogs of all sizes.</p>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="sec" id="services">
+  <div class="wrap menu-grid">
+    <div class="menu-side">
+      <span class="label">Services</span>
+      <h2>The grooming <em>menu</em></h2>
+      <p class="intro">From a fresh bath to a full breed cut, for pedigrees and crossbreeds of every size. Tell us how you like your dog to look and we&rsquo;ll take it from there.</p>
+      <div class="blob">
+        <img src="img/bruno.jpg" width="450" height="368" loading="lazy" alt="Bruno, a grey and white miniature schnauzer with a neat fresh trim, standing on the grooming table">
+        <span class="tag">Bruno</span>
+      </div>
+    </div>
+
+    <div class="menu-card">
+      <h3 class="title">&mdash; <span>At the salon</span> &mdash;</h3>
+
+      <div class="svc">
+        <svg viewBox="0 0 60 60" aria-hidden="true"><circle cx="30" cy="30" r="29" fill="#fbe8e5"/><g fill="none" stroke="#0f4744" stroke-width="2.4" stroke-linecap="round"><circle cx="19" cy="41" r="5.5"/><circle cx="29" cy="45" r="5.5"/><path d="M22.5 37 41 15M26.5 40 45 20"/></g><path d="M38 44h12M40 44v6M43 44v6M46 44v6M49 44v6" stroke="#c23f68" stroke-width="2" stroke-linecap="round"/></svg>
+        <div class="head"><h3>Full groom &amp; styling</h3><span class="for">Pedigrees &amp; crossbreeds</span></div>
+        <p>Professional care and attention from nose to tail, styled the way you like.</p>
+      </div>
+
+      <div class="svc">
+        <svg viewBox="0 0 60 60" aria-hidden="true"><circle cx="30" cy="30" r="29" fill="#fbe8e5"/><g fill="none" stroke="#0f4744" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M10 30h40v4a10 10 0 0 1-10 10H20a10 10 0 0 1-10-10z"/><path d="M15 30V19a4.5 4.5 0 0 1 9 0"/><path d="M18 44l-2 5M42 44l2 5"/></g><g fill="none" stroke="#c23f68" stroke-width="2"><circle cx="33" cy="22" r="3.5"/><circle cx="41" cy="16" r="2.5"/><circle cx="41" cy="25" r="2"/></g></svg>
+        <div class="head"><h3>Baths for every size</h3><span class="for">Toy to large</span></div>
+        <p>Safe, hygienic, purpose-designed bathing facilities for all sizes of dogs.</p>
+      </div>
+
+      <div class="svc">
+        <svg viewBox="0 0 60 60" aria-hidden="true"><circle cx="30" cy="30" r="29" fill="#fbe8e5"/><g fill="none" stroke="#0f4744" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="12" y="18" width="36" height="8" rx="3"/><path d="M16 26v14M21 26v14M26 26v14M31 26v10M36 26v10M41 26v7M45 26v7"/></g><path d="M34 42c3-3 6 3 9 0s6 3 9 0" fill="none" stroke="#c23f68" stroke-width="2" stroke-linecap="round"/></svg>
+        <div class="head"><h3>De-matting &amp; breed cuts</h3><span class="for">Poodle crosses &amp; more</span></div>
+        <p>Cavoodles, poodle crosses, bichons and more, worked through carefully with the right tools.</p>
+      </div>
+
+      <div class="svc">
+        <svg viewBox="0 0 60 60" aria-hidden="true"><circle cx="30" cy="30" r="29" fill="#fbe8e5"/><g fill="none" stroke="#0f4744" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 34c0-8 9-11 21-11s21 3 21 11v5a4 4 0 0 1-4 4H13a4 4 0 0 1-4-4z"/><path d="M16 35c3-4 25-4 28 0"/></g><path d="M39 11h6l-6 7h6M47 6h4l-4 5h4" fill="none" stroke="#c23f68" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <div class="head"><h3>A comfy place to wait</h3><span class="for">Beds provided</span></div>
+        <p>Clean, secure waiting rooms that are large and bright, each with a comfy bed.</p>
+      </div>
+
+      <p class="menu-foot">Every dog is different. <a href="tel:+6496308847">Phone (09) 630 8847</a> to book and to discuss your special requirements.</p>
+    </div>
+  </div>
+</section>
+
+<!-- HOW A VISIT WORKS -->
+<section class="sec visit" id="visit">
+  <div class="wrap">
+    <div class="visit-head">
+      <div>
+        <span class="label">How a visit works</span>
+        <h2>Drop off, sip, <em>pick up a star</em></h2>
+        <p class="intro">Your dog gets the full salon treatment. You get a little time to yourself in the beautiful inner-city suburb of Mount Eden.</p>
+      </div>
+      <p class="aside">&ldquo;Why not leave your pet with us while you enjoy a coffee or a nice meal?&rdquo;<svg width="60" height="46" viewBox="0 0 60 46" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M50 2C54 20 40 38 12 40M20 32l-9 8 10 5"/></svg></p>
+    </div>
+
+    <div class="steps-wrap">
+      <svg class="path" viewBox="0 0 1096 200" preserveAspectRatio="none" aria-hidden="true"><path d="M66 66 C 220 -20, 300 150, 444 112 S 700 10, 822 66 S 1000 90, 1090 40" fill="none" stroke="currentColor" stroke-width="2.5" stroke-dasharray="2 12" stroke-linecap="round" vector-effect="non-scaling-stroke"/></svg>
+    <ol class="steps">
+      <li class="step">
+        <div class="art"><span class="n">1</span>
+          <svg viewBox="0 0 80 80" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 30h56v38H12z"/><path d="M8 30l6-12h52l6 12"/><path d="M8 30a5 5 0 0 0 10 0a5 5 0 0 0 10 0a5 5 0 0 0 10 0a5 5 0 0 0 10 0a5 5 0 0 0 10 0a5 5 0 0 0 10 0a5 5 0 0 0 4 4.8" stroke="#f6d5d2"/><path d="M34 68V46h14v22"/><path d="M18 44h10v10H18zM54 44h8v10h-8z"/><text x="40" y="26" font-family="Figtree,sans-serif" font-size="8" font-weight="700" fill="currentColor" stroke="none" text-anchor="middle">611</text></svg>
+        </div>
+        <div>
+          <h3>Drop off</h3>
+          <p>Bring your dog to <b>611 Mount Eden Road</b>. Park free right outside the door, or in our own car park down the driveway at the back.</p>
+        </div>
+      </li>
+      <li class="step">
+        <div class="art"><span class="n">2</span>
+          <svg viewBox="0 0 80 80" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 36h40v8a18 18 0 0 1-18 18h-4a18 18 0 0 1-18-18z"/><path d="M56 40h4a7 7 0 0 1 0 14h-6"/><path d="M10 68h58"/><path d="M28 14c-3 4 3 6 0 10M38 12c-3 4 3 6 0 10M48 14c-3 4 3 6 0 10" stroke="#f6d5d2"/><path d="M36 48c-2-3 2-5 4-2 2-3 6-1 4 2l-4 4z" fill="#f6d5d2" stroke="none"/></svg>
+        </div>
+        <div>
+          <h3>Enjoy a coffee</h3>
+          <p>Head out for a coffee or a nice meal at one of the <b>many superb local cafes and eateries</b> on Mount Eden Road.</p>
+        </div>
+      </li>
+      <li class="step">
+        <div class="art"><span class="n">3</span>
+          <svg viewBox="0 0 80 80" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M26 30c0-9 6-14 14-14s14 5 14 14v12c0 10-6 18-14 18s-14-8-14-18z"/><path d="M26 28c-6 1-10 9-8 20 4 1 7-3 8-8M54 28c6 1 10 9 8 20-4 1-7-3-8-8"/><circle cx="34" cy="36" r="1.6" fill="currentColor"/><circle cx="46" cy="36" r="1.6" fill="currentColor"/><path d="M37 45h6l-3 3z" fill="currentColor"/><path d="M40 48v3m-4 1c2 2 6 2 8 0"/><path d="M34 14l6 3 6-3v6l-6-3-6 3z" stroke="#f6d5d2" fill="#f6d5d2"/><path d="M12 14v8M8 18h8M66 58v8M62 62h8M68 18v6M65 21h6" stroke="#f6d5d2"/></svg>
+        </div>
+        <div>
+          <h3>Pick up a star</h3>
+          <p>Come back to a <b>freshly groomed, happy dog</b> who has been treated like a star.</p>
+        </div>
+      </li>
+    </ol>
+    </div>
+    <p class="note"><svg width="22" height="22" fill="currentColor" aria-hidden="true"><use href="#paw"/></svg>While you&rsquo;re out, your dog waits in a secure, bright room with a comfy bed.</p>
+  </div>
+</section>
+
+<!-- WAITING ROOMS + SALON -->
+<section class="sec" id="rooms">
+  <div class="wrap">
+    <div class="rooms-grid">
+      <div class="windows">
+        <div class="win a"><img src="img/waiting-room-bed.jpg" width="450" height="253" loading="lazy" alt="A plush blue dog bed with a soft white cushion inside a pink-walled waiting room"></div>
+        <div class="win b"><img src="img/waiting-rooms.jpg" width="450" height="337" loading="lazy" alt="Row of waiting rooms behind pink picket-style gates in the salon"></div>
+        <span class="gate">Secure &middot; Bright &middot; Comfy</span>
+      </div>
+      <div>
+        <span class="label">The waiting rooms</span>
+        <h2>A bright little room <em>of their own</em></h2>
+        <p class="intro">Between the bath and the finishing touches, or while you&rsquo;re still enjoying that coffee, your dog relaxes in their own private space.</p>
+        <ul class="ticks">
+          <li><svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><use href="#paw"/></svg><div><b>Clean and secure.</b> <span>Each room closes off safely behind its own gate.</span></div></li>
+          <li><svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><use href="#paw"/></svg><div><b>Large and bright.</b> <span>Plenty of room to settle in and stretch out.</span></div></li>
+          <li><svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><use href="#paw"/></svg><div><b>Comfy beds.</b> <span>For the best experience from drop-off to pick-up.</span></div></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="tour">
+      <div class="tour-head">
+        <h3>Have a look <em>around the salon</em></h3>
+        <p>You&rsquo;re welcome to visit and inspect our facilities at 611 Mount Eden Road.</p>
+      </div>
+      <div class="snaps">
+        <figure class="snap"><img src="img/bath-tubs.jpg" width="450" height="284" loading="lazy" alt="Two raised white bathing tubs with hand-held shower hoses"><figcaption>The bathing room<small>Purpose-designed for all sizes of dogs.</small></figcaption></figure>
+        <figure class="snap"><img src="img/grooming-room.jpg" width="450" height="277" loading="lazy" alt="Grooming room with two blue height-adjustable grooming tables and grooming arms"><figcaption>The grooming room<small>State-of-the-art equipment for safe, efficient care.</small></figcaption></figure>
+        <figure class="snap"><img src="img/salon-reception-wall.jpg" width="450" height="253" loading="lazy" alt="The salon reception counter in teal and pink, with a wall of client dog photos behind it"><figcaption>Reception<small>Where every visit starts and ends.</small></figcaption></figure>
+        <figure class="snap"><img src="img/sign-paw-prints.jpg" width="450" height="253" loading="lazy" alt="Framed sign on a pink wall reading Dogs leave paw prints in your heart"><figcaption>On our wall<small>&ldquo;Dogs leave paw prints in your heart.&rdquo;</small></figcaption></figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CLIENTS -->
+<section class="sec clients" aria-labelledby="clients-h">
+  <div class="wrap">
+    <div class="head">
+      <span class="label">Our clients</span>
+      <h2 id="clients-h">Just some of our <em>lovely clients</em></h2>
+      <p class="intro" style="margin:0 auto">Fresh from the table, bandanas on.</p>
+    </div>
+    <ul class="board">
+      <li class="pol"><img src="img/chanel.jpg" width="450" height="313" loading="lazy" alt="Chanel, a white Maltese-type dog with long ears, wearing a lilac bandana"><span>Chanel</span></li>
+      <li class="pol"><img src="img/pinky.jpg" width="450" height="253" loading="lazy" alt="Pinky, a fluffy white dog with a round face and an orange collar"><span>Pinky</span></li>
+      <li class="pol"><img src="img/cookie.jpg" width="450" height="363" loading="lazy" alt="Cookie, a white and tan long-eared dog lying on the grooming table"><span>Cookie</span></li>
+      <li class="pol"><img src="img/bliss.jpg" width="450" height="572" loading="lazy" alt="Bliss, a chocolate Labrador puppy looking up at the camera"><span>Bliss</span></li>
+      <li class="pol"><img src="img/minnie.jpg" width="450" height="253" loading="lazy" alt="Minnie, a neatly trimmed small dog resting on the grooming table"><span>Minnie</span></li>
+      <li class="pol"><img src="img/binky.jpg" width="450" height="348" loading="lazy" alt="Binky, a small white dog in a floral bandana sitting on the salon floor"><span>Binky</span></li>
+      <li class="pol"><img src="img/dexter.jpg" width="450" height="253" loading="lazy" alt="Dexter, a husky with blue eyes, sitting on the salon floor"><span>Dexter</span></li>
+      <li class="pol"><img src="img/pipi.jpg" width="450" height="253" loading="lazy" alt="Pipi, a fluffy orange Pomeranian standing on the salon floor"><span>Pipi</span></li>
+    </ul>
+    <p class="fb">See our daily updates and client photos on <a href="https://www.facebook.com/pages/Boutique-Dog-Grooming/1603915746523244" rel="noopener">Facebook</a>.</p>
+  </div>
+</section>
+
+<!-- HOURS + FIND US -->
+<section class="sec find-sec" id="find">
+  <div class="wrap">
+    <span class="label">Come and see us</span>
+    <h2>Hours, directions <em>&amp; parking</em></h2>
+    <div class="visit-us" style="margin-top:36px">
+      <div class="left">
+        <div class="hours" role="group" aria-labelledby="hours-h">
+          <div class="felt">
+            <h3 id="hours-h"><span>&#10022;</span> Opening hours <span>&#10022;</span></h3>
+            <dl>
+              <div class="row off" data-days="Mon"><dt>Monday</dt><dd>Closed</dd></div>
+              <div class="row" data-days="Tue Wed Thu Fri"><dt>Tue &ndash; Fri</dt><dd>9am &ndash; 5pm</dd></div>
+              <div class="row" data-days="Sat"><dt>Saturday</dt><dd>9am &ndash; 4pm</dd></div>
+              <div class="row off" data-days="Sun"><dt>Sunday</dt><dd>Closed</dd></div>
+            </dl>
+            <p class="fine">Saturdays by appointment<br>Phone to book</p>
+          </div>
+        </div>
+        <figure class="shopsnap">
+          <img src="img/shopfront.jpg" width="326" height="238" loading="lazy" alt="The Boutique Dog Grooming shopfront on Mount Eden Road, with its pink and white sign and a pink poodle in the window">
+          <figcaption>Look for the pink sign!</figcaption>
+        </figure>
+      </div>
+
+      <div class="find">
+        <div class="body">
+          <h3>Find us on Mount Eden Road</h3>
+          <address>611 Mount Eden Road, Mount Eden, Auckland 1024</address>
+          <p class="visitline">Please feel free to visit the salon and inspect our facilities.</p>
+          <figure class="park">
+            <svg viewBox="0 0 320 206" role="img" aria-labelledby="park-t">
+              <title id="park-t">Sketch: free parking on Mount Eden Road right outside the salon, and a driveway beside the salon leading to its own car park at the back. Not to scale.</title>
+              <g font-family="Figtree,sans-serif" font-weight="700">
+              <rect x="8" y="8" width="304" height="62" rx="10" fill="#fffaf3" stroke="#0f4744" stroke-width="2" stroke-dasharray="6 5"/>
+              <path d="M150 20v38M180 20v38M270 20v38M240 20v38" stroke="#b9d2cd" stroke-width="2"/>
+              <circle cx="36" cy="39" r="14" fill="#c23f68"/>
+              <text x="36" y="45" font-size="17" fill="#fff" text-anchor="middle">P</text>
+              <text x="58" y="36" font-size="13" fill="#0f4744">Our own</text>
+              <text x="58" y="51" font-size="13" fill="#0f4744">car park</text>
+              <rect x="192" y="70" width="40" height="86" fill="#cfe1dd"/>
+              <path d="M212 148V86" stroke="#0f4744" stroke-width="2.2" stroke-dasharray="4 6" stroke-linecap="round"/>
+              <path d="M205 92l7-9 7 9" fill="none" stroke="#0f4744" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+              <text x="244" y="112" font-size="11.5" fill="#34504c">driveway</text>
+              <path d="M242 108h-6" stroke="#34504c" stroke-width="1.5"/>
+              <rect x="16" y="86" width="166" height="64" rx="4" fill="#fffaf3" stroke="#0f4744" stroke-width="2"/>
+              <path d="M12 86h174" stroke="#c23f68" stroke-width="6" stroke-linecap="round"/>
+              <text x="99" y="116" font-family="Fraunces,serif" font-style="italic" font-weight="600" font-size="19" fill="#c23f68" text-anchor="middle">Boutique</text>
+              <text x="99" y="136" font-size="11" letter-spacing="2" fill="#0f4744" text-anchor="middle">611 &#183; SALON</text>
+              <rect x="0" y="156" width="320" height="50" rx="8" fill="#0f4744"/>
+              <path d="M10 190h300" stroke="#6f9b95" stroke-width="2" stroke-dasharray="14 10"/>
+              <circle cx="30" cy="174" r="11" fill="#c23f68"/>
+              <text x="30" y="179" font-size="14" fill="#fff" text-anchor="middle">P</text>
+              <text x="48" y="178" font-size="12.5" fill="#fff">Free, right outside</text>
+              <text x="310" y="178" font-size="10" letter-spacing="1.6" fill="#b9d2cd" text-anchor="end">MOUNT EDEN RD</text>
+              </g>
+            </svg>
+            <figcaption><b>Free parking</b> right outside the door, or in our own car park <b>down the driveway</b> at the back of the salon. <span class="nts">Sketch, not to scale.</span></figcaption>
+          </figure>
+          <div class="links">
+            <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=611+Mount+Eden+Road,+Mount+Eden,+Auckland+1024" rel="noopener">Get directions</a>
+            <a class="btn alt" href="tel:+6496308847">(09) 630 8847</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta" aria-labelledby="cta-h">
+  <div class="wrap">
+    <div class="cta-box">
+      <div class="copy">
+        <h2 id="cta-h">Ready for a <em>pamper?</em></h2>
+        <p>Phone for a booking and to discuss your special requirements. We look forward to hearing from you.</p>
+        <a class="bigtel" href="tel:+6496308847">(09) 630 8847</a>
+        <span class="mail">or email <a href="mailto:info@boutiquedoggrooming.co.nz">info@boutiquedoggrooming.co.nz</a></span>
+      </div>
+      <figure class="audrey">
+        <img src="img/audrey.png" width="267" height="429" loading="lazy" alt="Audrey, the salon's pink poodle illustration, admiring herself in a hand mirror">
+        <figcaption>Audrey<svg width="40" height="22" viewBox="0 0 40 22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M2 4c10 12 22 14 34 10M30 8l6 6-8 3"/></svg></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="grid">
+      <div>
+        <a class="brand" href="#top" aria-label="Boutique Dog Grooming, back to top">
+          <svg width="40" height="40" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="19" fill="#175f5a" stroke="#f6d5d2" stroke-width="1.5"/><use href="#paw" x="9" y="8.5" width="22" height="22" fill="#f6d5d2"/></svg>
+          <span><b>Boutique</b><small>Dog Grooming</small></span>
+        </a>
+        <p style="margin-top:14px;max-width:22em">Professional pampering for pedigrees and pooches, on Mount Eden Road.</p>
+      </div>
+      <div><h4>Visit</h4><p>611 Mount Eden Road<br>Mount Eden, Auckland 1024<br>Free parking on-site &amp; at the rear</p></div>
+      <div><h4>Contact</h4><p><a href="tel:+6496308847">(09) 630 8847</a><br><a href="mailto:info@boutiquedoggrooming.co.nz">info@boutiquedoggrooming.co.nz</a><br><a href="https://www.facebook.com/pages/Boutique-Dog-Grooming/1603915746523244" rel="noopener">Facebook</a></p></div>
+      <div><h4>Hours</h4><p>Tue&ndash;Fri 9am&ndash;5pm<br>Sat 9am&ndash;4pm<br>Sun &amp; Mon closed</p></div>
+    </div>
+    <p class="small">Concept preview by Claude (an AI), not the official website. Photos from boutiquedoggrooming.co.nz.</p>
+  </div>
+</footer>
+
+<a class="callbar" href="tel:+6496308847"><svg width="20" height="20" aria-hidden="true"><use href="#phone"/></svg>Call to book <small>(09) 630 8847</small></a>
+
+<script>
+(function(){
+  try{
+    var d=new Intl.DateTimeFormat('en-NZ',{weekday:'short',timeZone:'Pacific/Auckland'}).format(new Date()).slice(0,3);
+    document.querySelectorAll('.hours .row').forEach(function(r){
+      if(r.getAttribute('data-days').split(' ').indexOf(d)>-1) r.classList.add('today');
+    });
+  }catch(e){}
+})();
+</script>
+</body>
+</html>

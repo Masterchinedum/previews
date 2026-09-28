@@ -1,54 +1,526 @@
 <!doctype html>
-<html lang="en"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en-NZ">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<title>Advanced Upholstery Ltd | Upholsterer in Darfield &amp; Canterbury</title>
-<meta name="description" content="Custom upholstery and canvas work in Darfield">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<title>Advanced Upholstery Ltd · Auto, marine &amp; canvas upholstery, Darfield</title>
+<meta name="description" content="Sue and Brian Stockdale's upholstery workshop at Race Course Hill, Darfield. Boat covers, car interiors, caravan and motorhome awnings, farm canvas, seats and dog crate covers.">
+<meta name="theme-color" content="#262421">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500;700&amp;family=Source+Sans+3:wght@400;600;700&amp;display=swap">
+<link rel="preload" as="image" href="img/workshop-truck.jpg">
 <style>
-:root{--bg:#f7f6f2;--ink:#16202a;--accent:#e8590c;--soft:#fff4ec;--dark:#16202a;--muted:#5f646b}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 Inter,system-ui,sans-serif}
-a{color:inherit}.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
-.preview{background:#111;color:#eee;font-size:13px;text-align:center;padding:8px 16px}
-header{position:sticky;top:0;background:var(--bg);border-bottom:1px solid rgba(0,0,0,.07);z-index:5}
-header .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:12px}
-.logo{font-weight:800;font-size:19px;letter-spacing:-.02em;text-decoration:none}
-.btn{display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600;padding:12px 20px;border-radius:10px;white-space:nowrap}
-.btn.ghost{background:transparent;color:var(--ink);border:1.5px solid rgba(0,0,0,.18)}
-.hero{padding:72px 0 64px;background:linear-gradient(180deg,var(--soft),var(--bg))}
-.hero h1{font-size:clamp(34px,6vw,58px);line-height:1.05;letter-spacing:-.03em;margin:12px 0 16px;font-weight:800;max-width:14ch}
-.hero p{font-size:19px;color:var(--muted);max-width:52ch;margin:0 0 28px}
-.since{display:inline-block;font-size:13px;font-weight:600;color:var(--accent);background:#fff;border:1px solid rgba(0,0,0,.06);padding:4px 10px;border-radius:99px}
-.herogrid{display:grid;grid-template-columns:1.4fr 1fr;gap:40px;align-items:center}
-.facts{background:#fff;border:1px solid rgba(0,0,0,.07);border-radius:18px;padding:26px;box-shadow:0 20px 40px -24px rgba(0,0,0,.25)}
-.facts h3{margin:0 0 12px;font-size:18px}.facts ul{list-style:none;padding:0;margin:0 0 14px}
-.facts li{padding:8px 0 8px 26px;border-bottom:1px solid rgba(0,0,0,.06);position:relative}
-.facts li::before{content:"";position:absolute;left:2px;top:15px;width:12px;height:7px;border-left:2.5px solid var(--accent);border-bottom:2.5px solid var(--accent);transform:rotate(-45deg)}
-.facts p{color:var(--muted);font-size:15px;margin:0 0 16px}.facts .btn{width:100%;justify-content:center}
-.ctas{display:flex;gap:12px;flex-wrap:wrap}
-section{padding:64px 0}section.alt{background:#fff}h2{font-size:clamp(26px,4vw,36px);letter-spacing:-.02em;margin:0 0 24px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
-.svc{background:#fff;border:1px solid rgba(0,0,0,.07);border-radius:14px;padding:22px}
-.svc h3{margin:0 0 6px;font-size:18px}.svc p{margin:0;color:var(--muted);font-size:15px}
-.about{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}.about p{color:var(--muted)}
-.pics{display:grid;grid-template-columns:1fr 1fr;gap:10px}.pics img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px}
-.pics img:first-child{grid-column:1/-1}
-.contact{display:grid;grid-template-columns:1fr 1fr;gap:40px}.contact a{color:var(--accent);font-weight:600}
-table{border-collapse:collapse;width:100%}td{padding:8px 0;border-bottom:1px solid rgba(0,0,0,.07)}td:last-child{text-align:right;color:var(--muted)}
-footer{background:var(--dark);color:rgba(255,255,255,.75);padding:28px 0;font-size:14px}
-.callbar{display:none}
-@media(max-width:720px){.herogrid{grid-template-columns:1fr}.about,.contact{grid-template-columns:1fr}.hero{padding:48px 0}header .btn{display:none}
-.callbar{display:flex;position:fixed;bottom:12px;left:12px;right:12px;justify-content:center;box-shadow:0 8px 24px rgba(0,0,0,.2)}body{padding-bottom:72px}}
-</style></head><body>
+:root{
+  --char:#262421;--char-2:#302d29;--char-3:#3b3732;--ink:#1f1d1b;
+  --canvas:#f2eadc;--sand:#e6d8bf;--paper:#fbf7ef;--line:#d8c7a8;
+  --tan:#c98545;--tan-lt:#dfa061;--tan-dk:#8a4a1b;--ox:#6b2420;
+  --muted:#5c554c;--on-dark:#efe6d6;--on-dark-2:#bfb4a2;
+  --slab:"Zilla Slab",Rockwell,"Roboto Slab",Georgia,serif;
+  --sans:"Source Sans 3","Source Sans Pro",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --gut:20px;--max:1180px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--canvas);color:var(--ink);font:400 17px/1.6 var(--sans)}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3{text-wrap:balance;font-family:var(--slab);font-weight:700;line-height:1.08;margin:0;letter-spacing:-.005em}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--gut)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+:focus-visible{outline:3px solid var(--tan-lt);outline-offset:3px}
+
+/* ---- stitch helpers ---- */
+.stitch-line{height:2px;background:repeating-linear-gradient(90deg,currentColor 0 9px,transparent 9px 15px);opacity:.55}
+.kicker{display:inline-flex;align-items:center;gap:10px;font:700 13px/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--tan-dk)}
+.kicker::before{content:"";width:28px;height:2px;background:repeating-linear-gradient(90deg,currentColor 0 6px,transparent 6px 10px)}
+
+/* ---- concept banner ---- */
+.preview{background:#111;color:#e9e3d8;font:500 13px/1.4 var(--sans);text-align:center;padding:8px 16px}
+
+/* ---- header ---- */
+.top{background:var(--char);color:var(--on-dark);position:sticky;top:0;z-index:20;border-bottom:1px solid #000}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:64px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;min-width:0}
+.badge{flex:none;width:42px;height:42px;border-radius:50%;background:var(--tan);color:var(--char);display:grid;place-items:center;font:700 16px/1 var(--slab);box-shadow:inset 0 0 0 3px var(--tan),inset 0 0 0 4.5px transparent;position:relative}
+.badge::after{content:"";position:absolute;inset:4px;border-radius:50%;border:1.5px dashed rgba(38,36,33,.6)}
+.brand b{display:block;font:700 19px/1.05 var(--slab);letter-spacing:.01em;white-space:nowrap}
+.brand small{display:block;font:600 11px/1.3 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--on-dark-2);white-space:nowrap}
+.nav{display:none;gap:26px;font-weight:600;font-size:15px}
+.nav a{text-decoration:none;color:var(--on-dark-2)}.nav a:hover{color:var(--on-dark)}
+.top .hcall{display:none}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:50px;padding:12px 22px;border-radius:6px;font:700 17px/1.1 var(--sans);text-decoration:none;white-space:nowrap;transition:transform .15s,background .15s}
+.btn svg{width:19px;height:19px;flex:none}
+.btn-tan{background:var(--tan);color:var(--char)}
+.btn-tan:hover{background:var(--tan-lt)}
+.btn-line{color:var(--on-dark);box-shadow:inset 0 0 0 2px rgba(239,230,214,.45)}
+.btn-line:hover{box-shadow:inset 0 0 0 2px var(--on-dark)}
+.btn-dark{background:var(--char);color:var(--on-dark)}
+.btn-dark:hover{background:var(--char-3)}
+
+/* ---- hero ---- */
+.hero{background:var(--char);color:var(--on-dark);position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;opacity:.07;background:
+  repeating-linear-gradient(45deg,#fff 0 1px,transparent 1px 7px),repeating-linear-gradient(-45deg,#fff 0 1px,transparent 1px 7px);pointer-events:none}
+.hero .wrap{position:relative;display:grid;gap:34px;padding-top:40px;padding-bottom:72px}
+.hero .kicker{color:var(--tan-lt)}
+.hero h1{font-size:clamp(40px,11vw,76px);margin:16px 0 18px;max-width:11ch}
+.hero h1 em{font-style:normal;color:var(--tan-lt)}
+.lede{font-size:19px;line-height:1.55;color:var(--on-dark);max-width:44ch;margin:0 0 26px}
+.lede strong{color:#fff;font-weight:600}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.status{display:flex;align-items:center;gap:10px;margin-top:22px;font-size:15px;color:var(--on-dark-2)}
+.dot{width:10px;height:10px;border-radius:50%;background:#8d8577;flex:none}
+.dot.open{background:#7fbf6a;box-shadow:0 0 0 4px rgba(127,191,106,.2)}
+
+.frame{position:relative;margin:0;background:var(--char-2);padding:10px;border-radius:4px;box-shadow:0 30px 60px -30px rgba(0,0,0,.8)}
+.frame::after{content:"";position:absolute;inset:5px;border:1.5px dashed rgba(223,160,97,.55);border-radius:2px;pointer-events:none}
+.frame img{width:100%;aspect-ratio:629/361;object-fit:cover;border-radius:2px}
+.inset{position:absolute;right:-8px;top:-30px;width:34%;max-width:190px;margin:0;background:var(--paper);padding:5px 5px 0;border-radius:3px;transform:rotate(3deg);box-shadow:0 18px 30px -14px rgba(0,0,0,.75);z-index:2}
+.inset img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:2px}
+.inset figcaption{font:600 11.5px/1.2 var(--sans);color:#4a443c;padding:6px 3px 7px;text-align:center}
+.frame>figcaption{position:absolute;left:22px;bottom:-14px;background:var(--tan);color:var(--char);font:700 13px/1 var(--sans);letter-spacing:.08em;text-transform:uppercase;padding:9px 12px;border-radius:3px;box-shadow:0 8px 16px -8px rgba(0,0,0,.6)}
+
+/* ---- facts rail ---- */
+.rail{background:var(--ox);color:#f6e9e2}
+.rail ul{list-style:none;margin:0 auto;padding:20px var(--gut);display:grid;grid-template-columns:1fr 1fr;gap:14px 18px}
+.rail li{font-size:15px;line-height:1.35;padding-left:14px;position:relative}
+.rail li::before{content:"";position:absolute;left:0;top:3px;bottom:3px;width:2px;background:repeating-linear-gradient(180deg,#e7b48a 0 5px,transparent 5px 9px)}
+.rail b{display:block;font:700 17px/1.2 var(--slab);color:#fff}
+
+/* ---- sections ---- */
+section{padding:64px 0}
+.head{margin-bottom:30px;max-width:720px}
+.head h2{font-size:clamp(32px,7vw,50px);margin:12px 0 12px}
+.head p{margin:0;color:var(--muted);font-size:18px}
+
+/* cover cards */
+.cards{display:grid;gap:18px}
+.card{background:var(--paper);border-radius:6px;overflow:hidden;box-shadow:0 1px 0 var(--line),0 14px 30px -24px rgba(40,30,20,.5);display:flex;flex-direction:column}
+.card .ph{position:relative;aspect-ratio:4/3;background:var(--sand);overflow:hidden}
+.card .ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.card .num{position:absolute;left:14px;top:14px;background:var(--char);color:var(--tan-lt);font:700 13px/1 var(--slab);padding:7px 9px;border-radius:3px;letter-spacing:.06em}
+.card .body{padding:20px 20px 22px;flex:1;display:flex;flex-direction:column}
+.card h3{font-size:26px;margin-bottom:8px}
+.card p{margin:0 0 14px;color:var(--muted);font-size:16px}
+.tags{list-style:none;margin:auto 0 0;padding:14px 0 0;display:flex;flex-wrap:wrap;gap:6px;border-top:2px dashed var(--line)}
+.tags li{font-size:13.5px;font-weight:600;background:var(--canvas);color:#3e3831;padding:4px 9px;border-radius:3px}
+.card.cavana .num{background:var(--tan);color:var(--char)}
+.flag{display:inline-block;background:var(--ox);color:#fbeee6;font:700 12px/1 var(--sans);letter-spacing:.1em;text-transform:uppercase;padding:6px 8px;border-radius:3px;margin-bottom:10px;align-self:flex-start}
+
+.odd{margin-top:22px;background:var(--char);color:var(--on-dark);border-radius:6px;padding:24px 22px;position:relative}
+.odd::after{content:"";position:absolute;inset:7px;border:1.5px dashed rgba(223,160,97,.45);border-radius:3px;pointer-events:none}
+.odd h3{font-size:24px;margin-bottom:6px;color:#fff}
+.odd p{margin:0 0 14px;color:var(--on-dark-2)}
+.odd ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px 18px}
+.odd li{font-weight:600;font-size:15.5px;position:relative;padding-left:16px}
+.odd li::before{content:"";position:absolute;left:0;top:.65em;width:8px;height:2px;background:var(--tan-lt)}
+.odd .ins{margin-top:16px;font-weight:700;color:var(--tan-lt);font-family:var(--slab);font-size:20px}
+
+/* workshop band */
+.band{background:var(--char);color:var(--on-dark);padding:0}
+.band .grid{display:grid}
+.band .pic{position:relative;min-height:260px}
+.band .pic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.band .txt{padding:48px var(--gut) 52px}
+.band .kicker{color:var(--tan-lt)}
+.band h2{font-size:clamp(32px,7vw,48px);margin:12px 0 14px;color:#fff}
+.band p{margin:0 0 14px;color:var(--on-dark);max-width:48ch}
+.band .agent{margin-top:24px;display:flex;gap:14px;align-items:flex-start;background:var(--char-2);border-radius:5px;padding:16px 18px;border-left:4px solid var(--tan)}
+.band .agent svg{flex:none;width:34px;height:34px;color:var(--tan-lt);margin-top:2px}
+.band .agent b{display:block;font:700 19px/1.2 var(--slab);color:#fff}
+.band .agent span{font-size:15px;color:var(--on-dark-2)}
+
+/* Sue & Brian */
+.meet .grid{display:grid;gap:40px}
+.who{display:flex;align-items:center;gap:18px;margin:22px 0 22px}
+.portrait{flex:none;width:104px;height:104px;border-radius:50%;padding:7px;background:var(--tan);position:relative}
+.portrait::after{content:"";position:absolute;inset:3px;border-radius:50%;border:1.5px dashed rgba(38,36,33,.55)}
+.portrait img{width:90px;height:90px;border-radius:50%;object-fit:cover}
+.who b{display:block;font:700 22px/1.15 var(--slab)}
+.who span{color:var(--muted);font-size:15px}
+.meet p{margin:0 0 16px}
+.pull{margin:26px 0 0;padding:20px 0 0;border-top:2px dashed var(--line);font:500 clamp(22px,4.6vw,28px)/1.3 var(--slab);color:var(--ox)}
+.pull cite{display:block;margin-top:10px;font:600 14px/1.3 var(--sans);font-style:normal;color:var(--muted);letter-spacing:.04em}
+
+.timeline{list-style:none;margin:0;padding:0;position:relative}
+.timeline li:not(:last-child)::after{content:"";position:absolute;left:9px;top:28px;bottom:2px;width:2px;background:repeating-linear-gradient(180deg,var(--tan-dk) 0 8px,transparent 8px 14px);opacity:.6}
+.timeline li{position:relative;padding:0 0 26px 40px}
+.timeline li:last-child{padding-bottom:0}
+.timeline li::before{content:"";position:absolute;left:1px;top:6px;width:18px;height:18px;border-radius:50%;background:var(--canvas);border:3px solid var(--tan-dk)}
+.timeline li.now::before{background:var(--tan);border-color:var(--char)}
+.timeline .yr{font:700 14px/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--tan-dk)}
+.timeline h3{font-size:22px;margin:6px 0 4px}
+.timeline p{margin:0;color:var(--muted);font-size:16px}
+
+/* survey cards */
+.words{background:var(--sand);padding:56px 0}
+.slips{display:grid;gap:16px}
+.slip{background:var(--paper);border-radius:3px;padding:20px 22px 18px;box-shadow:0 12px 24px -18px rgba(40,30,20,.6);position:relative}
+.slip:nth-child(1){transform:rotate(-.8deg)}.slip:nth-child(2){transform:rotate(.6deg)}.slip:nth-child(3){transform:rotate(-.4deg)}
+.slip small{display:block;font:600 11.5px/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:#8a8175;margin-bottom:10px}
+.slip q{font:500 24px/1.3 var(--slab);color:#233a6b;quotes:none}
+.slip::before{content:"";position:absolute;left:22px;right:22px;top:36px;height:1px;background:#e2d8c6}
+.rating{margin-top:26px;display:flex;flex-wrap:wrap;align-items:center;gap:6px 14px;font-size:16px;color:#3e3831}
+.stars{color:var(--tan-dk);letter-spacing:2px;font-size:18px}
+.rating b{font-family:var(--slab);font-size:22px}
+
+/* gallery strip */
+.strip{padding:56px 0 64px}
+.strip .head{display:flex;flex-direction:column;gap:6px}
+.reel{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px var(--gut) 18px;scroll-padding:0 var(--gut);scrollbar-width:thin;scrollbar-color:var(--tan) transparent}
+.reel figure{margin:0;flex:0 0 72%;scroll-snap-align:start;background:var(--paper);padding:6px 6px 0;border-radius:4px;box-shadow:0 10px 22px -18px rgba(40,30,20,.7)}
+.reel img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:2px}
+.reel figcaption{font-size:14px;font-weight:600;color:#4a443c;padding:8px 4px 10px}
+.hint{font-size:14px;color:var(--muted);margin:0}
+.strip .bar{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:18px}
+.arrows{display:none;gap:8px}
+.arrows button{width:46px;height:46px;border-radius:50%;border:2px solid var(--char);background:transparent;color:var(--char);font:700 20px/1 var(--sans);cursor:pointer}
+.arrows button:hover{background:var(--char);color:var(--on-dark)}
+
+/* visit */
+.visit{background:var(--char);color:var(--on-dark)}
+.visit .grid{display:grid;gap:34px}
+.visit .kicker{color:var(--tan-lt)}
+.visit h2{font-size:clamp(34px,8vw,54px);color:#fff;margin:12px 0 14px}
+.visit p{margin:0 0 14px;color:var(--on-dark)}
+.phone{display:inline-block;font:700 clamp(38px,11vw,60px)/1 var(--slab);color:var(--tan-lt);text-decoration:none;margin:6px 0 8px;letter-spacing:.01em}
+.phone:hover{color:#f0b77b}
+.mail{font-size:17px;font-weight:600;color:#fff;word-break:break-all}
+.note{font-size:15px;color:var(--on-dark-2)}
+.addr{margin-top:26px;padding-top:22px;border-top:2px dashed rgba(239,230,214,.22)}
+.addr b{display:block;font:700 20px/1.25 var(--slab);color:#fff;margin-bottom:4px}
+.addr a{color:var(--tan-lt);font-weight:600}
+.hours{background:var(--canvas);color:var(--ink);border-radius:6px;padding:26px 24px;position:relative;align-self:start}
+.hours::after{content:"";position:absolute;inset:7px;border:1.5px dashed rgba(138,74,27,.45);border-radius:3px;pointer-events:none}
+.hours h3{font-size:26px;margin-bottom:12px}
+.hours table{width:100%;border-collapse:collapse;font-size:17px}
+.hours td{padding:10px 0;border-bottom:1px solid var(--line)}
+.hours tr:last-child td{border-bottom:0}
+.hours td:last-child{text-align:right;font-weight:600}
+.hours tr.closed td{color:#7a7166}
+.hours tr.today td{color:var(--ox);font-weight:700}
+.hours tr.today td:first-child::after{content:" · today";font-weight:600;font-size:14px}
+
+footer{background:#1b1917;color:#a79d8e;font-size:14.5px;padding:30px 0 34px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:10px 24px;justify-content:space-between}
+footer b{color:var(--on-dark);font-family:var(--slab);font-size:17px}
+
+/* mobile call bar */
+.callbar{position:fixed;left:0;right:0;bottom:0;z-index:30;display:grid;grid-template-columns:1fr auto;gap:8px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(38,36,33,.97);border-top:1px solid #000;box-shadow:0 -10px 24px -12px rgba(0,0,0,.6)}
+.callbar .btn{min-height:52px}
+.callbar .btn-line{padding:12px 16px}
+body{padding-bottom:76px}
+
+/* ---- larger screens ---- */
+@media (min-width:640px){
+  :root{--gut:28px}
+  .cards{grid-template-columns:1fr 1fr}
+  .rail ul{grid-template-columns:repeat(4,1fr)}
+  .slips{grid-template-columns:repeat(3,1fr)}
+  .reel figure{flex-basis:40%}
+}
+@media (min-width:960px){
+  :root{--gut:36px}
+  body{padding-bottom:0}
+  .callbar{display:none}
+  .nav{display:flex}
+  .top .hcall{display:inline-flex;min-height:42px;padding:9px 16px;font-size:15.5px}
+  .top .wrap{height:72px}
+  .hero .wrap{grid-template-columns:1fr 1.12fr;align-items:center;gap:60px;padding-top:56px;padding-bottom:88px}
+  .frame{transform:rotate(-.6deg)}
+  .inset{top:auto;right:-44px;bottom:-56px;width:30%;max-width:none}
+  .hero h1{font-size:clamp(56px,5.6vw,76px)}
+  .cards{grid-template-columns:repeat(3,1fr);gap:22px}
+  section{padding:88px 0}
+  .band .grid{grid-template-columns:1.1fr 1fr;max-width:none}
+  .band .pic{min-height:520px}
+  .band .txt{padding:72px 56px;max-width:620px}
+  .meet .grid{grid-template-columns:1.05fr 1fr;gap:72px}
+  .visit .grid{grid-template-columns:1.2fr 1fr;gap:64px;align-items:start}
+  .reel{padding-left:max(var(--gut),calc((100vw - var(--max))/2 + var(--gut)));padding-right:var(--gut);scroll-padding-left:max(var(--gut),calc((100vw - var(--max))/2 + var(--gut)))}
+  .reel figure{flex-basis:calc((100% - 48px)/4.4)}
+  .words{padding:80px 0}
+  .arrows{display:flex}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
 <div class="preview">Concept preview prepared for Advanced Upholstery Ltd by Claude (an AI). Not the official website.</div>
-<header><div class="wrap"><a class="logo" href="#">Advanced Upholstery Ltd</a><a class="btn" href="tel:033187378">Call 03 318 7378</a></div></header>
-<div class="hero"><div class="wrap herogrid"><div>
-<h1>Custom upholstery and canvas work in Darfield</h1>
-<p>Boat covers, car interiors, caravan awnings and farm canvas, made and repaired in our Darfield workshop by Sue and Brian Stockdale.</p>
-<div class="ctas"><a class="btn" href="tel:033187378">Call now</a><a class="btn ghost" href="#services">Our services</a></div>
-</div><aside class="facts"><h3>Advanced Upholstery Ltd</h3><ul><li>Marine</li><li>Automotive</li><li>Caravans &amp; motorhomes</li><li>Farm &amp; truck</li></ul><p>Serving Darfield &amp; Canterbury</p><a class="btn" href="tel:033187378">03 318 7378</a></aside></div></div>
-<section id="services"><div class="wrap"><h2>What we do</h2><div class="grid"><div class="svc"><h3>Marine</h3><p>Boat covers, bimini tops, canopies, side curtains, cabin squabs and lining.</p></div><div class="svc"><h3>Automotive</h3><p>Restoration and custom interiors, headlining, convertible hoods, vinyl roofs.</p></div><div class="svc"><h3>Caravans &amp; motorhomes</h3><p>Authorised Cavana awnings agent. Awnings, linings, squabs and repairs.</p></div><div class="svc"><h3>Farm &amp; truck</h3><p>Hay and bin covers, truck and tractor interiors, custom machine and ute covers.</p></div><div class="svc"><h3>Seating</h3><p>Seats recovered or rebuilt from scratch.</p></div><div class="svc"><h3>For your dog</h3><p>Custom dog beds, crate and trolley covers.</p></div></div></div></section><section class="alt"><div class="wrap about"><div><h2>About Advanced Upholstery Ltd</h2><p>Our workshop at Race Course Hill has room for motorhomes and boats.</p></div></div></section><section id="contact"><div class="wrap contact"><div><h2>Get in touch</h2><p><strong>Visit</strong><br><a href="https://www.google.com/maps/search/?api=1&query=Advanced+Upholstery+Ltd+3967+West+Coast+Road,+Race+Course+Hill,+Darfield+Darfield">3967 West Coast Road, Race Course Hill, Darfield</a></p><p><strong>Call</strong><br><a href="tel:033187378">03 318 7378</a></p><p><strong>Email</strong><br><a href="mailto:advancedupholsteryltd@xtra.co.nz">advancedupholsteryltd@xtra.co.nz</a></p></div><div><h3>Hours</h3><table><tr><td>Tue, Wed, Fri</td><td>8am – 4:30pm</td></tr><tr><td>Thu</td><td>8am – 6:30pm</td></tr><tr><td>Sat</td><td>8:30am – 12pm</td></tr><tr><td>Sun–Mon</td><td>Closed</td></tr></table></div></div></section>
-<footer><div class="wrap">&copy; Advanced Upholstery Ltd &middot; Darfield &amp; Canterbury</div></footer>
-<a class="btn callbar" href="tel:033187378">Call 03 318 7378</a>
-</body></html>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Advanced Upholstery Ltd, back to top">
+      <span class="badge" aria-hidden="true">AU</span>
+      <span><b>Advanced Upholstery</b><small>Auto · Marine · Canvas</small></span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#cover">What we cover</a>
+      <a href="#workshop">The workshop</a>
+      <a href="#sue-brian">Sue &amp; Brian</a>
+      <a href="#visit">Hours &amp; directions</a>
+    </nav>
+    <a class="btn btn-tan hcall" href="tel:+6433187378">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+      03 318 7378</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero" aria-labelledby="h1" style="padding:0">
+  <div class="wrap">
+    <div>
+      <span class="kicker">Race Course Hill · Darfield</span>
+      <h1 id="h1">Your pride and joy is <em>our pride and joy.</em></h1>
+      <p class="lede">Boat covers, car interiors, caravan awnings, farm canvas and seats rebuilt from scratch. <strong>Sue and Brian Stockdale's</strong> upholstery workshop, five minutes' drive west of Darfield. However unusual the job, give us a call.</p>
+      <div class="ctas">
+        <a class="btn btn-tan" href="tel:+6433187378">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+          Call 03 318 7378</a>
+        <a class="btn btn-line" href="mailto:advancedupholsteryltd@xtra.co.nz">Email us</a>
+      </div>
+      <p class="status" id="status"><span class="dot" aria-hidden="true"></span><span>Open Tue–Sat. Late night Thursday till 6:30pm.</span></p>
+    </div>
+    <figure class="frame">
+      <img src="img/workshop-truck.jpg" width="629" height="361" alt="The yellow Advanced Upholstery truck parked on the gravel beside the workshop, with a blue vintage car and a green vintage car out front and tall pines behind." fetchpriority="high">
+      <figcaption>The workshop, Race Course Hill</figcaption>
+      <figure class="inset"><img src="img/g-leather-saddle.jpg" width="640" height="480" alt="Close-up of a tan leather motorbike saddle with hand-laced edges."><figcaption>Hand-laced leather</figcaption></figure>
+    </figure>
+  </div>
+</section>
+
+<div class="rail">
+  <ul class="wrap">
+    <li><b>Since 1991</b>Brian, qualified auto &amp; marine upholsterer</li>
+    <li><b>Cvana awnings</b>Authorised agent</li>
+    <li><b>Room to drive in</b>Motorhomes, boats, caravans</li>
+    <li><b>Insurance quotes</b>Yes, we do them</li>
+  </ul>
+</div>
+
+<section id="cover" aria-labelledby="cover-h">
+  <div class="wrap">
+    <div class="head">
+      <span class="kicker">What we cover</span>
+      <h2 id="cover-h">If it has a seat, a hood or needs a cover</h2>
+      <p>We work on all types of upholstery, and it doesn't matter how unusual your job may be. Every photo below is a job from our own galleries.</p>
+    </div>
+
+    <div class="cards">
+      <article class="card">
+        <div class="ph"><img src="img/marine-boat-cover.jpg" width="820" height="615" loading="lazy" alt="A runabout on its trailer under a fitted navy blue storage cover, with a matching bimini and clears over the cockpit."><span class="num">01</span></div>
+        <div class="body">
+          <h3>Marine</h3>
+          <p>Covers and canopies cut to your boat, plus the cabin and seats inside it.</p>
+          <ul class="tags"><li>Bimini tops</li><li>Road &amp; storage covers</li><li>Day canopies</li><li>Side curtains</li><li>Cabin squabs</li><li>Interior lining</li><li>Hood bows</li><li>Carpet</li><li>Stone guards</li><li>Propeller flags</li><li>Repairs</li></ul>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="ph"><img src="img/auto-teal-interior.jpg" width="779" height="615" loading="lazy" alt="A classic car interior re-trimmed in teal and white pleated vinyl, with a matching two-tone wrapped steering wheel."><span class="num">02</span></div>
+        <div class="body">
+          <h3>Automotive</h3>
+          <p>Full restoration work and the custom street look, down to the steering wheel.</p>
+          <ul class="tags"><li>Full restorations</li><li>Custom street cars</li><li>Headlining</li><li>Convertible hoods</li><li>Vinyl roofs</li><li>Carpet</li><li>Window replacements</li><li>Steering wheel recovers</li></ul>
+        </div>
+      </article>
+
+      <article class="card cavana">
+        <div class="ph"><img src="img/caravan-awning.jpg" width="820" height="615" loading="lazy" alt="A navy and white striped awning with a door and clear windows, set up against a caravan on a grassy campground."><span class="num">03</span></div>
+        <div class="body">
+          <span class="flag">Authorised Cvana agent</span>
+          <h3>Caravans &amp; motorhomes</h3>
+          <p>Custom-made awnings and repairs, and the whole interior, from squabs to blinds.</p>
+          <ul class="tags"><li>Custom awnings</li><li>Awning repairs</li><li>Ceiling &amp; wall linings</li><li>Squabs</li><li>Curtains</li><li>Roman blinds</li><li>Stone guards</li><li>Storage covers</li></ul>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="ph"><img src="img/truck-canopy-cover.jpg" width="820" height="615" loading="lazy" alt="A small flat-deck truck with a fitted blue PVC canopy cover tied down over its tray."><span class="num">04</span></div>
+        <div class="body">
+          <h3>Farm &amp; truck</h3>
+          <p>Canvas and PVC for the farm, and covers made to fit your machinery, truck or ute. Ask us for a specialised estimate.</p>
+          <ul class="tags"><li>Hay covers</li><li>Bin covers</li><li>Machine covers</li><li>Truck &amp; ute covers</li><li>Truck interiors</li><li>Tractor interiors</li></ul>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="ph"><img src="img/seating-vintage-tourer.jpg" width="640" height="480" loading="lazy" alt="An open red vintage tourer with its front and rear seats trimmed in pleated dark grey leather."><span class="num">05</span></div>
+        <div class="body">
+          <h3>Seating</h3>
+          <p>Seats recovered, or built from scratch. Car, boat, motorbike, or your favourite lounge suite.</p>
+          <ul class="tags"><li>Recovers</li><li>Built from scratch</li><li>Motorbike seats</li><li>Lounge suites</li><li>Outdoor squabs</li></ul>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="ph"><img src="img/dog-crate-cover.jpg" width="820" height="615" loading="lazy" alt="A wheeled aluminium dog crate with a fitted green canvas cover rolled up to show the bars."><span class="num">06</span></div>
+        <div class="body">
+          <h3>For your dog</h3>
+          <p>Custom-made beds, and fitted covers for crates and trolleys.</p>
+          <ul class="tags"><li>Custom dog beds</li><li>Crate covers</li><li>Trolley covers</li></ul>
+        </div>
+      </article>
+    </div>
+
+    <div class="odd">
+      <h3>And the odd ones</h3>
+      <p>If you don't see it listed, call or email and we'll work with you to make your piece.</p>
+      <ul>
+        <li>Shade sails</li><li>Channel-it blinds</li><li>Sand-pit covers</li><li>Golf cart covers</li><li>Pool tables</li><li>Swimming pool covers</li><li>Furniture repairs</li><li>Dive bags</li>
+      </ul>
+      <p class="ins">We do insurance quotes.</p>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="workshop" aria-labelledby="ws-h">
+  <div class="grid">
+    <div class="pic"><img src="img/motorhome-awning-workshop.jpg" width="1024" height="768" loading="lazy" alt="A large motorhome parked indoors with its new grey roll-out awning extended."></div>
+    <div class="txt">
+      <span class="kicker">The workshop</span>
+      <h2 id="ws-h">Bring the whole thing in.</h2>
+      <p>Our home at Race Course Hill sits on 2 hectares, with plenty of room for your motorhome, caravan, boat or car. The workshop was built new in early 2014.</p>
+      <p>We keep it clean, friendly and secure, and we aim for quality work with an efficient turnaround.</p>
+      <div class="agent">
+        <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 14h32l-4 7H8z"/><path d="M8 21v13M32 21v13"/><path d="M4 14l4-6h24l4 6" stroke-dasharray="3 3"/></svg>
+        <div><b>Authorised Cvana awnings agent</b><span>Awnings for caravans and motorhomes, plus repairs to the one you've got.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="meet" id="sue-brian" aria-labelledby="meet-h">
+  <div class="wrap grid">
+    <div>
+      <span class="kicker">Meet Sue &amp; Brian</span>
+      <div class="who">
+        <span class="portrait"><img src="img/brian.jpg" width="89" height="83" alt="Brian Stockdale, smiling, in a dark shirt."></span>
+        <div><b>Sue &amp; Brian Stockdale</b><span>Owners, Advanced Upholstery Ltd</span></div>
+      </div>
+      <h2 id="meet-h" class="sr">Meet Sue and Brian</h2>
+      <p>Brian has been a qualified auto and marine upholsterer since 1991. He has a good eye for detail and concept. Plenty of customers have explained an idea to him and been amazed at the finished piece he and the team designed.</p>
+      <p>We understand the passion our customers have for their boats, cars and motorhomes, and we're happy to help with all your upholstery needs.</p>
+      <blockquote class="pull">“From the cigarette burn in your backseat to a total redesign of your motor home.”<cite>Brian &amp; Sue Stockdale</cite></blockquote>
+    </div>
+    <div>
+      <ol class="timeline" aria-label="How we got to Race Course Hill">
+        <li><span class="yr">1991</span><h3>Qualified in Christchurch</h3><p>Brian starts as a qualified auto and marine upholsterer.</p></li>
+        <li><span class="yr">February 2011</span><h3>The earthquake</h3><p>The Christchurch quake hits our premises, so we move to Ashburton.</p></li>
+        <li><span class="yr">December 2012</span><h3>The fire</h3><p>We lose the Ashburton workshop in a fire, with all of our equipment.</p></li>
+        <li><span class="yr">The next 12 months</span><h3>On the road</h3><p>We buy a truck and run a mobile service while we move again, this time to Race Course Hill in Darfield.</p></li>
+        <li class="now"><span class="yr">Early 2014</span><h3>A brand new workshop</h3><p>Built at Race Course Hill, and fully up and running.</p></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section class="words" aria-labelledby="words-h">
+  <div class="wrap">
+    <div class="head">
+      <span class="kicker">What customers wrote</span>
+      <h2 id="words-h">From our customer survey cards</h2>
+    </div>
+    <div class="slips">
+      <figure class="slip" style="margin:0"><small>Testimonial (optional)</small><q>Great workmanship, can do anything you require.</q></figure>
+      <figure class="slip" style="margin:0"><small>Testimonial (optional)</small><q>A first class job at a fair price.</q></figure>
+      <figure class="slip" style="margin:0"><small>Comment</small><q>I couldn't fault the friendliness &amp; courtesy.</q></figure>
+    </div>
+    <p class="rating"><span class="stars" aria-hidden="true">★</span><span><b>4.6</b> out of 5 on Google, from 28 reviews</span></p>
+  </div>
+</section>
+
+<section class="strip" aria-labelledby="strip-h" style="padding-top:64px">
+  <div class="wrap bar"><div class="head" style="margin-bottom:0">
+    <span class="kicker">From the gallery</span>
+    <h2 id="strip-h">More work off the bench</h2>
+    <p class="hint">Swipe or scroll along.</p>
+  </div><div class="arrows"><button type="button" data-dir="-1" aria-label="Previous photos">←</button><button type="button" data-dir="1" aria-label="Next photos">→</button></div></div>
+  <div class="reel" tabindex="0" role="region" aria-label="Photo gallery of past jobs">
+    <figure><img src="img/g-rx8-interior.jpg" width="720" height="540" loading="lazy" alt="Sports car interior with black seats and red door cards and a red and black steering wheel."><figcaption>Red &amp; black street car interior</figcaption></figure>
+    <figure><img src="img/g-motorhome-lounge.jpg" width="720" height="540" loading="lazy" alt="Motorhome lounge with a curved cream leather settee around a wooden table."><figcaption>Cream motorhome lounge</figcaption></figure>
+    <figure><img src="img/g-boat-clears.jpg" width="720" height="540" loading="lazy" alt="A black bimini top with zip-in clear side panels fitted to a boat in the workshop."><figcaption>Bimini with clears</figcaption></figure>
+    <figure><img src="img/g-cobra-seats.jpg" width="720" height="540" loading="lazy" alt="Black bucket seats in a blue open-top Cobra-style roadster."><figcaption>Cobra bucket seats</figcaption></figure>
+    <figure><img src="img/g-motorhome-dinette.jpg" width="720" height="540" loading="lazy" alt="Motorhome dinette with bright red squabs and matching patterned curtains."><figcaption>Motorhome dinette squabs</figcaption></figure>
+    <figure><img src="img/g-impala-bench.jpg" width="720" height="540" loading="lazy" alt="Pale blue and white bench seats in a classic Impala, with Impala stitched into the backrest."><figcaption>Impala bench seats</figcaption></figure>
+    <figure><img src="img/g-vintage-rear-bench.jpg" width="640" height="480" loading="lazy" alt="Vintage saloon rear bench seat trimmed in pleated green-blue fabric with a matching headlining."><figcaption>Vintage saloon rear bench</figcaption></figure>
+    <figure><img src="img/g-motorbike-seat.jpg" width="720" height="540" loading="lazy" alt="A black two-up motorbike seat with a stitched and buttoned finish on a Harley-style cruiser."><figcaption>Custom motorbike seat</figcaption></figure>
+    <figure><img src="img/g-poptop.jpg" width="720" height="540" loading="lazy" alt="Canvas pop-top roof raised on a white campervan."><figcaption>Campervan pop-top canvas</figcaption></figure>
+    <figure><img src="img/g-vintage-grey-bench.jpg" width="720" height="540" loading="lazy" alt="Grey leather bench seat and matching cushion in a vintage car."><figcaption>Grey leather vintage bench</figcaption></figure>
+  </div>
+</section>
+
+<section class="visit" id="visit" aria-labelledby="visit-h">
+  <div class="wrap grid">
+    <div>
+      <span class="kicker">Bookings &amp; quotes</span>
+      <h2 id="visit-h">Talk to Sue &amp; Brian</h2>
+      <a class="phone" href="tel:+6433187378">03 318 7378</a>
+      <p><a class="mail" href="mailto:advancedupholsteryltd@xtra.co.nz">advancedupholsteryltd@xtra.co.nz</a></p>
+      <p class="note">Emailing? Please include a contact number so we can call you back.</p>
+      <div class="addr">
+        <b>Race Course Hill<br>3967 West Coast Road, Darfield</b>
+        <p class="note" style="margin-bottom:10px">About five minutes' drive west of Darfield, Canterbury.</p>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=Advanced+Upholstery+3967+West+Coast+Road+Darfield" rel="noopener">Get directions in Google Maps →</a>
+      </div>
+    </div>
+    <div class="hours">
+      <h3>Workshop hours</h3>
+      <table>
+        <caption class="sr">Opening hours</caption>
+        <tbody>
+          <tr data-d="2"><td>Tuesday</td><td>8:00am – 4:30pm</td></tr>
+          <tr data-d="3"><td>Wednesday</td><td>8:00am – 4:30pm</td></tr>
+          <tr data-d="4"><td>Thursday</td><td>8:00am – 6:30pm</td></tr>
+          <tr data-d="5"><td>Friday</td><td>8:00am – 4:30pm</td></tr>
+          <tr data-d="6"><td>Saturday</td><td>8:30am – 12:00pm</td></tr>
+          <tr data-d="0" class="closed"><td>Sunday</td><td>Closed</td></tr>
+          <tr data-d="1" class="closed"><td>Monday</td><td>Closed</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span><b>Advanced Upholstery Ltd</b> · “Advanced Service, Advanced Upholstery”</span>
+    <span>Race Course Hill, 3967 West Coast Road, Darfield · <a href="tel:+6433187378">03 318 7378</a></span>
+  </div>
+</footer>
+
+<div class="callbar">
+  <a class="btn btn-tan" href="tel:+6433187378">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+    Call 03 318 7378</a>
+  <a class="btn btn-line" href="mailto:advancedupholsteryltd@xtra.co.nz" aria-label="Email Advanced Upholstery">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m3 6 9 7 9-7"/></svg>
+    Email</a>
+</div>
+
+<script>
+(function(){
+  // Workshop hours in minutes, keyed by day (0 = Sunday), Darfield time.
+  var H={2:[480,990],3:[480,990],4:[480,1110],5:[480,990],6:[510,720]};
+  try{
+    var p=new Intl.DateTimeFormat('en-NZ',{timeZone:'Pacific/Auckland',weekday:'short',hour:'numeric',minute:'numeric',hourCycle:'h23'}).formatToParts(new Date());
+    var o={};p.forEach(function(x){o[x.type]=x.value});
+    var d=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].indexOf(o.weekday),m=(+o.hour)*60+(+o.minute);
+    var row=document.querySelector('.hours tr[data-d="'+d+'"]');if(row)row.classList.add('today');
+    var s=document.getElementById('status');if(!s||d<0)return;
+    var t=H[d],fmt=function(v){var h=Math.floor(v/60),mm=v%60,ap=h>=12?'pm':'am';h=h%12||12;return h+(mm?':'+(mm<10?'0':'')+mm:'')+ap};
+    if(t&&m>=t[0]&&m<t[1]){s.querySelector('.dot').classList.add('open');s.lastChild.textContent='Open now, until '+fmt(t[1])+' today.';}
+    else{
+      for(var i=(t&&m<t[0])?0:1;i<8;i++){var nd=(d+i)%7;if(H[nd]){s.lastChild.textContent='Closed right now. Next open '+(i===0?'today':i===1?'tomorrow':['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'][nd])+' at '+fmt(H[nd][0])+'.';break;}}
+    }
+  }catch(e){}
+  var reel=document.querySelector('.reel');
+  document.querySelectorAll('.arrows button').forEach(function(b){b.addEventListener('click',function(){reel.scrollBy({left:(+b.dataset.dir)*reel.clientWidth*0.8,behavior:'smooth'})})});
+})();
+</script>
+</body>
+</html>

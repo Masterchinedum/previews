@@ -1,54 +1,540 @@
 <!doctype html>
-<html lang="en"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<title>Olivers Lawn and Landscaping | Landscaping &amp; grounds maintenance in Perth, WA</title>
-<meta name="description" content="Commercial grounds maintenance and landscaping in Perth">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<title>Olivers Lawn and Landscaping | Commercial grounds maintenance, Perth since 1992</title>
+<meta name="description" content="Commercial lawn mowing, garden and grounds maintenance, landscaping, bores and reticulation across the Perth metropolitan area. Established 1992.">
+<meta name="theme-color" content="#173a2b">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,500..800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/mowing-verge.jpg">
 <style>
-:root{--bg:#f6f8f4;--ink:#1d2a22;--accent:#2f8f5b;--soft:#e9f3ec;--dark:#1d2a22;--muted:#5f646b}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 Inter,system-ui,sans-serif}
-a{color:inherit}.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
-.preview{background:#111;color:#eee;font-size:13px;text-align:center;padding:8px 16px}
-header{position:sticky;top:0;background:var(--bg);border-bottom:1px solid rgba(0,0,0,.07);z-index:5}
-header .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:12px}
-.logo{font-weight:800;font-size:19px;letter-spacing:-.02em;text-decoration:none}
-.btn{display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600;padding:12px 20px;border-radius:10px;white-space:nowrap}
-.btn.ghost{background:transparent;color:var(--ink);border:1.5px solid rgba(0,0,0,.18)}
-.hero{padding:72px 0 64px;background:linear-gradient(180deg,var(--soft),var(--bg))}
-.hero h1{font-size:clamp(34px,6vw,58px);line-height:1.05;letter-spacing:-.03em;margin:12px 0 16px;font-weight:800;max-width:14ch}
-.hero p{font-size:19px;color:var(--muted);max-width:52ch;margin:0 0 28px}
-.since{display:inline-block;font-size:13px;font-weight:600;color:var(--accent);background:#fff;border:1px solid rgba(0,0,0,.06);padding:4px 10px;border-radius:99px}
-.herogrid{display:grid;grid-template-columns:1.4fr 1fr;gap:40px;align-items:center}
-.facts{background:#fff;border:1px solid rgba(0,0,0,.07);border-radius:18px;padding:26px;box-shadow:0 20px 40px -24px rgba(0,0,0,.25)}
-.facts h3{margin:0 0 12px;font-size:18px}.facts ul{list-style:none;padding:0;margin:0 0 14px}
-.facts li{padding:8px 0 8px 26px;border-bottom:1px solid rgba(0,0,0,.06);position:relative}
-.facts li::before{content:"";position:absolute;left:2px;top:15px;width:12px;height:7px;border-left:2.5px solid var(--accent);border-bottom:2.5px solid var(--accent);transform:rotate(-45deg)}
-.facts p{color:var(--muted);font-size:15px;margin:0 0 16px}.facts .btn{width:100%;justify-content:center}
-.ctas{display:flex;gap:12px;flex-wrap:wrap}
-section{padding:64px 0}section.alt{background:#fff}h2{font-size:clamp(26px,4vw,36px);letter-spacing:-.02em;margin:0 0 24px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
-.svc{background:#fff;border:1px solid rgba(0,0,0,.07);border-radius:14px;padding:22px}
-.svc h3{margin:0 0 6px;font-size:18px}.svc p{margin:0;color:var(--muted);font-size:15px}
-.about{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}.about p{color:var(--muted)}
-.pics{display:grid;grid-template-columns:1fr 1fr;gap:10px}.pics img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px}
-.pics img:first-child{grid-column:1/-1}
-.contact{display:grid;grid-template-columns:1fr 1fr;gap:40px}.contact a{color:var(--accent);font-weight:600}
-table{border-collapse:collapse;width:100%}td{padding:8px 0;border-bottom:1px solid rgba(0,0,0,.07)}td:last-child{text-align:right;color:var(--muted)}
-footer{background:var(--dark);color:rgba(255,255,255,.75);padding:28px 0;font-size:14px}
-.callbar{display:none}
-@media(max-width:720px){.herogrid{grid-template-columns:1fr}.about,.contact{grid-template-columns:1fr}.hero{padding:48px 0}header .btn{display:none}
-.callbar{display:flex;position:fixed;bottom:12px;left:12px;right:12px;justify-content:center;box-shadow:0 8px 24px rgba(0,0,0,.2)}body{padding-bottom:72px}}
-</style></head><body>
+:root{
+  --euc:#173a2b;      /* deep eucalyptus */
+  --euc-2:#204a37;
+  --euc-3:#2b5c45;
+  --lime:#b9e04c;     /* hi-vis lawn green, as worn by the crew */
+  --lime-ink:#3d6b1f; /* accessible lime for text on light */
+  --paper:#f7f4ec;    /* warm off-white */
+  --sand:#e9dfc8;
+  --sand-2:#dccfb2;
+  --ink:#14231b;
+  --muted:#4d5b52;
+  --line:rgba(20,35,27,.13);
+  --r:14px;
+  --display:"Archivo",system-ui,sans-serif;
+  --body:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font:16.5px/1.6 var(--body);padding-bottom:76px}
+@media(min-width:880px){body{padding-bottom:0}}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+.wrap{max-width:1200px;margin:0 auto;padding:0 20px}
+@media(min-width:880px){.wrap{padding:0 40px}}
+h1,h2,h3{font-family:var(--display);font-stretch:108%;letter-spacing:-.022em;line-height:1.04;margin:0}
+.eyebrow{font:600 12.5px/1.2 var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--lime-ink);display:flex;align-items:center;gap:10px;margin:0 0 18px}
+.eyebrow::before{content:"";width:22px;height:10px;background:repeating-linear-gradient(90deg,currentColor 0 4px,transparent 4px 7px);opacity:.9}
+.on-dark .eyebrow{color:var(--lime)}
+
+/* concept banner */
+.preview{background:#0d1a13;color:#e8efe9;font:500 12.5px/1.45 var(--body);text-align:center;padding:8px 16px}
+
+/* header */
+.top{background:var(--paper);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:66px;gap:16px}
+.brand{display:flex;align-items:center;gap:11px;text-decoration:none}
+.mark{width:34px;height:34px;border-radius:8px;background:repeating-linear-gradient(90deg,var(--euc) 0 7px,var(--euc-3) 7px 14px);position:relative;flex:none}
+.mark::after{content:"";position:absolute;right:5px;top:5px;width:8px;height:8px;border-radius:50%;background:var(--lime)}
+.brand b{font:800 20px/1 var(--display);font-stretch:112%;letter-spacing:-.02em;display:block}
+.brand small{font:600 10.5px/1 var(--body);letter-spacing:.16em;text-transform:uppercase;color:var(--muted);display:block;margin-top:5px}
+.nav{display:none;gap:28px;font:500 14.5px var(--body)}
+.nav a{text-decoration:none;color:var(--muted)}
+.nav a:hover{color:var(--ink)}
+.callbtn{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font:600 14.5px var(--body);background:var(--euc);color:#fff;padding:10px 16px;border-radius:999px;white-space:nowrap}
+.callbtn svg{width:16px;height:16px}
+.callbtn .num{display:none}
+@media(min-width:880px){.nav{display:flex}.callbtn .num{display:inline}.callbtn .lbl{display:none}}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;text-decoration:none;font:600 15.5px/1 var(--body);padding:16px 22px;border-radius:999px;transition:transform .15s ease,background .15s}
+.btn:hover{transform:translateY(-1px)}
+.btn svg{width:18px;height:18px;flex:none}
+.btn-lime{background:var(--lime);color:var(--euc)}
+.btn-lime:hover{background:#c8ea68}
+.btn-dark{background:var(--euc);color:#fff}
+.btn-line{border:1.5px solid currentColor;color:var(--euc)}
+.on-dark .btn-line{color:#fff;border-color:rgba(255,255,255,.45)}
+
+/* hero */
+.hero{position:relative;overflow:hidden}
+.hero-grid{display:grid;gap:0}
+.hero-copy{padding:44px 0 36px}
+.hero h1{font-size:clamp(2.3rem,8.4vw,3.95rem);font-weight:800;color:var(--euc)}
+.hero h1 em{font-style:normal;color:var(--lime-ink);position:relative;white-space:nowrap}
+.hero .lede{font-size:clamp(1.02rem,2.6vw,1.18rem);color:var(--muted);max-width:34em;margin:22px 0 30px}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:12px}
+.hero-photo{position:relative;margin:0 -20px;aspect-ratio:4/3.4;overflow:hidden;background:var(--euc)}
+.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:50% 62%}
+.hero-photo figcaption{position:absolute;left:14px;bottom:14px;background:rgba(13,26,19,.78);color:#fff;font:500 12.5px/1.3 var(--body);padding:8px 12px;border-radius:999px;backdrop-filter:blur(4px)}
+.hero-photo figcaption i{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--lime);margin-right:7px;vertical-align:1px}
+.trust{display:flex;flex-wrap:wrap;gap:8px 20px;margin:28px 0 0;padding:0;list-style:none;font:500 13.5px var(--body);color:var(--muted)}
+.trust li{display:flex;align-items:center;gap:8px}
+.trust li::before{content:"";width:6px;height:6px;border-radius:2px;background:var(--lime-ink)}
+@media(max-width:879px){.hero .ctas .btn-line,.hero .trust{display:none}.hero-copy{padding:36px 0 32px}.hero .lede{margin:18px 0 24px}}
+@media(min-width:880px){
+  .hero-grid{grid-template-columns:1.18fr .82fr;min-height:620px}
+  .hero-copy{padding:76px 56px 68px 0;align-self:center}
+  .hero-photo{margin:0 -40px 0 0;aspect-ratio:auto;height:100%;border-radius:0}
+  .hero-photo img{object-position:50% 55%}
+  .hero-photo figcaption{left:22px;bottom:22px}
+}
+@media(min-width:1280px){.hero-photo{margin-right:calc((1200px - 100vw)/2 - 40px)}}
+
+/* mower-stripe stats band */
+.stats{background:
+  repeating-linear-gradient(90deg,rgba(255,255,255,.035) 0 90px,rgba(0,0,0,.07) 90px 180px),
+  var(--euc-2);color:#fff;position:relative}
+.stats .wrap{display:grid;grid-template-columns:1fr 1fr;gap:0}
+.stat{padding:28px 6px 26px;border-top:1px solid rgba(255,255,255,.12)}
+.stat:nth-child(-n+2){border-top:0}
+.stat:nth-child(odd){padding-right:14px}
+.stat b{display:block;font:800 clamp(2rem,7vw,3.1rem)/1 var(--display);font-stretch:112%;letter-spacing:-.03em;color:var(--lime)}
+.stat span{display:block;margin-top:8px;font:500 13.5px/1.35 var(--body);color:rgba(255,255,255,.82)}
+@media(min-width:880px){
+  .stats .wrap{grid-template-columns:repeat(4,1fr)}
+  .stat{padding:40px 24px 38px;border-top:0;border-left:1px solid rgba(255,255,255,.12)}
+  .stat:first-child{border-left:0;padding-left:0}
+}
+
+/* generic sections */
+section{position:relative}
+.sec{padding:76px 0}
+@media(min-width:880px){.sec{padding:112px 0}}
+.sec-head{max-width:760px;margin-bottom:44px}
+.sec-head h2{font-size:clamp(1.95rem,5.4vw,3.05rem);font-weight:800;color:var(--euc)}
+.sec-head p{color:var(--muted);font-size:1.06rem;margin:18px 0 0;max-width:38em}
+.on-dark .sec-head h2{color:#fff}
+.on-dark .sec-head p{color:rgba(255,255,255,.78)}
+
+/* who we look after */
+.clients{display:grid;gap:36px;align-items:center}
+.clients figure{margin:0;border-radius:var(--r);overflow:hidden;position:relative}
+.clients figure img{width:100%;aspect-ratio:16/10;object-fit:cover}
+.sites{list-style:none;padding:0;margin:26px 0 0;display:grid;gap:0;border-top:1px solid var(--line)}
+.sites li{display:flex;justify-content:space-between;gap:16px;padding:15px 0;border-bottom:1px solid var(--line);font:600 17px/1.3 var(--display);font-stretch:104%;color:var(--euc)}
+.sites li span{font:400 14px/1.4 var(--body);color:var(--muted);text-align:right}
+.named{margin:26px 0 0;padding:18px 20px;background:var(--sand);border-radius:var(--r);font-size:15px;color:#34443a}
+.named b{color:var(--euc)}
+@media(min-width:880px){.clients{grid-template-columns:1fr 1fr;gap:72px}.clients figure img{aspect-ratio:1/1.08;object-position:45% 60%}}
+
+/* services two-tier */
+.services{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.tier{display:grid;gap:22px;padding:34px 0;border-top:2px solid var(--euc)}
+.tier + .tier{margin-top:14px}
+.tier-label{display:flex;flex-direction:column;gap:10px}
+.tier-label .tag{align-self:flex-start;font:700 11.5px/1 var(--body);letter-spacing:.14em;text-transform:uppercase;background:var(--euc);color:var(--lime);padding:7px 10px;border-radius:6px}
+.tier-label h3{font-size:clamp(1.5rem,4vw,2rem);font-weight:750;color:var(--euc)}
+.tier-label p{margin:0;color:var(--muted);font-size:15px;max-width:26em}
+.tier-label img{border-radius:10px;aspect-ratio:3/2;object-fit:cover;width:100%;margin-top:8px}
+.svc{list-style:none;margin:0;padding:0;display:grid;gap:0;align-content:start}
+.svc li{padding:20px 0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:34px 1fr;gap:4px 14px;align-content:start}
+.svc li:first-child{padding-top:4px}
+.svc .n{font:700 13px/1.6 var(--display);color:var(--lime-ink);grid-row:span 2}
+.svc h4{margin:0;font:700 18.5px/1.25 var(--display);font-stretch:104%;color:var(--ink);letter-spacing:-.01em}
+.svc p{margin:0;color:var(--muted);font-size:15px}
+.svc .chips{display:flex;flex-wrap:wrap;align-items:flex-start;gap:6px;margin-top:8px;grid-column:2}
+.svc .chips span{font:500 12.5px/1 var(--body);background:var(--paper);border:1px solid var(--line);padding:6px 9px;border-radius:999px;color:#34443a}
+@media(min-width:880px){
+  .tier{grid-template-columns:.8fr 1.2fr;gap:64px;padding:48px 0}
+  .svc{grid-template-columns:1fr 1fr;column-gap:40px}
+  .svc li:nth-child(2){padding-top:4px}
+}
+.shared{margin-top:14px;border-top:2px solid var(--euc);padding-top:34px;display:grid;gap:18px}
+.shared h3{font-size:1.35rem;font-weight:750;color:var(--euc)}
+.shared-grid{display:grid;gap:14px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:22px;display:flex;flex-direction:column;gap:8px}
+.card h4{margin:0;font:700 18px/1.25 var(--display);font-stretch:104%;color:var(--euc)}
+.card p{margin:0;font-size:15px;color:var(--muted)}
+.card.photo{padding:0;overflow:hidden}
+.card.photo img{width:100%;aspect-ratio:16/9;object-fit:cover}
+.card.photo div{padding:20px 22px 22px;display:flex;flex-direction:column;gap:8px}
+@media(min-width:880px){.shared{grid-template-columns:.8fr 1.2fr;gap:64px;padding-top:48px}.shared-grid{grid-template-columns:1.1fr 1fr;grid-template-rows:auto auto}.shared-grid .card.photo{grid-row:1/3}.shared-grid .card.photo img{aspect-ratio:4/3}}
+
+/* specialists / team */
+.team{background:var(--euc);color:#fff;overflow:hidden}
+.team::before{content:"";position:absolute;inset:0;background:url(img/contours.svg) center/cover no-repeat;opacity:.13;pointer-events:none}
+.team .wrap{position:relative}
+.team-photo{margin:0 0 44px;border-radius:var(--r);overflow:hidden;position:relative;box-shadow:0 30px 60px -30px rgba(0,0,0,.6)}
+.team-photo img{width:100%;aspect-ratio:5/4;object-fit:cover;object-position:50% 58%}
+@media(min-width:880px){.team-photo img{aspect-ratio:16/8}}
+.team-photo figcaption{position:absolute;left:0;right:0;bottom:0;padding:40px 18px 14px;background:linear-gradient(transparent,rgba(10,22,15,.82));font:500 13px/1.4 var(--body);color:rgba(255,255,255,.9)}
+.roles{display:grid;gap:12px;list-style:none;padding:0;margin:0}
+.roles li{border:1px solid rgba(255,255,255,.16);border-radius:var(--r);padding:22px;background:rgba(255,255,255,.03)}
+.roles .ic{width:40px;height:40px;border-radius:10px;background:var(--lime);color:var(--euc);display:grid;place-items:center;margin-bottom:16px}
+.roles .ic svg{width:22px;height:22px}
+.roles h3{font-size:1.2rem;font-weight:700;letter-spacing:-.01em}
+.roles p{margin:8px 0 0;font-size:14.5px;color:rgba(255,255,255,.74)}
+.roles .lic{display:inline-block;margin-top:12px;font:600 12px/1 var(--body);letter-spacing:.06em;color:var(--lime);border:1px solid rgba(185,224,76,.45);padding:6px 9px;border-radius:6px}
+.voice{margin:44px 0 0;display:grid;gap:18px;align-items:center;border-top:1px solid rgba(255,255,255,.14);padding-top:34px}
+.voice blockquote{margin:0;font:700 clamp(1.45rem,4.4vw,2.2rem)/1.15 var(--display);font-stretch:106%;letter-spacing:-.02em}
+.voice blockquote span{color:var(--lime)}
+.voice p{margin:0;color:rgba(255,255,255,.72);font-size:15px}
+@media(min-width:880px){
+  .roles{grid-template-columns:repeat(4,1fr);gap:16px}
+  .voice{grid-template-columns:1.3fr 1fr;gap:64px}
+}
+
+/* standards */
+.standards{display:grid;gap:0;border-top:1px solid var(--line)}
+.standards div{padding:22px 0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:auto 1fr;gap:4px 16px;align-items:start}
+.standards svg{width:26px;height:26px;color:var(--lime-ink);grid-row:span 2;margin-top:2px}
+.standards h4{margin:0;font:700 18px/1.3 var(--display);color:var(--euc)}
+.standards p{margin:0;color:var(--muted);font-size:15px}
+@media(min-width:880px){.standards{grid-template-columns:repeat(3,1fr);border-top:0}.standards div{border-bottom:0;border-left:1px solid var(--line);padding:6px 32px}.standards div:first-child{border-left:0;padding-left:0}}
+
+/* seasonal notes on sand with stripes */
+.notes{background:
+  repeating-linear-gradient(90deg,rgba(255,255,255,.16) 0 120px,transparent 120px 240px),
+  var(--sand)}
+.note-grid{display:grid;gap:14px;counter-reset:n}
+.note{background:var(--paper);border-radius:var(--r);padding:24px;border:1px solid var(--sand-2)}
+.note .when{font:700 11.5px/1 var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--lime-ink)}
+.note h3{font-size:1.28rem;font-weight:750;color:var(--euc);margin:12px 0 10px;letter-spacing:-.015em}
+.note p{margin:0;color:var(--muted);font-size:15px}
+@media(min-width:880px){.note-grid{grid-template-columns:repeat(3,1fr);gap:20px}.note{padding:30px}}
+
+/* gallery */
+.gal{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.gal figure{margin:0;border-radius:12px;overflow:hidden;background:var(--sand)}
+.gal img{width:100%;height:100%;object-fit:cover}
+.gal .wide{grid-column:1/-1;aspect-ratio:3/1}
+.gal .sq{aspect-ratio:1/1.1}
+.gal .land{grid-column:1/-1;aspect-ratio:16/10}
+@media(min-width:880px){
+  .gal{grid-template-columns:repeat(4,1fr);grid-auto-rows:220px;gap:14px}
+  .gal figure{aspect-ratio:auto!important}
+  .gal .g1{grid-column:1/3;grid-row:1/3}
+  .gal .g2{grid-column:3/5;grid-row:1/2}
+  .gal .g3{grid-column:3/4;grid-row:2/4}
+  .gal .g4{grid-column:4/5;grid-row:2/4}
+  .gal .g5{grid-column:1/3;grid-row:3/4}
+}
+.gal-foot{margin-top:22px;font-size:14.5px;color:var(--muted)}
+.gal-foot a{color:var(--euc);font-weight:600}
+
+/* quote CTA */
+.cta{background:var(--euc);color:#fff;overflow:hidden}
+.cta::before{content:"";position:absolute;inset:0;background:url(img/contours.svg) 70% 30%/cover no-repeat;opacity:.18;pointer-events:none}
+.cta .wrap{position:relative;display:grid;gap:40px}
+.cta h2{font-size:clamp(2.1rem,6.2vw,3.15rem);font-weight:800;color:#fff}
+.cta h2 span{color:var(--lime)}
+.cta .lede{color:rgba(255,255,255,.8);font-size:1.08rem;margin:18px 0 28px;max-width:32em}
+.cta .ctas{display:flex;flex-wrap:wrap;gap:12px}
+.checklist{margin:30px 0 0;padding:0;list-style:none;display:grid;gap:10px;font-size:15px;color:rgba(255,255,255,.84)}
+.checklist li{display:flex;gap:12px}
+.checklist li::before{content:"";flex:none;width:18px;height:18px;margin-top:3px;border-radius:5px;background:var(--lime) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23173a2b' stroke-width='3.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12.5l4.5 4.5L19 7.5'/%3E%3C/svg%3E") center/13px no-repeat}
+.contact-card{background:var(--paper);color:var(--ink);border-radius:18px;padding:26px;align-self:start}
+.contact-card h3{font-size:1.1rem;font-weight:700;color:var(--euc);margin-bottom:14px}
+.cc-row{display:grid;grid-template-columns:92px 1fr;gap:10px;padding:14px 0;border-top:1px solid var(--line);font-size:15px}
+.cc-row dt{font:600 12px/1.9 var(--body);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.cc-row dd{margin:0;overflow-wrap:anywhere}
+.cc-row a{font-weight:600;color:var(--euc);text-decoration:none}
+.cc-row a:hover{text-decoration:underline}
+.hours{display:grid;grid-template-columns:auto 1fr;gap:2px 16px}
+.hours .closed{color:var(--muted)}
+@media(min-width:880px){.cta .wrap{grid-template-columns:1.25fr .9fr;gap:80px;align-items:center}.contact-card{padding:34px}}
+
+/* footer */
+footer{background:#0f241a;color:rgba(255,255,255,.7);font-size:14px;padding:44px 0 36px}
+footer .wrap{display:grid;gap:26px}
+footer .brand b{color:#fff}
+footer .brand small{color:rgba(255,255,255,.55)}
+footer .mark{background:repeating-linear-gradient(90deg,#2b5c45 0 7px,#3a6f55 7px 14px)}
+footer nav{display:flex;flex-wrap:wrap;gap:10px 22px}
+footer a{text-decoration:none}
+footer a:hover{color:#fff}
+.fine{font-size:12.5px;color:rgba(255,255,255,.5);border-top:1px solid rgba(255,255,255,.1);padding-top:20px}
+@media(min-width:880px){footer .wrap{grid-template-columns:1fr auto;align-items:center}.fine{grid-column:1/-1}}
+
+/* sticky mobile call bar */
+.mbar{position:fixed;left:0;right:0;bottom:0;z-index:30;display:grid;grid-template-columns:1fr auto;gap:8px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(15,36,26,.97);border-top:1px solid rgba(255,255,255,.1)}
+.mbar a{display:flex;align-items:center;justify-content:center;gap:9px;text-decoration:none;font:600 15.5px/1 var(--body);border-radius:12px;padding:15px 16px}
+.mbar .call{background:var(--lime);color:var(--euc)}
+.mbar .mail{background:rgba(255,255,255,.1);color:#fff;padding:15px 18px}
+.mbar svg{width:18px;height:18px}
+@media(min-width:880px){.mbar{display:none}}
+
+a:focus-visible,.btn:focus-visible{outline:3px solid var(--lime);outline-offset:3px}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+</style>
+</head>
+<body>
 <div class="preview">Concept preview prepared for Olivers Lawn and Landscaping by Claude (an AI). Not the official website.</div>
-<header><div class="wrap"><a class="logo" href="#">Olivers Lawn and Landscaping</a><a class="btn" href="tel:0894074646">Call (08) 9407 4646</a></div></header>
-<div class="hero"><div class="wrap herogrid"><div><span class="since">Since 1992</span>
-<h1>Commercial grounds maintenance and landscaping in Perth</h1>
-<p>A team of horticulturists, licensed chemical sprayers and reticulation specialists looking after more than 50 commercial sites across Perth.</p>
-<div class="ctas"><a class="btn" href="tel:0894074646">Call now</a><a class="btn ghost" href="#services">Our services</a></div>
-</div><aside class="facts"><h3>Olivers Lawn and Landscaping</h3><ul><li>Commercial mowing</li><li>Grounds &amp; garden maintenance</li><li>Landscaping</li><li>Bores &amp; reticulation</li></ul><p>Serving Perth, WA</p><a class="btn" href="tel:0894074646">(08) 9407 4646</a></aside></div></div>
-<section id="services"><div class="wrap"><h2>What we do</h2><div class="grid"><div class="svc"><h3>Commercial mowing</h3><p>Scheduled lawn care for commercial properties.</p></div><div class="svc"><h3>Grounds &amp; garden maintenance</h3><p>Keeping sites neat all year round.</p></div><div class="svc"><h3>Landscaping</h3><p>Residential and commercial landscape construction.</p></div><div class="svc"><h3>Bores &amp; reticulation</h3><p>Installation and ongoing maintenance.</p></div><div class="svc"><h3>Coring &amp; mulching</h3><p>Healthier turf and garden beds.</p></div><div class="svc"><h3>Fertilising</h3><p>Applied by licensed specialists.</p></div></div></div></section><section class="alt"><div class="wrap about"><div><h2>About Olivers Lawn and Landscaping</h2><p>Established in 1992, with 21 staff including horticulturists, licensed chemical sprayers and reticulation specialists.</p></div></div></section><section id="contact"><div class="wrap contact"><div><h2>Get in touch</h2><p><strong>Call</strong><br><a href="tel:0894074646">(08) 9407 4646</a></p><p><strong>Email</strong><br><a href="mailto:office.oliverslawn@iinet.net.au">office.oliverslawn@iinet.net.au</a></p></div><div><h3>Hours</h3><table><tr><td>Mon–Fri</td><td>8am – 5pm</td></tr><tr><td>Sat–Sun</td><td>Closed</td></tr></table></div></div></section>
-<footer><div class="wrap">&copy; Olivers Lawn and Landscaping &middot; Perth, WA</div></footer>
-<a class="btn callbar" href="tel:0894074646">Call (08) 9407 4646</a>
-</body></html>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="M3 6.5l9 6.5 9-6.5"/></g></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></symbol>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Olivers Lawn and Landscaping, home">
+      <span class="mark" aria-hidden="true"></span>
+      <span><b>Olivers</b><small>Lawn &amp; Landscaping</small></span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#sites">Who we look after</a>
+      <a href="#services">Services</a>
+      <a href="#team">Our team</a>
+      <a href="#work">Our work</a>
+      <a href="#quote">Contact</a>
+    </nav>
+    <a class="callbtn" href="tel:+61894074646"><svg aria-hidden="true"><use href="#i-phone"/></svg><span class="num">(08) 9407 4646</span><span class="lbl">Call</span></a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow">Perth metropolitan area &middot; Est. 1992</p>
+      <h1>Grounds maintenance for Perth&rsquo;s commercial properties <em>since&nbsp;1992.</em></h1>
+      <p class="lede">Commercial lawn mowing, garden and grounds maintenance, landscaping, and bores and reticulation, delivered by a team of 21 that currently looks after more than fifty commercial sites.</p>
+      <div class="ctas">
+        <a class="btn btn-dark" href="#quote">Request a site quote <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <a class="btn btn-line" href="tel:+61894074646"><svg aria-hidden="true"><use href="#i-phone"/></svg>(08) 9407 4646</a>
+      </div>
+      <ul class="trust">
+        <li>Licensed chemical spraying (Lic. No. 1981)</li>
+        <li>Office &amp; depot in the northern suburbs</li>
+      </ul>
+    </div>
+    <figure class="hero-photo">
+      <img src="img/mowing-verge.jpg" width="1050" height="1400" alt="An Olivers ride-on mower on a freshly cut, tree-lined street verge">
+      <figcaption><i></i>From the Olivers gallery</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="stats" aria-label="Olivers at a glance">
+  <div class="wrap">
+    <div class="stat"><b>1992</b><span>Year established</span></div>
+    <div class="stat"><b>21</b><span>Staff on the team</span></div>
+    <div class="stat"><b>50+</b><span>Commercial sites currently serviced</span></div>
+    <div class="stat"><b>28,000<small style="font-size:.5em;letter-spacing:0"> m&sup2;</small></b><span>Site sizes from 1,000&nbsp;m&sup2; up to 28,000&nbsp;m&sup2;</span></div>
+  </div>
+</section>
+
+<section class="sec" id="sites">
+  <div class="wrap clients">
+    <div>
+      <p class="eyebrow">Who we look after</p>
+      <div class="sec-head" style="margin-bottom:0">
+        <h2>Lawn, garden and public open space, kept right across Perth.</h2>
+        <p>We specialise in commercial lawn mowing and garden maintenance, with clients throughout the Perth metropolitan area. The sites we service range in size from 1,000&nbsp;m&sup2; up to 28,000&nbsp;m&sup2;.</p>
+      </div>
+      <ul class="sites">
+        <li>Retirement villages <span>Grounds &amp; gardens</span></li>
+        <li>Schools <span>Lawn &amp; grounds</span></li>
+        <li>Government contracts <span>Held across a number of sites</span></li>
+        <li>Homeowners <span>Custom landscaping</span></li>
+      </ul>
+      <p class="named">We manage complete turf maintenance programs for commercial clients, retirement living and multiple WA government sites.</p>
+    </div>
+    <figure>
+      <img src="img/streetscape-garden.jpg" width="1100" height="619" loading="lazy" alt="A flowering garden bed at the entrance of a well-kept residential estate street">
+    </figure>
+  </div>
+</section>
+
+<section class="sec services" id="services">
+  <div class="wrap">
+    <p class="eyebrow">Services</p>
+    <div class="sec-head">
+      <h2>One contractor for the whole site.</h2>
+      <p>From the weekly mow to a new garden, and the water that keeps it all alive in our hot climate.</p>
+    </div>
+
+    <div class="tier">
+      <div class="tier-label">
+        <span class="tag">Commercial</span>
+        <h3>For property &amp; facility managers</h3>
+        <p>Scheduled, programmed maintenance for commercial sites, retirement villages, schools and government grounds.</p>
+        <img src="img/site-works-2.jpg" width="825" height="1100" loading="lazy" alt="An Olivers crew member preparing a new lawn area beside an industrial building" style="object-position:50% 40%">
+      </div>
+      <ol class="svc">
+        <li><span class="n">01</span><h4>Commercial lawn mowing</h4><p>Quality commercial mowing throughout the Perth metropolitan area.</p>
+          <div class="chips"><span>Mowing</span><span>Edging</span><span>Whipper snipping</span><span>Sweeping</span></div></li>
+        <li><span class="n">02</span><h4>Turf maintenance programs</h4><p>A complete program for the life of the lawn, managed for you.</p>
+          <div class="chips"><span>Soil preparation</span><span>Wetta-Soil</span><span>Fertilising</span><span>Weed &amp; pest control</span><span>Reticulation programs</span></div></li>
+        <li><span class="n">03</span><h4>Garden &amp; grounds maintenance</h4><p>All aspects of commercial garden maintenance.</p>
+          <div class="chips"><span>Hedging &amp; pruning</span><span>Mulching</span><span>Weed control program</span><span>Under-pruning of trees</span><span>Pressure cleaning &amp; sealing</span></div></li>
+        <li><span class="n">04</span><h4>Commercial landscaping</h4><p>All aspects of landscaping for commercial sites, in the metropolitan and rural area.</p></li>
+      </ol>
+    </div>
+
+    <div class="tier">
+      <div class="tier-label">
+        <span class="tag">Residential</span>
+        <h3>For homeowners</h3>
+        <p>Custom landscaping for homes across the Perth area, whether you&rsquo;re building a new garden or updating an existing one.</p>
+        <img src="img/courtyard-garden.jpg" width="1100" height="733" loading="lazy" alt="A courtyard garden with a stone water-feature urn, palms and flowering beds">
+      </div>
+      <ol class="svc">
+        <li><span class="n">01</span><h4>Landscaping</h4><p>From planning to plant selection and advice, designed so you&rsquo;ll enjoy it for years to come.</p></li>
+        <li><span class="n">02</span><h4>Reticulation</h4><p>New installations, servicing and re-setting of controllers, from a tap timer in a courtyard to a 5&nbsp;hp pump on a rural property.</p></li>
+        <li><span class="n">03</span><h4>Rainwater tanks &amp; pumps</h4><p>Supplied and installed, for consumption or plumbed into your reticulation for garden watering.</p></li>
+        <li><span class="n">04</span><h4>Lawn care</h4><p>Coring, fertilising and mulching for a thicker, healthier lawn and garden beds.</p></li>
+      </ol>
+    </div>
+
+    <div class="shared">
+      <div class="tier-label">
+        <span class="tag">Both</span>
+        <h3>Specialist lawn &amp; water work</h3>
+        <p style="color:var(--muted);font-size:15px;margin:0">Available on commercial sites and at home.</p>
+      </div>
+      <div class="shared-grid">
+        <article class="card photo">
+          <img src="img/reticulation.jpg" width="1100" height="619" loading="lazy" alt="A pop-up reticulation sprinkler watering a freshly mulched bed">
+          <div><h4>Bores &amp; reticulation</h4><p>Planned and drafted for the best coverage with minimal wastage. Bores are installed and maintained through trusted associates we&rsquo;ve worked with for many years.</p></div>
+        </article>
+        <article class="card"><h4>Coring</h4><p>Mechanical aeration that removes plugs of thatch and fractures the soil crust beneath the lawn: better roots, better water intake, less water used.</p></article>
+        <article class="card"><h4>Fertilising &amp; mulching</h4><p>We recommend fertilising at least three times a year. Mulch, supplied and installed, cuts evaporation and weeds.</p></article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec team on-dark" id="team">
+  <div class="wrap">
+    <p class="eyebrow">Specialists on the team</p>
+    <div class="sec-head">
+      <h2>Twenty-one people. Real qualifications.</h2>
+      <p>Our team includes horticulturists, qualified licensed chemical spraying personnel, reticulation installation and maintenance specialists, and turf care maintenance specialists.</p>
+    </div>
+    <figure class="team-photo">
+      <img src="img/team.jpg" width="1600" height="900" loading="lazy" alt="The Olivers Lawn and Landscaping team in hi-vis shirts, standing on a lawn in front of a clipped hedge">
+      <figcaption>The Olivers team</figcaption>
+    </figure>
+    <ul class="roles">
+      <li>
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21V11"/><path d="M12 11c0-4 3-7 8-7 0 5-3 8-8 7z"/><path d="M12 14c0-3-2.5-5.5-7-5.5 0 4 2.5 6.5 7 5.5z"/></svg></span>
+        <h3>Horticulturists</h3>
+        <p>Plant selection, pruning and the ongoing health of gardens and grounds.</p>
+      </li>
+      <li>
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 3h6v4H9z"/><path d="M7 7h10l1 4v9a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-9z"/><path d="M15 3h3l2-1.5"/><path d="M10 14h4"/></svg></span>
+        <h3>Licensed chemical sprayers</h3>
+        <p>Qualified, licensed personnel for weed and pest control programs.</p>
+        <span class="lic">Lic. No. 1981</span>
+      </li>
+      <li>
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z"/><path d="M9.5 15a2.5 2.5 0 0 0 2.5 2.5"/></svg></span>
+        <h3>Reticulation specialists</h3>
+        <p>Installation and maintenance, set for correct water coverage.</p>
+      </li>
+      <li>
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 20h18"/><path d="M5 20c0-4 1-7 2-9M9 20c0-5 .5-8 1.5-11M13 20c0-4 .8-7 2-9.5M17 20c0-3 .6-5 1.5-7"/></svg></span>
+        <h3>Turf care specialists</h3>
+        <p>Mowing, coring, fertilising and complete turf programs.</p>
+      </li>
+    </ul>
+    <div class="voice">
+      <blockquote>&ldquo;Our people are <span>rippers</span> to deal with.&rdquo;</blockquote>
+      <p>A local business since 1992, with our office and depot in Perth&rsquo;s northern suburbs.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec" aria-labelledby="std-h">
+  <div class="wrap">
+    <p class="eyebrow">How we work on your site</p>
+    <div class="sec-head"><h2 id="std-h">All aspects covered.</h2></div>
+    <div class="standards">
+      <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 19c8 0 14-6 14-15C10 4 5 9 5 15v4z"/><path d="M5 19l7-7"/></svg><h4>Eco friendly</h4><p>All of the products we use are eco friendly and good for the environment.</p></div>
+      <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 4.5-3.4 8-8 9-4.6-1-8-4.5-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg><h4>Safety</h4><p>We operate all our equipment safely.</p></div>
+      <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l6-6M14 4l6 6-8 8H6v-6z"/></svg><h4>Clean &amp; tidy</h4><p>We leave the area clean and tidy.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec notes" aria-labelledby="notes-h">
+  <div class="wrap">
+    <p class="eyebrow">From the depot</p>
+    <div class="sec-head"><h2 id="notes-h">Advice we give our own clients.</h2><p>More than three decades of Perth summers and winters, boiled down.</p></div>
+    <div class="note-grid">
+      <article class="note"><span class="when">Before summer</span><h3>Check and reset your reticulation</h3><p>Have your system checked and reset for correct water coverage before the start of summer. It&rsquo;s essential in our hot climate.</p></article>
+      <article class="note"><span class="when">Year-round</span><h3>Fertilise at least three times a year</h3><p>It keeps the root system stimulated and the lawn thick enough that weeds can&rsquo;t germinate.</p></article>
+      <article class="note"><span class="when">Winter</span><h3>Mow more, spray less</h3><p>Rather than overusing chemicals on winter weeds, an extra two or three mows often controls the problem. It&rsquo;s often cheaper and kinder to the environment.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="work">
+  <div class="wrap">
+    <p class="eyebrow">Some of our work</p>
+    <div class="sec-head"><h2>Projects we&rsquo;ve completed.</h2></div>
+    <div class="gal">
+      <figure class="g1 land"><img src="img/rural-residence-lawn.jpg" width="1100" height="730" loading="lazy" alt="New lawn, garden edging and paving around a modern home overlooking hills"></figure>
+      <figure class="g2 wide"><img src="img/booragoon-panorama.jpg" width="1100" height="369" loading="lazy" alt="Panorama of curved paths, lawns and garden beds between brick units"></figure>
+      <figure class="g3 sq"><img src="img/sprinklers.jpg" width="825" height="1100" loading="lazy" alt="Reticulation sprinklers running over a newly mulched garden bed"></figure>
+      <figure class="g4 sq"><img src="img/crew-ute-garden.jpg" width="1100" height="657" loading="lazy" alt="Mass-planted grasses along brick pillars, with an Olivers work vehicle parked behind" style="object-position:64% 50%"></figure>
+      <figure class="g5 land"><img src="img/villa-garden-bed.jpg" width="1100" height="825" loading="lazy" alt="A freshly mulched and planted garden bed at the entrance to a villa complex" style="object-position:50% 60%"></figure>
+    </div>
+    <p class="gal-foot">Every photo on this page is Olivers&rsquo; own, from their website and project gallery.</p>
+  </div>
+</section>
+
+<section class="sec cta on-dark" id="quote">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Request a site quote</p>
+      <h2>Tell us about your site. <span>We&rsquo;ll take it from there.</span></h2>
+      <p class="lede">Whether it&rsquo;s a single garden or a 28,000&nbsp;m&sup2; site, call the office or send us the details and we&rsquo;ll be in touch.</p>
+      <div class="ctas">
+        <a class="btn btn-lime" href="mailto:office.oliverslawn@iinet.net.au?subject=Site%20quote%20request&amp;body=Site%20address%3A%0D%0AApprox.%20area%20(m2)%3A%0D%0AServices%20needed%3A%0D%0AContact%20name%20and%20phone%3A%0D%0A"><svg aria-hidden="true"><use href="#i-mail"/></svg>Email a quote request</a>
+        <a class="btn btn-line" href="tel:+61894074646"><svg aria-hidden="true"><use href="#i-phone"/></svg>(08) 9407 4646</a>
+      </div>
+      <ul class="checklist">
+        <li>Site address and approximate area</li>
+        <li>What you need: mowing, gardens, landscaping, reticulation</li>
+        <li>Best contact name and number</li>
+      </ul>
+    </div>
+    <div class="contact-card">
+      <h3>Olivers Lawn &amp; Landscaping Pty Ltd</h3>
+      <dl style="margin:0">
+        <div class="cc-row"><dt>Phone</dt><dd><a href="tel:+61894074646">(08) 9407 4646</a></dd></div>
+        <div class="cc-row"><dt>Email</dt><dd><a href="mailto:office.oliverslawn@iinet.net.au">office.oliverslawn@iinet.net.au</a></dd></div>
+        <div class="cc-row"><dt>Hours</dt><dd class="hours"><span>Mon&ndash;Fri</span><span>8am &ndash; 5pm</span><span class="closed">Sat&ndash;Sun</span><span class="closed">Closed</span></dd></div>
+        <div class="cc-row"><dt>Post</dt><dd>PO Box 415<br>Quinns Rocks WA 6030</dd></div>
+        <div class="cc-row"><dt>Social</dt><dd><a href="https://www.facebook.com/oliverslawnandlandscaping/" rel="noopener">Facebook</a></dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <a class="brand" href="#top"><span class="mark" aria-hidden="true"></span><span><b>Olivers</b><small>Lawn &amp; Landscaping &middot; Perth, WA</small></span></a>
+    <nav aria-label="Footer">
+      <a href="#services">Services</a><a href="#team">Our team</a><a href="#work">Our work</a><a href="#quote">Contact</a><a href="tel:+61894074646">(08) 9407 4646</a>
+    </nav>
+    <p class="fine">&copy; Olivers Lawn and Landscaping Pty Ltd. Established 1992. Concept preview only, not the official website.</p>
+  </div>
+</footer>
+
+<nav class="mbar" aria-label="Quick contact">
+  <a class="call" href="tel:+61894074646"><svg aria-hidden="true"><use href="#i-phone"/></svg>Call (08) 9407 4646</a>
+  <a class="mail" href="mailto:office.oliverslawn@iinet.net.au?subject=Site%20quote%20request" aria-label="Email Olivers"><svg aria-hidden="true"><use href="#i-mail"/></svg></a>
+</nav>
+</body>
+</html>
