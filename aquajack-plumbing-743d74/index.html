@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Aquajack Plumbing | Jack Corthals Plumbing Services, Port Macquarie</title>
+<meta name="description" content="Concept homepage for Aquajack Plumbing: plumbing, gas fitting, roofing and draining from Kempsey to Camden Haven. Call Jack on 0408 654 615.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M32 4C22 20 12 30 12 42a20 20 0 0 0 40 0C52 30 42 20 32 4z' fill='%230140f0' stroke='%23f68a00' stroke-width='4'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,400..900;1,62..125,400..900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --blue:#0140f0; --blue-d:#0030b8; --orange:#f68a00; --orange-d:#c46a00;
+  --cyan:#12d4ec; --ink:#0d0f14; --navy:#071a3d; --navy-2:#0b2654;
+  --foam:#eaf6fb; --sand:#f5efe3; --paper:#ffffff; --text:#1b2230; --muted:#4d586b;
+  --copper-1:#7a3e17; --copper-2:#c9763a; --copper-3:#f2b27a;
+  --brass-1:#8a6a22; --brass-2:#d5ae55; --brass-3:#f5dd98;
+  --r:14px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:"Archivo",system-ui,sans-serif;color:var(--text);background:var(--paper);line-height:1.55;font-size:17px;overflow-x:hidden}
+img,svg{max-width:100%;display:block}
+a{color:inherit}
+.preview{background:#111;color:#fff;font:600 13px/1.4 "Archivo",sans-serif;text-align:center;padding:8px 16px}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+.mono{font-family:"JetBrains Mono",ui-monospace,monospace}
+h1,h2,h3{font-stretch:112%;line-height:1.05;margin:0;color:var(--ink)}
+h2{font-size:clamp(30px,5vw,48px);font-weight:900;letter-spacing:-.01em}
+.kicker{font:700 12px/1 "JetBrains Mono",monospace;letter-spacing:.16em;text-transform:uppercase;color:var(--orange-d);display:flex;align-items:center;gap:10px;margin-bottom:14px}
+.kicker::before{content:"";width:28px;height:8px;border-radius:4px;background:linear-gradient(180deg,var(--copper-3),var(--copper-2) 45%,var(--copper-1))}
+
+/* ---------- top bar ---------- */
+.top{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.94);backdrop-filter:blur(8px);border-bottom:1px solid #dbe6ee}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:62px;gap:16px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:900;font-stretch:118%;font-size:19px;color:var(--blue);letter-spacing:.01em}
+.brand small{display:block;font:700 10px/1 "JetBrains Mono",monospace;color:var(--ink);letter-spacing:.08em;margin-top:3px}
+.nav{display:none;gap:26px;font-weight:600;font-size:15px}
+.nav a{text-decoration:none;color:var(--muted)}
+.nav a:hover{color:var(--blue)}
+.topcall{display:none;text-decoration:none;background:var(--orange);color:#111;font-weight:800;padding:10px 16px;border-radius:999px;font-size:15px;white-space:nowrap}
+.topcall:hover{background:#ff9d1f}
+
+/* ---------- hero ---------- */
+.hero{position:relative;background:linear-gradient(180deg,#f4fbfe 0%,var(--foam) 70%,#d6eff8 100%);overflow:hidden}
+.hero .wrap{position:relative;z-index:2;padding-top:34px;padding-bottom:120px;display:grid;gap:34px}
+.logo{width:100%;max-width:640px;height:auto}
+.hero-copy h1{font-size:clamp(28px,4.6vw,46px);font-weight:800;margin:26px 0 14px;max-width:18ch}
+.hero-copy h1 em{font-style:normal;color:var(--blue)}
+.hero-copy p{font-size:18px;color:var(--muted);max-width:52ch;margin:0}
+.towns{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0 0;padding:0;list-style:none}
+.towns li{font:700 12px/1 "JetBrains Mono",monospace;letter-spacing:.05em;text-transform:uppercase;background:#fff;border:1.5px solid #b9d7e6;color:var(--navy);padding:8px 11px;border-radius:999px}
+
+.card{background:#fff;border-radius:22px;box-shadow:0 1px 0 #cfe2ec,0 24px 50px -24px rgba(7,26,61,.35);padding:26px 22px 22px;position:relative;align-self:center}
+.patch{position:absolute;top:-22px;right:22px;width:118px;height:62px;border-radius:50%;background:#fff;border:3px solid var(--blue);box-shadow:0 0 0 3px #fff,0 0 0 5px var(--orange),0 8px 18px -6px rgba(0,0,0,.35);display:grid;place-items:center;transform:rotate(-6deg)}
+.patch span{font:italic 800 30px/1 "Archivo",cursive;font-stretch:100%;color:var(--blue);letter-spacing:-.01em}
+.patch::after{content:"";position:absolute;inset:5px;border-radius:50%;border:1.5px dashed var(--orange)}
+.card h2{font-size:22px;font-weight:800;margin-bottom:4px}
+.card .sub{color:var(--muted);font-size:15px;margin:0 0 18px;max-width:30ch}
+.call{display:flex;align-items:center;gap:14px;text-decoration:none;border-radius:16px;padding:14px 16px;margin-bottom:10px;transition:transform .15s}
+.call:hover{transform:translateY(-2px)}
+.call .ico{flex:0 0 46px;height:46px;border-radius:12px;display:grid;place-items:center}
+.call b{display:block;font-size:clamp(22px,6vw,28px);font-weight:900;font-stretch:108%;letter-spacing:.01em;line-height:1.1}
+.call small{display:block;font:700 11px/1.2 "JetBrains Mono",monospace;letter-spacing:.1em;text-transform:uppercase;opacity:.8}
+.call.mob{background:var(--blue);color:#fff}
+.call.mob .ico{background:var(--orange);color:#111}
+.call.off{background:#eef5ff;color:var(--navy);border:1.5px solid #c7d8fb}
+.call.off .ico{background:#fff;color:var(--blue)}
+.call.mail{background:#fff7ec;color:#4a2a00;border:1.5px solid #f5d2a3}
+.call.mail .ico{background:var(--orange);color:#111}
+.call.mail b{font-size:clamp(15px,4vw,21px);font-stretch:100%;letter-spacing:0;overflow-wrap:anywhere}
+.quote-note{display:flex;gap:10px;align-items:flex-start;margin:14px 2px 0;font-size:14px;color:var(--muted)}
+.quote-note svg{flex:0 0 20px;margin-top:2px}
+
+.waves{position:absolute;left:0;right:0;bottom:-1px;width:100%;height:120px;z-index:1}
+
+/* ---------- services: pipe markers ---------- */
+.services{background:var(--navy);color:#dfe8f7;padding:84px 0 90px;position:relative}
+.services h2{color:#fff}
+.services .kicker{color:var(--cyan)}
+.services .lede{max-width:60ch;color:#b7c6e0;margin:14px 0 44px;font-size:18px}
+.manifold{position:relative;padding:8px 0 8px 46px}
+.manifold::before{content:"";position:absolute;left:0;top:0;bottom:0;width:24px;border-radius:12px;background:linear-gradient(90deg,var(--copper-1) 0%,#a65a26 30%,var(--copper-2) 55%,var(--copper-3) 75%,var(--copper-2) 100%)}
+.run{position:relative;padding:18px 0}
+.run + .run{border-top:1px solid rgba(255,255,255,.08)}
+.pipe{position:relative;display:flex;align-items:center}
+.pipe::before{content:"";position:absolute;left:-34px;top:50%;margin-top:-10px;width:40px;height:20px;background:linear-gradient(180deg,var(--copper-3),var(--copper-2) 35%,#a65a26 65%,var(--copper-1))}
+.pipe::after{content:"";position:absolute;left:-40px;top:50%;margin-top:-17px;width:14px;height:34px;border-radius:4px;background:linear-gradient(90deg,#8f4a1c,#cf8446 45%,#f7c79b 70%,#cf8446)}
+.marker{height:40px;display:flex;align-items:center;gap:10px;padding:0 14px 0 16px;border-radius:4px;font:800 15px/1 "Archivo",sans-serif;font-stretch:115%;letter-spacing:.08em;text-transform:uppercase;box-shadow:0 2px 0 rgba(0,0,0,.25);white-space:nowrap;position:relative;z-index:1}
+.marker svg{flex:0 0 auto}
+.m-water{background:var(--cyan);color:#022a33}
+.m-hot{background:var(--orange);color:#1c0f00}
+.m-gas{background:#f2c200;color:#1d1700}
+.m-roof{background:var(--blue);color:#fff}
+.m-build{background:#fff;color:var(--ink)}
+.items{list-style:none;margin:12px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:8px 10px}
+.items li{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.16);padding:9px 14px;border-radius:10px;font-weight:600;color:#fff;font-size:16px}
+.agent{margin-top:48px;border:1.5px dashed rgba(18,212,236,.5);border-radius:var(--r);padding:22px;display:grid;gap:10px}
+.agent p{margin:0;color:#c9d6ec}
+.agent strong{color:#fff}
+.agent .names{display:flex;flex-wrap:wrap;gap:10px}
+.agent .names span{background:#fff;color:var(--ink);font-weight:800;padding:8px 14px;border-radius:8px;font-size:15px}
+
+/* ---------- area map ---------- */
+.area{background:var(--sand);padding:84px 0}
+.area .grid{display:grid;gap:36px;align-items:center}
+.area p.lede{font-size:18px;color:var(--muted);max-width:52ch;margin:14px 0 26px}
+.mapbox{background:#fffaf0;border-radius:22px;border:1.5px solid #e6dac2;padding:10px;box-shadow:0 20px 40px -28px rgba(60,40,10,.4)}
+.legs{display:grid;gap:14px;margin:0;padding:0;list-style:none}
+.legs li{display:grid;grid-template-columns:92px 1fr;gap:12px;align-items:baseline;border-top:1.5px solid #e2d6bd;padding-top:12px}
+.legs b{font:700 12px/1.3 "JetBrains Mono",monospace;letter-spacing:.12em;text-transform:uppercase;color:var(--orange-d)}
+.legs span{font-weight:700;font-size:18px;color:var(--ink)}
+.small{font-size:14px;color:var(--muted);margin-top:18px}
+
+/* ---------- valve tags ---------- */
+.why{padding:84px 0 70px;background:#fff}
+.why .intro{display:grid;gap:22px;margin-bottom:10px}
+.why .intro p{margin:0;font-size:18px;color:var(--muted);max-width:60ch}
+.rail{position:relative;margin-top:40px}
+.tags{position:relative;list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,1fr);gap:30px 14px}
+.tag{position:relative;padding-top:58px;display:flex;justify-content:center}
+.tag::before{content:"";position:absolute;top:12px;left:50%;width:0;height:48px;border-left:3px dotted #8b8f96;z-index:1}
+.tag::after{content:"";position:absolute;top:0;left:-8px;right:-8px;height:22px;background:linear-gradient(180deg,var(--copper-3),var(--copper-2) 35%,#a65a26 65%,var(--copper-1))}
+.tag:nth-child(2n+1)::after{border-radius:11px 0 0 11px}.tag:nth-child(2n)::after{border-radius:0 11px 11px 0}
+.disc{width:100%;max-width:150px;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 34% 28%,var(--brass-3),var(--brass-2) 42%,var(--brass-1) 100%);box-shadow:inset 0 0 0 6px rgba(255,255,255,.18),inset 0 -6px 12px rgba(0,0,0,.2),0 12px 18px -10px rgba(0,0,0,.45);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:22px 14px 14px;position:relative;color:#3b2a06}
+.disc::before{content:"";position:absolute;top:10px;left:50%;margin-left:-7px;width:14px;height:14px;border-radius:50%;background:#fff;box-shadow:inset 0 2px 3px rgba(0,0,0,.45)}
+.disc b{font:900 clamp(15px,3.9vw,19px)/1.05 "Archivo",sans-serif;font-stretch:112%;text-transform:uppercase;letter-spacing:.02em;text-shadow:0 1px 0 rgba(255,255,255,.45)}
+.disc small{font:500 11px/1.3 "JetBrains Mono",monospace;margin-top:6px;letter-spacing:.02em}
+.tag:nth-child(odd) .disc{transform:rotate(-3deg)}
+.tag:nth-child(3n) .disc{transform:rotate(4deg)}
+.jack{margin-top:56px;display:grid;gap:20px;background:var(--foam);border-radius:22px;padding:28px 24px;position:relative;overflow:hidden}
+.jack p{margin:0;font-size:18px;max-width:62ch}
+.jack .sig{justify-self:start;width:132px;height:70px;border-radius:50%;background:#fff;border:3px solid var(--blue);box-shadow:0 0 0 3px #fff,0 0 0 5px var(--orange);display:grid;place-items:center;transform:rotate(-6deg);position:relative;font:italic 800 32px/1 "Archivo",sans-serif;color:var(--blue)}
+.jack .sig::after{content:"";position:absolute;inset:5px;border-radius:50%;border:1.5px dashed var(--orange)}
+
+/* ---------- plate + contact ---------- */
+.contact{background:var(--ink);color:#e7e9ee;padding:84px 0 96px}
+.contact h2{color:#fff}
+.contact h2 span{color:var(--orange)}
+.contact .grid{display:grid;gap:36px}
+.contact .lede{font-size:18px;color:#b9bec9;margin:14px 0 28px;max-width:46ch}
+.bigcalls{display:grid;gap:12px}
+.bigcalls a{display:flex;justify-content:space-between;align-items:center;gap:12px;text-decoration:none;border-radius:14px;padding:18px 20px;font-weight:900;font-stretch:110%;font-size:clamp(22px,5.6vw,30px)}
+.bigcalls a small{font:700 11px/1.2 "JetBrains Mono",monospace;letter-spacing:.12em;text-transform:uppercase;display:block;opacity:.8;font-stretch:100%}
+.bigcalls .b1{background:var(--orange);color:#111}
+.bigcalls .b2{background:#1b1f28;color:#fff;border:1.5px solid #333a48}
+.bigcalls .b3{background:#1b1f28;color:var(--cyan);border:1.5px solid #333a48;font-size:clamp(18px,4.8vw,26px);font-stretch:100%;overflow-wrap:anywhere}
+.plate{border-radius:10px;padding:26px 24px 22px;background:linear-gradient(135deg,#e9ecef 0%,#c8ced4 40%,#eef1f3 55%,#b7bec6 100%);color:#1b1f26;position:relative;box-shadow:inset 0 0 0 2px rgba(255,255,255,.6),0 20px 36px -20px #000}
+.plate::before,.plate::after{content:"";position:absolute;width:12px;height:12px;border-radius:50%;background:radial-gradient(circle at 35% 35%,#fff,#8a929c 60%,#5b626b);top:10px}
+.plate::before{left:10px}.plate::after{right:10px}
+.plate h3{font:800 13px/1 "JetBrains Mono",monospace;letter-spacing:.2em;text-transform:uppercase;text-align:center;border-bottom:2px solid #1b1f26;padding-bottom:12px;margin:0 0 6px;color:#1b1f26}
+.plate dl{margin:0;display:grid;grid-template-columns:1fr;font-family:"JetBrains Mono",monospace;font-size:13.5px}
+.plate dl div{display:grid;grid-template-columns:130px 1fr;gap:10px;padding:9px 0;border-bottom:1px solid rgba(27,31,38,.25)}
+.plate dt{text-transform:uppercase;letter-spacing:.08em;font-weight:700;color:#4a525e;font-size:11.5px;padding-top:2px}
+.plate dd{margin:0;font-weight:700}
+.plate .rv{position:absolute;width:12px;height:12px;border-radius:50%;background:radial-gradient(circle at 35% 35%,#fff,#8a929c 60%,#5b626b);bottom:10px}
+.plate .rv.l{left:10px}.plate .rv.r{right:10px}
+
+footer{background:#000;color:#9aa1ad;font-size:14px;padding:30px 0 110px}
+footer .wrap{display:grid;gap:12px}
+footer b{color:#fff}
+footer .bar{height:6px;background:linear-gradient(90deg,var(--blue),var(--cyan) 50%,var(--orange));margin-bottom:24px}
+
+/* ---------- mobile sticky bar ---------- */
+.mbar{position:fixed;left:0;right:0;bottom:0;z-index:40;display:grid;grid-template-columns:1.35fr 1fr 1fr;gap:6px;padding:8px 8px calc(8px + env(safe-area-inset-bottom));background:rgba(13,15,20,.97);border-top:3px solid var(--orange)}
+.mbar a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;text-decoration:none;border-radius:10px;padding:8px 4px;font-weight:800;font-size:14px;color:#fff;background:#232834;min-height:52px}
+.mbar a small{font:700 10px/1 "JetBrains Mono",monospace;letter-spacing:.08em;text-transform:uppercase;opacity:.75}
+.mbar a.p{background:var(--orange);color:#111}
+
+/* ---------- larger screens ---------- */
+@media (min-width:760px){
+  .tags{grid-template-columns:repeat(4,1fr);gap:40px 22px}
+  .disc{max-width:170px}
+  .tag::after{left:-11px;right:-11px;border-radius:0!important}
+  .tag:nth-child(4n+1)::after{border-radius:11px 0 0 11px!important}.tag:nth-child(4n)::after{border-radius:0 11px 11px 0!important}
+  .jack{grid-template-columns:auto 1fr;align-items:center;padding:34px 40px}
+  .agent{grid-template-columns:1fr auto;align-items:center}
+}
+@media (min-width:960px){
+  .nav,.topcall{display:flex}
+  .hero .wrap{grid-template-columns:1.3fr 1fr;align-items:center;padding-top:56px;padding-bottom:150px;gap:56px}
+  .card{padding:34px 30px 26px}
+  .area .grid{grid-template-columns:1.1fr 1fr;gap:64px}
+  .contact .grid{grid-template-columns:1fr 1fr;gap:64px;align-items:start}
+  .run{display:grid;grid-template-columns:250px 1fr;gap:24px;align-items:center}
+  .run .items{margin:0}
+  .marker{width:100%}
+  .items li{font-size:17px}
+  .mbar{display:none}
+  footer{padding-bottom:36px}
+}
+@media (max-width:420px){
+  .card{padding:26px 16px 20px}
+  .call{padding:12px 12px;gap:12px}
+  .call .ico{flex-basis:42px;height:42px}
+  .plate dl div{grid-template-columns:1fr;gap:2px}
+  .legs li{grid-template-columns:1fr;gap:2px}
+}
+</style>
+</head>
+<body>
+<div class="preview">Concept preview prepared for Aquajack Plumbing by Claude (an AI). Not the official website.</div>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Aquajack Plumbing, back to top">
+      <svg width="30" height="34" viewBox="0 0 64 72" aria-hidden="true"><path d="M32 4C22 22 10 33 10 48a22 22 0 0 0 44 0C54 33 42 22 32 4z" fill="#0140f0" stroke="#f68a00" stroke-width="5"/><path d="M22 50c3 6 9 9 15 8" stroke="#12d4ec" stroke-width="5" fill="none" stroke-linecap="round"/></svg>
+      <span>AQUAJACK<small>JACK CORTHALS PLUMBING</small></span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#services">Services</a>
+      <a href="#area">Service area</a>
+      <a href="#why">About Jack</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="topcall" href="tel:+61408654615">Call Jack 0408 654 615</a>
+  </div>
+</header>
+
+<main id="top">
+<!-- ============ HERO ============ -->
+<section class="hero" aria-labelledby="h1">
+  <div class="wrap">
+    <div class="hero-copy">
+      <svg class="logo" viewBox="0 0 720 262" role="img" aria-label="Aqua Jack, Jack Corthals Plumbing">
+        <defs>
+          <path id="arc" d="M26 176 C 230 150, 430 112, 704 104"/>
+          <text id="word" font-family="Archivo, sans-serif" font-weight="900" font-size="132" style="font-stretch:125%"><textPath href="#arc" textLength="660" lengthAdjust="spacingAndGlyphs">AQUA JACK</textPath></text>
+        </defs>
+        <!-- splash -->
+        <path d="M18 186 C 120 176, 220 186, 318 178 C 370 174, 404 170, 430 160 C 452 150, 468 132, 474 112 C 476 132, 470 150, 460 164 C 490 158, 508 146, 520 124 C 524 142, 516 158, 502 170 C 532 164, 552 150, 566 126 C 570 146, 560 162, 544 174 C 578 168, 600 154, 618 128 C 620 150, 606 168, 586 180 C 610 180, 640 176, 668 170 C 640 186, 560 194, 470 194 C 360 196, 200 192, 18 186 Z" fill="#12d4ec"/>
+        <circle cx="492" cy="102" r="5" fill="#12d4ec"/><circle cx="548" cy="110" r="4" fill="#12d4ec"/><circle cx="604" cy="112" r="5" fill="#12d4ec"/><circle cx="636" cy="134" r="3.5" fill="#12d4ec"/>
+        <!-- word: orange outline, white gap, blue fill -->
+        <use href="#word" fill="#f68a00" stroke="#f68a00" stroke-width="22" stroke-linejoin="round"/>
+        <use href="#word" fill="#fff" stroke="#fff" stroke-width="9" stroke-linejoin="round"/>
+        <use href="#word" fill="#0140f0"/>
+        <!-- black bar -->
+        <rect x="0" y="200" width="720" height="62" fill="#0d0f14"/>
+        <text x="360" y="245" text-anchor="middle" font-family="Archivo, sans-serif" font-size="38" fill="#f68a00" style="font-stretch:100%" letter-spacing="1.5"><tspan font-weight="700">JACK CORTHALS </tspan><tspan font-weight="900">PLUMBING</tspan></text>
+      </svg>
+      <h1 id="h1">Plumbing, gas fitting, roofing and draining for <em>Port&nbsp;Macquarie</em> and the Hastings.</h1>
+      <p>A family owned plumbing business. Jack and his friendly team work from Camden Haven in the south to Kempsey in the north, and west to Comboyne, Long Flat and Ellenborough.</p>
+      <ul class="towns" aria-label="Towns serviced">
+        <li>Port Macquarie</li><li>Lake Cathie</li><li>Bonny Hills</li><li>Wauchope</li>
+      </ul>
+    </div>
+
+    <aside class="card" aria-labelledby="callcard">
+      <div class="patch" aria-hidden="true"><span>Jack</span></div>
+      <h2 id="callcard">Talk to Jack</h2>
+      <p class="sub">Call the mobile or the office, or send an email.</p>
+      <a class="call mob" href="tel:+61408654615">
+        <span class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M11 18h2"/></svg></span>
+        <span><small>Jack's mobile</small><b>0408 654 615</b></span>
+      </a>
+      <a class="call off" href="tel:+61265820434">
+        <span class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></span>
+        <span><small>Office</small><b>02 6582 0434</b></span>
+      </a>
+      <a class="call mail" href="mailto:aquacath@bigpond.com?subject=Plumbing%20enquiry%20for%20Jack">
+        <span class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2.5"/><path d="m3 6 9 7 9-7"/></svg></span>
+        <span><small>Email</small><b>aquacath@bigpond.com</b></span>
+      </a>
+      <p class="quote-note"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#f68a00" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span><strong>Free written quotes</strong> and cost estimates before any work starts.</span></p>
+    </aside>
+  </div>
+  <svg class="waves" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0 58 C 180 20, 360 96, 560 60 S 940 18, 1140 56 S 1360 86, 1440 50 V120 H0Z" fill="#12d4ec" opacity=".45"/>
+    <path d="M0 80 C 220 44, 420 112, 660 78 S 1060 40, 1260 76 S 1400 96, 1440 80 V120 H0Z" fill="#0140f0" opacity=".55"/>
+    <path d="M0 98 C 240 74, 480 124, 760 98 S 1180 76, 1440 100 V120 H0Z" fill="#071a3d"/>
+  </svg>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section class="services" id="services" aria-labelledby="svc-h">
+  <div class="wrap">
+    <div class="kicker">Products and services</div>
+    <h2 id="svc-h">Every line Jack runs.</h2>
+    <p class="lede">Jack and his staff of professional tradesmen carry out work in all of these areas, for homes, new builds and commercial and industrial sites.</p>
+
+    <div class="manifold">
+    <div class="run">
+      <div class="pipe"><span class="marker m-water"><svg width="18" height="14" viewBox="0 0 18 14" aria-hidden="true"><path d="M0 7h14M9 1l7 6-7 6" stroke="currentColor" stroke-width="3" fill="none"/></svg>Water &amp; drains</span></div>
+      <ul class="items"><li>General plumbing</li><li>Draining</li><li>Blockages</li><li>Maintenance work</li></ul>
+    </div>
+    <div class="run">
+      <div class="pipe"><span class="marker m-hot"><svg width="18" height="14" viewBox="0 0 18 14" aria-hidden="true"><path d="M0 7h14M9 1l7 6-7 6" stroke="currentColor" stroke-width="3" fill="none"/></svg>Hot water</span></div>
+      <ul class="items"><li>Hot water services</li><li>Solar hot water</li><li>Heat pumps</li><li>Thermostatic mixing valves</li></ul>
+    </div>
+    <div class="run">
+      <div class="pipe"><span class="marker m-gas"><svg width="18" height="14" viewBox="0 0 18 14" aria-hidden="true"><path d="M0 7h14M9 1l7 6-7 6" stroke="currentColor" stroke-width="3" fill="none"/></svg>Gas</span></div>
+      <ul class="items"><li>Gas fitting</li><li>LP gas fitting</li></ul>
+    </div>
+    <div class="run">
+      <div class="pipe"><span class="marker m-roof"><svg width="18" height="14" viewBox="0 0 18 14" aria-hidden="true"><path d="M0 7h14M9 1l7 6-7 6" stroke="currentColor" stroke-width="3" fill="none"/></svg>Roof &amp; rain</span></div>
+      <ul class="items"><li>Roof plumbing</li><li>Rainwater tanks</li></ul>
+    </div>
+    <div class="run">
+      <div class="pipe"><span class="marker m-build"><svg width="18" height="14" viewBox="0 0 18 14" aria-hidden="true"><path d="M0 7h14M9 1l7 6-7 6" stroke="currentColor" stroke-width="3" fill="none"/></svg>Building work</span></div>
+      <ul class="items"><li>New residential work</li><li>Commercial work</li><li>Industrial work</li><li>Concrete core cutting</li></ul>
+    </div>
+    </div>
+</div>
+</section>
+
+<!-- ============ AREA ============ -->
+<section class="area" id="area" aria-labelledby="area-h">
+  <div class="wrap grid">
+    <div class="mapbox">
+      <svg viewBox="0 0 600 720" role="img" aria-labelledby="map-t map-d">
+        <title id="map-t">Aquajack service area</title>
+        <desc id="map-d">A pipe-run diagram over a simplified map of the Mid North Coast. The main line runs along the coast from Kempsey through Port Macquarie, Lake Cathie and Bonny Hills to Camden Haven. A branch runs west through Wauchope to Long Flat and Ellenborough, with another branch to Comboyne.</desc>
+        <defs>
+          <linearGradient id="sea" x1="0" x2="1"><stop offset="0" stop-color="#bfe8f3"/><stop offset="1" stop-color="#7fcfe6"/></linearGradient>
+          <pattern id="swell" width="40" height="18" patternUnits="userSpaceOnUse"><path d="M0 9 q10 -7 20 0 t20 0" stroke="#fff" stroke-opacity=".55" stroke-width="1.6" fill="none"/></pattern>
+        </defs>
+        <rect width="600" height="720" fill="#fffaf0"/>
+        <!-- sea -->
+        <path d="M568 0 L560 68 L520 124 L504 189 L504 302 L484 349 L452 410 L456 424 L472 457 L444 490 L412 527 L398 565 L384 617 L360 720 L600 720 L600 0 Z" fill="url(#sea)"/>
+        <path d="M568 0 L560 68 L520 124 L504 189 L504 302 L484 349 L452 410 L456 424 L472 457 L444 490 L412 527 L398 565 L384 617 L360 720 L600 720 L600 0 Z" fill="url(#swell)"/>
+        <path d="M568 0 L560 68 L520 124 L504 189 L504 302 L484 349 L452 410 L456 424 L472 457 L444 490 L412 527 L398 565 L384 617 L360 720" fill="none" stroke="#e8cf9f" stroke-width="7" stroke-linejoin="round"/>
+        <text x="560" y="300" font-family="JetBrains Mono, monospace" font-size="13" font-weight="700" fill="#0b4f66" letter-spacing="4" transform="rotate(90 560 300)" text-anchor="middle">TASMAN SEA</text>
+        <!-- rivers -->
+        <path d="M392 86 C 430 92, 470 70, 540 60" fill="none" stroke="#7fcfe6" stroke-width="4" stroke-linecap="round"/>
+        <path d="M452 412 C 420 420, 390 408, 360 430 C 340 444, 320 440, 306 441 C 270 440, 240 420, 200 424 C 160 428, 130 410, 90 418" fill="none" stroke="#7fcfe6" stroke-width="4" stroke-linecap="round"/>
+        <text x="236" y="410" font-family="JetBrains Mono, monospace" font-size="11" fill="#2b7890" font-style="italic">Hastings River</text>
+        <text x="420" y="58" font-family="JetBrains Mono, monospace" font-size="11" fill="#2b7890" font-style="italic">Macleay River</text>
+
+        <!-- pipe network: dark outline, copper body, highlight -->
+        <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path id="net" d="M392 86 L392 300 L446 360 L446 416 M446 416 L404 470 L404 529 L390 565 L357 619 M446 416 L306 441 L200 441 L110 415 M110 415 L87 431 M200 441 L200 540 L93 581"/>
+          <use href="#net" stroke="#5a2b0e" stroke-width="17"/>
+          <use href="#net" stroke="#c9763a" stroke-width="11"/>
+          <use href="#net" stroke="#f6c08c" stroke-width="3" transform="translate(-1.5 -2)" opacity=".85"/>
+        </g>
+        <!-- fittings / towns -->
+        <g font-family="Archivo, sans-serif" font-weight="800" font-size="17" fill="#0d0f14">
+          <g><circle cx="392" cy="86" r="11" fill="#0d0f14" stroke="#f68a00" stroke-width="5"/><text x="372" y="80" text-anchor="end">Kempsey</text></g>
+          <g><circle cx="446" cy="416" r="19" fill="#0140f0" stroke="#f68a00" stroke-width="6"/><circle cx="446" cy="416" r="6" fill="#12d4ec"/>
+             <rect x="222" y="354" width="198" height="34" rx="8" fill="#0140f0"/><text x="321" y="377" text-anchor="middle" fill="#fff" font-size="17">Port Macquarie</text></g>
+          <g><circle cx="306" cy="441" r="11" fill="#0d0f14" stroke="#f68a00" stroke-width="5"/><text x="306" y="476" text-anchor="middle">Wauchope</text></g>
+          <g><circle cx="404" cy="529" r="10" fill="#0d0f14" stroke="#f68a00" stroke-width="5"/><text x="386" y="524" text-anchor="end">Lake Cathie</text></g>
+          <g><circle cx="390" cy="565" r="10" fill="#0d0f14" stroke="#f68a00" stroke-width="5"/><text x="372" y="572" text-anchor="end">Bonny Hills</text></g>
+          <g><circle cx="357" cy="619" r="11" fill="#0d0f14" stroke="#f68a00" stroke-width="5"/><text x="340" y="648" text-anchor="end">Camden Haven</text></g>
+          <g><circle cx="110" cy="415" r="10" fill="#0d0f14" stroke="#f68a00" stroke-width="5"/><text x="96" y="394" text-anchor="start">Long Flat</text></g>
+          <g><circle cx="87" cy="431" r="10" fill="#0d0f14" stroke="#f68a00" stroke-width="5"/><text x="40" y="468" text-anchor="start">Ellenborough</text></g>
+          <g><circle cx="93" cy="581" r="11" fill="#0d0f14" stroke="#f68a00" stroke-width="5"/><text x="60" y="618" text-anchor="start">Comboyne</text></g>
+        </g>
+        <!-- compass -->
+        <g transform="translate(70 90)" font-family="JetBrains Mono, monospace" font-size="12" font-weight="700" fill="#0d0f14">
+          <circle r="26" fill="none" stroke="#c9b58c" stroke-width="2"/>
+          <path d="M0 -20 L7 4 L0 0 L-7 4 Z" fill="#f68a00"/>
+          <text y="-32" text-anchor="middle">N</text>
+        </g>
+        <text x="24" y="700" font-family="JetBrains Mono, monospace" font-size="11" fill="#7a6a4a">Diagram only, not to scale</text>
+      </svg>
+    </div>
+    <div>
+      <div class="kicker">Areas serviced</div>
+      <h2 id="area-h">From Kempsey down to Camden&nbsp;Haven.</h2>
+      <p class="lede">Aquajack proudly serves the Port Macquarie community and the surrounding areas. These are the places named on Jack's own site.</p>
+      <ul class="legs">
+        <li><b>Home base</b><span>Port Macquarie</span></li>
+        <li><b>North</b><span>Kempsey</span></li>
+        <li><b>South</b><span>Lake Cathie, Bonny Hills, Camden Haven</span></li>
+        <li><b>West</b><span>Wauchope, Long Flat, Ellenborough, Comboyne</span></li>
+      </ul>
+      <p class="small">Somewhere in between? <a href="tel:+61408654615"><strong>Call Jack on 0408 654 615</strong></a> and ask.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY / ABOUT ============ -->
+<section class="why" id="why" aria-labelledby="why-h">
+  <div class="wrap">
+    <div class="intro">
+      <div>
+        <div class="kicker">About Aquajack</div>
+        <h2 id="why-h">Tagged, licensed and insured.</h2>
+      </div>
+      <p>Aquajack Pty Ltd trades as Jack Corthals' Plumbing Services: a family owned company looking after Port Macquarie's plumbing, gas fitting, roofing and draining.</p>
+    </div>
+    <div class="rail">
+      <ul class="tags">
+        <li class="tag"><div class="disc"><b>Family owned</b><small>Port Macquarie</small></div></li>
+        <li class="tag"><div class="disc"><b>25+ years</b><small>of plumbing, gas fitting, roofing &amp; draining</small></div></li>
+        <li class="tag"><div class="disc"><b>Licensed</b><small>Contractor licence 15412C</small></div></li>
+        <li class="tag"><div class="disc"><b>Local</b><small>Based in Port Macquarie</small></div></li>
+        <li class="tag"><div class="disc"><b>Fully insured</b><small>public &amp; products liability</small></div></li>
+        <li class="tag"><div class="disc"><b>Gas fitting</b><small>Plumbing, gas fitting, roofing &amp; draining</small></div></li>
+        <li class="tag"><div class="disc"><b>All job sizes</b><small>Homes, new builds, commercial &amp; industrial</small></div></li>
+        <li class="tag"><div class="disc"><b>Free quotes</b><small>written, before work starts</small></div></li>
+      </ul>
+    </div>
+
+    <div class="jack">
+      <div class="sig" aria-hidden="true">Jack</div>
+      <p><strong>Keeping up to date.</strong> Continuing professional development matters to Jack. He attends regular seminars within the construction industry to keep up to date with new products, technical knowledge and services.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="contact" id="contact" aria-labelledby="c-h">
+  <div class="wrap grid">
+    <div>
+      <div class="kicker" style="color:var(--orange)">Contact</div>
+      <h2 id="c-h">For all of your plumbing needs, <span>call Aquajack today.</span></h2>
+      <p class="lede">Ask Jack for a free written quote or cost estimate before any work begins.</p>
+      <div class="bigcalls">
+        <a class="b1" href="tel:+61408654615"><span><small>Jack's mobile</small>0408 654 615</span><span aria-hidden="true">&rarr;</span></a>
+        <a class="b2" href="tel:+61265820434"><span><small>Office</small>02 6582 0434</span><span aria-hidden="true">&rarr;</span></a>
+        <a class="b3" href="mailto:aquacath@bigpond.com?subject=Plumbing%20enquiry%20for%20Jack"><span><small>Email</small>aquacath@bigpond.com</span><span aria-hidden="true">&rarr;</span></a>
+      </div>
+    </div>
+    <div class="plate" role="group" aria-labelledby="plate-h">
+      <h3 id="plate-h">Licence &amp; business details</h3>
+      <dl>
+        <div><dt>Company</dt><dd>Aquajack Pty Ltd</dd></div>
+        <div><dt>Trading as</dt><dd>Jack Corthals' Plumbing Services</dd></div>
+        <div><dt>Contact</dt><dd>Jack Corthals</dd></div>
+        <div><dt>ABN</dt><dd>37 092 601 119</dd></div>
+        <div><dt>Contractor lic.</dt><dd>No. 15412C</dd></div>
+        <div><dt>Company lic.</dt><dd>No. 114488C</dd></div>
+        <div><dt>Postal</dt><dd>PO Box 9068, Port Macquarie NSW 2444</dd></div>
+        <div><dt>Fax</dt><dd>02 6582 0434</dd></div>
+        <div><dt>Payment</dt><dd>Cash · Direct deposit</dd></div>
+      </dl>
+      <span class="rv l"></span><span class="rv r"></span>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="bar"></div>
+  <div class="wrap">
+    <div><b>Aquajack Plumbing</b> · Jack Corthals' Plumbing Services · Port Macquarie NSW</div>
+    <div>Port Macquarie · Lake Cathie · Bonny Hills · Wauchope · Kempsey · Camden Haven</div>
+    <div>Concept preview prepared by Claude (an AI). Not the official website.</div>
+  </div>
+</footer>
+
+<nav class="mbar" aria-label="Quick contact">
+  <a class="p" href="tel:+61408654615"><small>Call Jack</small>0408 654 615</a>
+  <a href="tel:+61265820434"><small>Office</small>Call</a>
+  <a href="mailto:aquacath@bigpond.com?subject=Plumbing%20enquiry%20for%20Jack"><small>Email</small>Jack</a>
+</nav>
+</body>
+</html>

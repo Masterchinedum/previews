@@ -1,0 +1,578 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Bendigo McIvor Motor Inn · Concept preview</title>
+<meta name="description" content="Concept homepage for Bendigo McIvor Motor Inn, 45 McIvor Road, Bendigo VIC. 20 quiet ground-floor suites about 600 m from the CBD.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500;1,700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#15302b;        /* Victorian bottle green */
+  --ink-2:#1d3f38;
+  --paper:#f7f1e6;      /* warm sandstone cream */
+  --paper-2:#efe5d2;
+  --gold:#c9a14a;       /* heritage gold (on dark) */
+  --gold-lt:#e3c77f;
+  --gold-dk:#85611a;    /* gold for text on cream */
+  --text:#2a2622;
+  --muted:#5e554a;
+  --line:#dccfb4;
+  --serif:"Playfair Display",Georgia,serif;
+  --sans:"DM Sans",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--text);font:400 17px/1.6 var(--sans);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:var(--serif);font-weight:700;line-height:1.12;margin:0;color:var(--ink)}
+.wrap{width:min(1160px,100% - 40px);margin-inline:auto}
+.preview{background:#111;color:#f3eee4;font:500 13px/1.4 var(--sans);text-align:center;padding:8px 14px}
+
+/* ---------- header ---------- */
+.top{background:var(--ink);color:var(--paper);position:relative;z-index:5}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:16px 0}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--paper)}
+.brand svg{flex:none}
+.brand b{display:block;font:italic 700 25px/1 var(--serif);letter-spacing:.2px}
+.brand b span{font-style:normal;font-weight:500;font-size:17px;margin-right:3px}
+.brand small{display:block;font:700 10.5px/1 var(--sans);letter-spacing:.32em;color:var(--gold-lt);margin-top:5px}
+.nav{display:flex;gap:26px;font-size:15px}
+.nav a{text-decoration:none;opacity:.88}
+.nav a:hover{opacity:1;color:var(--gold-lt)}
+.top-cta{display:flex;align-items:center;gap:16px}
+.top-cta .ph{text-decoration:none;font-weight:700;font-size:15px;color:var(--gold-lt)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border-radius:999px;font:700 16px/1 var(--sans);text-decoration:none;padding:15px 24px;transition:transform .15s,background .15s}
+.btn:hover{transform:translateY(-1px)}
+.btn-gold{background:var(--gold);color:var(--ink)}
+.btn-gold:hover{background:var(--gold-lt)}
+.btn-line{border:1.5px solid rgba(247,241,230,.45);color:var(--paper)}
+.btn-line:hover{border-color:var(--gold-lt);color:var(--gold-lt)}
+.btn-ink{background:var(--ink);color:var(--paper)}
+.btn-sm{padding:11px 18px;font-size:14.5px}
+
+/* ---------- cast-iron lace frieze ---------- */
+.lace{display:block;width:100%;height:34px;color:var(--gold)}
+.lace-flip{transform:scaleY(-1)}
+
+/* ---------- hero ---------- */
+.hero{background:var(--ink);color:var(--paper);position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 60% 70% at 78% 55%,rgba(201,161,74,.16),transparent 70%);pointer-events:none}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center;padding:54px 0 70px;position:relative}
+.eyebrow{font:700 12.5px/1 var(--sans);letter-spacing:.24em;text-transform:uppercase;color:var(--gold-lt);display:flex;align-items:center;gap:12px}
+.eyebrow::before{content:"";width:34px;height:1.5px;background:currentColor}
+.hero h1{color:var(--paper);font-size:clamp(40px,5.6vw,68px);margin:20px 0 22px;letter-spacing:-.5px}
+.hero h1 em{color:var(--gold-lt);font-style:italic}
+.hero p.lede{font-size:19px;max-width:34em;color:#e6dfd0;margin:0 0 30px}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:26px}
+.hero .btn-gold{font-size:18px;padding:19px 32px}
+.direct{display:flex;flex-wrap:wrap;align-items:center;gap:4px 10px;font-size:14.5px;color:#d9d0bd}
+.direct strong{color:var(--gold-lt);letter-spacing:.08em;font-size:13px}
+.arch{justify-self:center;position:relative;width:min(360px,100%)}
+.arch-frame{border-radius:180px 180px 6px 6px;overflow:hidden;border:2px solid var(--gold);padding:8px;background:rgba(0,0,0,.18)}
+.arch-frame img{width:100%;height:378px;max-height:378px;object-fit:cover;object-position:62% 50%;border-radius:172px 172px 2px 2px}
+.arch figcaption{font:italic 500 15px/1.4 var(--serif);color:#d9d0bd;text-align:center;margin-top:14px}
+.keystone{position:absolute;top:-14px;left:50%;transform:translateX(-50%);color:var(--gold)}
+
+/* ---------- facts strip ---------- */
+.facts{background:var(--paper-2);border-bottom:1px solid var(--line)}
+.facts ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr)}
+.facts li{padding:26px 22px;border-left:1px solid var(--line);display:flex;flex-direction:column;gap:4px}
+.facts li:first-child{border-left:0}
+.facts b{font:700 30px/1 var(--serif);color:var(--ink)}
+.facts span{font-size:14.5px;color:var(--muted)}
+
+/* ---------- sections ---------- */
+section{padding:88px 0}
+.sec-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:40px}
+.sec-head h2{font-size:clamp(32px,4vw,48px)}
+.sec-head p{max-width:30em;color:var(--muted);margin:0}
+.kicker{font:700 12.5px/1 var(--sans);letter-spacing:.24em;text-transform:uppercase;color:var(--gold-dk);margin-bottom:14px;display:block}
+
+/* ---------- rooms ---------- */
+.rooms-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:22px}
+.room{background:#fffdf8;border:1px solid var(--line);border-radius:14px;overflow:hidden;display:flex;flex-direction:column;position:relative}
+.room .media{position:relative}
+.room .ph{position:relative;aspect-ratio:3/2;overflow:hidden;background:var(--paper-2)}
+.room .ph img{width:100%;height:100%;object-fit:cover}
+.room.single .ph{background:var(--ink);display:flex;align-items:center;justify-content:center;padding:14px}
+.room.single .ph img{width:auto;height:100%;max-height:400px;aspect-ratio:3/4;object-fit:cover;border:1.5px solid var(--gold);border-radius:90px 90px 3px 3px;padding:4px;background:var(--ink)}
+.room.groups{background:var(--ink);color:var(--paper);border-color:var(--ink);justify-content:center}
+.room.groups .body{padding:34px 30px;justify-content:center;gap:16px}
+.room.groups h3{color:var(--paper);font-size:28px}
+.room.groups p{color:#ddd5c4}
+.room.groups .lines a{color:var(--paper)}
+.room.groups .lines svg{color:var(--gold)}
+.room.groups .kicker{color:var(--gold-lt);margin:0}
+.fob{position:absolute;left:22px;bottom:-18px;display:flex;align-items:center;gap:0;filter:drop-shadow(0 3px 6px rgba(0,0,0,.18))}
+.fob .ring{width:20px;height:20px;border:3px solid var(--gold);border-radius:50%;margin-right:-4px;background:transparent}
+.fob .tag{background:var(--ink);color:var(--gold-lt);font:700 13px/1 var(--sans);letter-spacing:.06em;padding:9px 14px 9px 16px;border-radius:4px 14px 14px 4px;border:1.5px solid var(--gold)}
+.room .body{padding:32px 22px 22px;display:flex;flex-direction:column;gap:12px;flex:1}
+.room h3{font-size:25px}
+.room .beds{display:flex;flex-wrap:wrap;gap:8px 16px;font-size:14.5px;color:var(--muted)}
+.room .beds span{display:inline-flex;align-items:center;gap:6px}
+.room .beds svg{color:var(--gold-dk)}
+.room p{margin:0;font-size:15.5px}
+.room .go{margin-top:auto;padding-top:8px;display:flex;justify-content:space-between;align-items:center;border-top:1px dashed var(--line)}
+.room .go a{font-weight:700;font-size:15px;color:var(--ink);text-decoration:none;display:inline-flex;gap:6px;align-items:center;padding-top:8px}
+.room .go a:hover{color:var(--gold-dk)}
+.room .go small{color:var(--muted);font-size:13px;padding-top:8px}
+.rooms-note{margin-top:26px;font-size:14.5px;color:var(--muted);text-align:center}
+
+/* ---------- facilities ---------- */
+.fac{background:var(--ink);color:var(--paper);padding:0}
+.fac .inner{padding:78px 0 84px}
+.fac h2{color:var(--paper)}
+.fac .kicker{color:var(--gold-lt)}
+.fac .sec-head p{color:#cfc7b6}
+.icons{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(6,1fr);gap:0;border-top:1px solid rgba(201,161,74,.28)}
+.icons li{padding:26px 10px 22px;text-align:center;border-bottom:1px solid rgba(201,161,74,.28);border-right:1px solid rgba(201,161,74,.28);display:flex;flex-direction:column;align-items:center;gap:10px;font-size:14.5px;line-height:1.35;color:#ece5d6}
+.icons li:nth-child(6n){border-right:0}
+.icons svg{width:34px;height:34px;color:var(--gold)}
+.fac-split{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:56px;align-items:center}
+.fac-photos{display:grid;grid-template-columns:1.2fr 1fr;gap:14px}
+.fac-photos img{border-radius:10px;width:100%;height:260px;object-fit:cover;border:1px solid rgba(201,161,74,.4)}
+.fac-photos figure{margin:0}
+.fac-photos figcaption{font-size:13px;color:#bdb4a2;margin-top:8px}
+.property h3{color:var(--paper);font-size:28px;margin-bottom:16px}
+.property ul{list-style:none;margin:0;padding:0;columns:2;column-gap:28px}
+.property li{padding:9px 0 9px 26px;position:relative;break-inside:avoid;color:#ece5d6;font-size:15.5px;border-bottom:1px solid rgba(255,255,255,.08)}
+.property li::before{content:"";position:absolute;left:2px;top:17px;width:9px;height:9px;background:var(--gold);transform:rotate(45deg)}
+
+/* ---------- explore ---------- */
+.explore .grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:start}
+.guide{background:#fffdf8;border:1px solid var(--line);border-radius:4px;padding:34px 34px 30px;position:relative;box-shadow:0 1px 0 var(--line),0 18px 40px -26px rgba(21,48,43,.35)}
+.guide::before{content:"";position:absolute;inset:8px;border:1px solid var(--line);pointer-events:none;border-radius:2px}
+.guide h3{font-size:22px;display:flex;align-items:center;gap:12px;margin:0 0 6px}
+.guide h3 + p{margin:0 0 14px;color:var(--muted);font-size:14.5px}
+.guide ol{list-style:none;margin:0 0 26px;padding:0;counter-reset:g}
+.guide ol:last-child{margin-bottom:0}
+.guide li{counter-increment:g;display:flex;gap:14px;align-items:baseline;padding:8px 0;border-bottom:1px dotted #cdbf9f;font-size:16.5px}
+.guide li::before{content:counter(g,upper-roman);font:italic 700 14px/1 var(--serif);color:var(--gold-dk);min-width:28px}
+.across{background:var(--ink);color:var(--paper);border-radius:14px;padding:30px;margin-top:26px;display:flex;gap:18px;align-items:flex-start}
+.across svg{flex:none;color:var(--gold)}
+.across b{display:block;font:700 21px/1.2 var(--serif);color:var(--gold-lt);margin-bottom:6px}
+.explore-intro .across p{margin:0;color:#e3dccd;font-size:15.5px}
+.explore-intro p{color:var(--muted);margin:0 0 18px}
+.explore-intro .big{font:italic 500 26px/1.35 var(--serif);color:var(--ink);margin-bottom:22px}
+.minutes{display:flex;flex-wrap:wrap;gap:8px;margin:6px 0 0;padding:0;list-style:none}
+.minutes li{border:1px solid var(--line);background:#fffdf8;border-radius:999px;padding:7px 14px;font-size:14.5px}
+.src{font-size:13px;color:var(--muted);margin-top:16px}
+
+/* ---------- meetings ---------- */
+.meet{background:var(--paper-2);border-block:1px solid var(--line)}
+.meet .grid{display:grid;grid-template-columns:auto 1fr;gap:48px;align-items:center}
+.lotus-card{background:#fffdf8;border:1px solid var(--line);padding:12px;border-radius:12px;width:264px}
+.lotus-card img{width:240px;height:180px;border-radius:6px}
+.lotus-card p{margin:10px 2px 0;font-size:13px;color:var(--muted)}
+.meet h2{font-size:clamp(28px,3.4vw,40px);margin-bottom:14px}
+.meet p{margin:0 0 18px;max-width:40em}
+.uses{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:0 0 24px}
+.uses li{background:var(--ink);color:var(--gold-lt);border-radius:999px;padding:7px 14px;font-size:14px}
+
+/* ---------- find us ---------- */
+.find .grid{display:grid;grid-template-columns:minmax(0,472px) 1fr;gap:0;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:#fffdf8}
+.find .photo{background:var(--ink);display:flex;align-items:center;justify-content:center}
+.find .photo img{width:100%;max-width:472px;height:auto}
+.find .card{padding:40px 40px 36px;display:flex;flex-direction:column;gap:18px}
+.find h2{font-size:clamp(30px,3.6vw,42px)}
+.find address{font-style:normal;font-size:19px;line-height:1.5}
+.lines{display:grid;gap:10px;margin:0;padding:0;list-style:none}
+.lines a{display:flex;align-items:center;gap:12px;text-decoration:none;font-weight:500;overflow-wrap:anywhere}
+.lines a:hover{color:var(--gold-dk)}
+.lines svg{flex:none;color:var(--gold-dk)}
+.find .ctas{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
+
+/* ---------- book band ---------- */
+.book{background:var(--ink);color:var(--paper);text-align:center;padding:0}
+.book .inner{padding:70px 0 76px}
+.book h2{color:var(--paper);font-size:clamp(32px,4.4vw,54px);margin:10px 0 14px}
+.book h2 em{color:var(--gold-lt)}
+.book p{color:#d9d0bd;margin:0 auto 30px;max-width:34em}
+.book .ctas{display:flex;justify-content:center;flex-wrap:wrap;gap:12px}
+.book .btn-gold{font-size:19px;padding:20px 36px}
+
+footer{background:#0e211d;color:#b9b19f;font-size:13.5px;padding:26px 0 30px}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+
+/* ---------- mobile bar ---------- */
+.mbar{display:none}
+
+@media (max-width:980px){
+  .nav{display:none}
+  .hero .wrap{grid-template-columns:1fr;gap:40px;padding:40px 0 56px}
+  .arch{width:min(340px,100%)}
+  .facts ul{grid-template-columns:repeat(2,1fr)}
+  .facts li:nth-child(3){border-left:0}
+  .facts li:nth-child(n+3){border-top:1px solid var(--line)}
+  .icons{grid-template-columns:repeat(3,1fr)}
+  .icons li:nth-child(6n){border-right:1px solid rgba(201,161,74,.28)}
+  .icons li:nth-child(3n){border-right:0}
+  .fac-split,.explore .grid,.find .grid{grid-template-columns:1fr}
+  .meet .grid{grid-template-columns:1fr}
+  .sec-head{flex-direction:column;align-items:flex-start}
+}
+@media (max-width:640px){
+  body{font-size:16px;padding-bottom:74px}
+  .wrap{width:calc(100% - 32px)}
+  .top .wrap{padding:12px 0}
+  .top-cta .ph{display:none}
+  .brand b{font-size:21px}
+  .brand small{letter-spacing:.2em;font-size:9.5px;white-space:nowrap}
+  .top-cta .btn{white-space:nowrap}
+  .eyebrow{letter-spacing:.14em;font-size:11.5px}
+  .eyebrow::before{width:22px}
+  .brand svg{width:40px;height:40px}
+  .top-cta .btn{padding:10px 14px;font-size:14px}
+  .hero h1{font-size:40px}
+  .hero p.lede{font-size:17px}
+  .hero .ctas .btn{flex:1 1 100%}
+  .arch-frame img{height:320px}
+  section{padding:60px 0}
+  .facts li{padding:18px 14px}
+  .facts b{font-size:24px}
+  .icons{grid-template-columns:repeat(2,1fr)}
+  .icons li:nth-child(3n){border-right:1px solid rgba(201,161,74,.28)}
+  .icons li:nth-child(2n){border-right:0}
+  .fac .inner{padding:60px 0}
+  .fac-photos img{height:180px}
+  .property ul{columns:1}
+  .guide{padding:26px 22px}
+  .find .card{padding:28px 22px}
+  .lines a{font-size:15px}
+  .lotus-card{width:100%;max-width:264px}
+  .mbar{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:50;background:var(--ink);padding:10px 12px calc(10px + env(safe-area-inset-bottom));border-top:2px solid var(--gold);box-shadow:0 -6px 20px rgba(0,0,0,.25)}
+  .mbar a{display:flex;align-items:center;justify-content:center;gap:7px;border-radius:10px;padding:12px 6px;text-decoration:none;font:700 15px/1 var(--sans);color:var(--paper);border:1.5px solid rgba(247,241,230,.35)}
+  .mbar a.book-it{background:var(--gold);color:var(--ink);border-color:var(--gold)}
+  .mbar svg{width:18px;height:18px}
+}
+</style>
+</head>
+<body>
+<div class="preview">Concept preview prepared for Bendigo McIvor Motor Inn by Claude (an AI). Not the official website.</div>
+
+<!-- icon sprite -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <pattern id="lacePat" width="48" height="34" patternUnits="userSpaceOnUse">
+      <g fill="none" stroke="#c9a14a" stroke-width="1.6" opacity=".85">
+        <path d="M0 2h48"/><path d="M0 6h48" stroke-width="1"/>
+        <path d="M0 6c0 12 12 16 24 16S48 18 48 6"/>
+        <path d="M24 6c0 9-7 13-12 13M24 6c0 9 7 13 12 13"/>
+        <circle cx="24" cy="26" r="3.2"/>
+        <path d="M24 29.2V34M12 19c-4 0-7 3-7 7M36 19c4 0 7 3 7 7"/>
+        <circle cx="0" cy="14" r="2"/><circle cx="48" cy="14" r="2"/>
+      </g>
+    </pattern>
+  </defs>
+  <symbol id="i-bed" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18V6M3 14h18v4M21 14v-2a3 3 0 0 0-3-3h-7v5"/><circle cx="7" cy="11" r="1.8"/></g></symbol>
+  <symbol id="i-guest" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="8" r="3.5"/><path d="M5 20c.8-3.6 3.6-5.5 7-5.5s6.2 1.9 7 5.5"/></g></symbol>
+  <symbol id="i-bath" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16v2a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5v-2zM6 12V5.5A1.5 1.5 0 0 1 9 5M7 19l-1 2M17 19l1 2"/></g></symbol>
+  <symbol id="i-wifi" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M2.5 9a14 14 0 0 1 19 0M5.5 12.5a9.5 9.5 0 0 1 13 0M8.6 16a5 5 0 0 1 6.8 0"/><circle cx="12" cy="19" r="1.1" fill="currentColor"/></g></symbol>
+  <symbol id="i-air" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M12 3v18M4.2 7.5l15.6 9M4.2 16.5l15.6-9"/><path d="M10 4.5l2 2 2-2M10 19.5l2-2 2 2"/></g></symbol>
+  <symbol id="i-tv" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="12" rx="1.5"/><path d="M8 21h8"/></g></symbol>
+  <symbol id="i-kitchen" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="13" height="10" rx="1.2"/><path d="M5.5 8.5h6v5h-6zM14 9v.01M14 12v.01M19 6v12M17.5 18h3"/></g></symbol>
+  <symbol id="i-cup" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9h12v5a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5V9zM16 10.5h1.5a2.5 2.5 0 0 1 0 5H16M8 3.5c-.8 1 .8 2 0 3M12 3.5c-.8 1 .8 2 0 3"/></g></symbol>
+  <symbol id="i-car" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 16v-4l2-5h12l2 5v4zM4 16v2.5M20 16v2.5M4 12h16"/><circle cx="7.5" cy="14" r=".6" fill="currentColor"/><circle cx="16.5" cy="14" r=".6" fill="currentColor"/></g></symbol>
+  <symbol id="i-tray" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17h18M5 17a7 7 0 0 1 14 0M12 8V6.5M10.5 6.5h3"/></g></symbol>
+  <symbol id="i-iron" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17h16c0-5-3-8-8-8H8M8 9V7h9M9 13h.01M12 13h.01"/></g></symbol>
+  <symbol id="i-sofa" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 11V8a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v3M3 12a2 2 0 0 1 4 0v2h10v-2a2 2 0 0 1 4 0v5H3zM5 17v2M19 17v2"/></g></symbol>
+  <symbol id="i-dryer" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 7a4 4 0 1 0 0 6h6V7zM11 13l-2 8h3l1.5-8M20 9h1.5M20 11h1.5"/></g></symbol>
+  <symbol id="i-drape" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4h18M5 4c0 6 2 12 5 16H5zM19 4c0 6-2 12-5 16h5z"/></g></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M5 3.5h3.2l1.6 4.2-2.1 1.4a11 11 0 0 0 5.2 5.2l1.4-2.1 4.2 1.6V17a2.5 2.5 0 0 1-2.5 2.5A15 15 0 0 1 2.5 6 2.5 2.5 0 0 1 5 3.5z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3.5 6l8.5 7 8.5-7"/></g></symbol>
+  <symbol id="i-cal" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4M9 14.5l2 2 4-4"/></g></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></g></symbol>
+  <symbol id="i-fork" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3v7a2 2 0 0 0 2 2v9M11 3v7a2 2 0 0 1-2 2M9 3v6M17 21V3c-2 1.5-3 4-3 7v3h3"/></g></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></symbol>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Bendigo McIvor Motor Inn, home">
+      <svg width="46" height="46" viewBox="0 0 46 46" aria-hidden="true">
+        <circle cx="23" cy="23" r="21.5" fill="none" stroke="#c9a14a" stroke-width="1.5"/>
+        <circle cx="23" cy="23" r="17.5" fill="none" stroke="#c9a14a" stroke-width=".8" stroke-dasharray="1.5 2.2"/>
+        <text x="23" y="30.5" text-anchor="middle" font-family="Playfair Display, Georgia, serif" font-style="italic" font-weight="700" font-size="22" fill="#e3c77f">M</text>
+      </svg>
+      <span><b><span>The</span>McIvor</b><small>MOTOR INN · BENDIGO</small></span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#rooms">Rooms</a><a href="#facilities">Facilities</a><a href="#explore">Explore Bendigo</a><a href="#meetings">Meetings</a><a href="#find">Find us</a>
+    </nav>
+    <div class="top-cta">
+      <a class="ph" href="tel:+61354438444">03 5443 8444</a>
+      <a class="btn btn-gold btn-sm" href="https://book-directonline.com/properties/BendigoMcIvorMotorInnDirect">Book online</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero" style="padding:0">
+  <svg class="lace" aria-hidden="true" preserveAspectRatio="none"><rect width="100%" height="34" fill="url(#lacePat)"/></svg>
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">45 McIvor Road · Bendigo, Victoria</span>
+      <h1>A warm welcome in <em>golden</em> Bendigo.</h1>
+      <p class="lede">Twenty quiet, quality ground-floor suites, about 600&nbsp;metres from the edge of the Bendigo CBD. A family owned and operated motor inn that prides itself on attention to detail.</p>
+      <div class="ctas">
+        <a class="btn btn-gold" href="https://book-directonline.com/properties/BendigoMcIvorMotorInnDirect"><svg width="20" height="20"><use href="#i-cal"/></svg>Book online</a>
+        <a class="btn btn-line" href="tel:+61354438444"><svg width="18" height="18"><use href="#i-phone"/></svg>03 5443 8444</a>
+        <a class="btn btn-line" href="mailto:reception@bendigomcivormotorinn.com.au?subject=Booking%20enquiry"><svg width="18" height="18"><use href="#i-mail"/></svg>Email us</a>
+      </div>
+      <p class="direct"><strong>BOOK DIRECT &amp; SAVE</strong> Book with the motel, online or by phone.</p>
+    </div>
+    <figure class="arch" style="margin:0">
+      <svg class="keystone" width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path d="M15 2l6 13-6 13-6-13z" fill="#15302b" stroke="currentColor" stroke-width="1.5"/><circle cx="15" cy="15" r="2.4" fill="currentColor"/></svg>
+      <div class="arch-frame"><img src="img/courtyard.jpg" width="504" height="378" alt="The McIvor's red-brick courtyard, lined with ground-floor suites under a blue Bendigo sky"></div>
+      <figcaption>Ground-floor suites around the courtyard</figcaption>
+    </figure>
+  </div>
+</section>
+
+<div class="facts">
+  <ul class="wrap">
+    <li><b>20</b><span>ground-floor suites</span></li>
+    <li><b>~600 m</b><span>to the edge of the CBD</span></li>
+    <li><b>Free</b><span>WiFi and on-site parking</span></li>
+    <li><b>In-room</b><span>breakfast delivered to your suite</span></li>
+  </ul>
+</div>
+
+<section id="rooms">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><span class="kicker">Rooms &amp; suites</span><h2>Pick your suite</h2></div>
+      <p>Every room is on the ground floor, in a quiet spot opposite eateries and a short stroll to the CBD. Singles, couples, friends and families all have a fit.</p>
+    </div>
+    <div class="rooms-grid">
+      <article class="room">
+        <div class="media"><div class="ph"><img src="img/room-deluxe.jpg" width="504" height="378" loading="lazy" alt="Deluxe room: queen bed with navy runner, timber bedside tables, desk and leather lounge"></div>
+        <div class="fob"><span class="ring"></span><span class="tag">SLEEPS 2</span></div></div>
+        <div class="body">
+          <h3>Deluxe</h3>
+          <div class="beds"><span><svg width="18" height="18"><use href="#i-bed"/></svg>1 queen bed</span><span><svg width="18" height="18"><use href="#i-bath"/></svg>Ensuite</span></div>
+          <p>Ground-floor room with a queen size bed, a settee and a table and chairs, in a quiet location opposite eateries.</p>
+          <div class="go"><small>Kitchenette · Smart TV · WiFi</small><a href="https://book-directonline.com/properties/BendigoMcIvorMotorInnDirect">Check dates <svg width="16" height="16"><use href="#i-arrow"/></svg></a></div>
+        </div>
+      </article>
+      <article class="room">
+        <div class="media"><div class="ph"><img src="img/room-family.jpg" width="504" height="378" loading="lazy" alt="Family room: leather lounge, dining table and chairs, with a queen bed and single beds beyond"></div>
+        <div class="fob"><span class="ring"></span><span class="tag">SLEEPS 4</span></div></div>
+        <div class="body">
+          <h3>Family Room</h3>
+          <div class="beds"><span><svg width="18" height="18"><use href="#i-bed"/></svg>1 queen + 2 single beds</span><span><svg width="18" height="18"><use href="#i-bath"/></svg>Ensuite</span></div>
+          <p>A queen bed and two singles, with room to spread out on the lounge. Cots are available on request.</p>
+          <div class="go"><small>Kitchenette · Smart TV · WiFi</small><a href="https://book-directonline.com/properties/BendigoMcIvorMotorInnDirect">Check dates <svg width="16" height="16"><use href="#i-arrow"/></svg></a></div>
+        </div>
+      </article>
+      <article class="room">
+        <div class="media"><div class="ph"><img src="img/room-standard.jpg" width="400" height="267" loading="lazy" alt="Standard room with queen bed, timber-look feature wall and a lounge by the window"></div>
+        <div class="fob"><span class="ring"></span><span class="tag">SLEEPS 2</span></div></div>
+        <div class="body">
+          <h3>Standard Room</h3>
+          <div class="beds"><span><svg width="18" height="18"><use href="#i-bed"/></svg>1 queen bed</span><span><svg width="18" height="18"><use href="#i-bath"/></svg>Ensuite</span></div>
+          <p>A quiet ground-floor suite with a queen size bed, a short stroll to the CBD.</p>
+          <div class="go"><small>Kitchenette · TV · WiFi</small><a href="https://book-directonline.com/properties/BendigoMcIvorMotorInnDirect">Check dates <svg width="16" height="16"><use href="#i-arrow"/></svg></a></div>
+        </div>
+      </article>
+      <article class="room">
+        <div class="media"><div class="ph"><img src="img/room-twin.jpg" width="400" height="267" loading="lazy" alt="Twin share room with a double bed and a single bed, timber bedheads and a writing desk"></div>
+        <div class="fob"><span class="ring"></span><span class="tag">SLEEPS 3</span></div></div>
+        <div class="body">
+          <h3>Twin Share</h3>
+          <div class="beds"><span><svg width="18" height="18"><use href="#i-bed"/></svg>1 double + 1 single bed</span><span><svg width="18" height="18"><use href="#i-bath"/></svg>Ensuite</span></div>
+          <p>A double and a single: good for friends, colleagues or a parent and child.</p>
+          <div class="go"><small>Kitchenette · TV · WiFi</small><a href="https://book-directonline.com/properties/BendigoMcIvorMotorInnDirect">Check dates <svg width="16" height="16"><use href="#i-arrow"/></svg></a></div>
+        </div>
+      </article>
+      <article class="room single">
+        <div class="media"><div class="ph"><img src="img/room-single.jpg" width="300" height="400" loading="lazy" alt="Single room with a king single bed against a dark brick wall"></div>
+        <div class="fob"><span class="ring"></span><span class="tag">SLEEPS 1</span></div></div>
+        <div class="body">
+          <h3>Single Room</h3>
+          <div class="beds"><span><svg width="18" height="18"><use href="#i-bed"/></svg>1 king single bed</span><span><svg width="18" height="18"><use href="#i-bath"/></svg>Ensuite</span></div>
+          <p>A small ground-floor room with a king single bed. Just right for the solo traveller.</p>
+          <div class="go"><small>Kitchenette · TV · WiFi</small><a href="https://book-directonline.com/properties/BendigoMcIvorMotorInnDirect">Check dates <svg width="16" height="16"><use href="#i-arrow"/></svg></a></div>
+        </div>
+      </article>
+      <article class="room groups">
+        <div class="body">
+          <span class="kicker">Travelling together?</span>
+          <h3>Corporate rates, groups &amp; coach tours welcome</h3>
+          <p>Bringing a team or a coach tour to Bendigo? Talk to reception about rooms for the whole group.</p>
+          <ul class="lines">
+            <li><a href="tel:+61354438444"><svg width="20" height="20"><use href="#i-phone"/></svg>03 5443 8444</a></li>
+            <li><a href="mailto:reception@bendigomcivormotorinn.com.au?subject=Group%20booking%20enquiry"><svg width="20" height="20"><use href="#i-mail"/></svg>Email a group enquiry</a></li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="facilities" class="fac">
+  <svg class="lace" aria-hidden="true" preserveAspectRatio="none"><rect width="100%" height="34" fill="url(#lacePat)"/></svg>
+  <div class="wrap inner">
+    <div class="sec-head">
+      <div><span class="kicker">In every suite</span><h2>Everything within reach</h2></div>
+      <p>Each suite has its own ensuite and kitchenette, with blockout drapes for a proper sleep-in.</p>
+    </div>
+    <ul class="icons">
+      <li><svg><use href="#i-wifi"/></svg>Free WiFi</li>
+      <li><svg><use href="#i-air"/></svg>Reverse-cycle air con &amp; heating</li>
+      <li><svg><use href="#i-tv"/></svg>Smart TV</li>
+      <li><svg><use href="#i-kitchen"/></svg>Kitchenette with microwave &amp; fridge</li>
+      <li><svg><use href="#i-cup"/></svg>Tea, coffee, kettle &amp; toaster</li>
+      <li><svg><use href="#i-bath"/></svg>Ensuite bathroom</li>
+      <li><svg><use href="#i-bed"/></svg>Queen size beds</li>
+      <li><svg><use href="#i-sofa"/></svg>Settee, table &amp; chairs</li>
+      <li><svg><use href="#i-drape"/></svg>Blockout drapes</li>
+      <li><svg><use href="#i-iron"/></svg>Iron &amp; ironing board</li>
+      <li><svg><use href="#i-dryer"/></svg>Hairdryer</li>
+      <li><svg><use href="#i-car"/></svg>Free on-site parking</li>
+    </ul>
+    <div class="fac-split">
+      <div class="fac-photos">
+        <figure><img src="img/kitchenette.jpg" width="504" height="378" loading="lazy" alt="Suite kitchenette with microwave, fridge and kettle beside a dining table for two"><figcaption>Kitchenette and dining nook</figcaption></figure>
+        <figure><img src="img/ensuite.jpg" width="400" height="267" loading="lazy" alt="Bright tiled ensuite with glass shower screen and vanity"><figcaption>Your own ensuite</figcaption></figure>
+      </div>
+      <div class="property">
+        <h3>Around the motel</h3>
+        <ul>
+          <li>Breakfast delivered to your suite</li>
+          <li>Room service</li>
+          <li>Drinks from the office</li>
+          <li>Guest laundry</li>
+          <li>Dry cleaning service</li>
+          <li>BBQ area</li>
+          <li>Cots on request</li>
+          <li>Non-smoking property</li>
+          <li>Onsite meeting room</li>
+          <li>Eateries across the road</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="explore" class="explore">
+  <div class="wrap">
+    <div class="grid">
+      <div class="explore-intro">
+        <span class="kicker">Explore Bendigo</span>
+        <h2 style="font-size:clamp(32px,4vw,48px);margin-bottom:22px">Gold-rush streets, a short stroll away</h2>
+        <p class="big">“Bendigo has something for everyone.”</p>
+        <p>The motel sits on McIvor Road, about 600&nbsp;m from the edge of the central business district and the city's tourist destinations. Only minutes away, according to the motel:</p>
+        <ul class="minutes">
+          <li>Lakes &amp; parks with playgrounds and BBQs</li>
+          <li>Trotting &amp; harness racing tracks</li>
+          <li>Local wineries</li>
+          <li>Sporting grounds</li>
+          <li>Shopping centres &amp; supermarket</li>
+          <li>La Trobe University</li>
+          <li>Hospitals</li>
+        </ul>
+        <div class="across">
+          <svg width="34" height="34"><use href="#i-fork"/></svg>
+          <div><b>Dinner? Just cross the road.</b><p>The McIvor sits opposite eateries and food outlets, including a bistro/pub. Bendigo itself has everything from budget pub meals and Thai to fashionable dining.</p></div>
+        </div>
+      </div>
+      <div class="guide" aria-label="Places the motel recommends">
+        <h3><svg width="22" height="22" style="color:var(--gold-dk)"><use href="#i-pin"/></svg>History &amp; culture</h3>
+        <p>The motel's own picks</p>
+        <ol>
+          <li>Central Deborah Gold Mine</li>
+          <li>Golden Dragon Museum</li>
+          <li>Bendigo Tramways</li>
+          <li>Bendigo Art Gallery</li>
+          <li>Sacred Heart Cathedral</li>
+          <li>Bendigo Pottery</li>
+        </ol>
+        <h3><svg width="22" height="22" style="color:var(--gold-dk)"><use href="#i-pin"/></svg>Parks &amp; gardens</h3>
+        <p>Room to breathe</p>
+        <ol>
+          <li>Rosalind Park</li>
+          <li>Lake Weeroona</li>
+          <li>White Hills Botanical Gardens</li>
+        </ol>
+        <h3><svg width="22" height="22" style="color:var(--gold-dk)"><use href="#i-pin"/></svg>With the kids</h3>
+        <p>Hands-on fun</p>
+        <ol>
+          <li>Discovery Centre</li>
+          <li>Cinema</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="meetings" class="meet">
+  <div class="wrap grid">
+    <div class="lotus-card">
+      <img src="img/lotus-room.jpg" width="240" height="180" loading="lazy" alt="The Lotus Convention Centre meeting room set with long tables, chairs and a whiteboard">
+      <p>Lotus Convention Centre, on site</p>
+    </div>
+    <div>
+      <span class="kicker">Meetings &amp; training</span>
+      <h2>The Lotus Convention Centre</h2>
+      <p>Right on site, the Lotus Convention Centre has built a firm reputation as a quality professional business centre. Book it for a day, and your out-of-town team can stay just steps away.</p>
+      <ul class="uses">
+        <li>Meetings</li><li>Interviews</li><li>Training days</li><li>Seminars</li><li>Product launches</li><li>Information nights</li><li>Strategic planning</li>
+      </ul>
+      <a class="btn btn-ink" href="mailto:reception@bendigomcivormotorinn.com.au?subject=Lotus%20Convention%20Centre%20enquiry"><svg width="18" height="18"><use href="#i-mail"/></svg>Enquire about the room</a>
+    </div>
+  </div>
+</section>
+
+<section id="find" class="find">
+  <div class="wrap">
+    <div class="grid">
+      <div class="photo"><img src="img/aerial.jpg" width="472" height="346" loading="lazy" alt="Aerial view of the McIvor Motor Inn on McIvor Road, with its roadside sign and tree-lined Bendigo streets behind"></div>
+      <div class="card">
+        <span class="kicker" style="margin:0">Find us</span>
+        <h2>On McIvor Road, close to town</h2>
+        <address>Bendigo McIvor Motor Inn<br>45 McIvor Road<br>Bendigo VIC</address>
+        <ul class="lines">
+          <li><a href="tel:+61354438444"><svg width="20" height="20"><use href="#i-phone"/></svg>03 5443 8444</a></li>
+          <li><a href="mailto:reception@bendigomcivormotorinn.com.au?subject=Booking%20enquiry"><svg width="20" height="20"><use href="#i-mail"/></svg>reception@bendigomcivormotorinn.com.au</a></li>
+          <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Bendigo+McIvor+Motor+Inn+45+McIvor+Road+Bendigo+VIC"><svg width="20" height="20"><use href="#i-pin"/></svg>Open in Google Maps</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="book">
+  <svg class="lace" aria-hidden="true" preserveAspectRatio="none"><rect width="100%" height="34" fill="url(#lacePat)"/></svg>
+  <div class="wrap inner">
+    <span class="eyebrow" style="justify-content:center">Book direct &amp; save</span>
+    <h2>Your suite in <em>Bendigo</em> is waiting.</h2>
+    <p>See live availability and book online, or call reception on 03&nbsp;5443&nbsp;8444.</p>
+    <div class="ctas">
+      <a class="btn btn-gold" href="https://book-directonline.com/properties/BendigoMcIvorMotorInnDirect"><svg width="20" height="20"><use href="#i-cal"/></svg>Book online</a>
+      <a class="btn btn-line" href="tel:+61354438444"><svg width="18" height="18"><use href="#i-phone"/></svg>03 5443 8444</a>
+      <a class="btn btn-line" href="mailto:reception@bendigomcivormotorinn.com.au?subject=Booking%20enquiry"><svg width="18" height="18"><use href="#i-mail"/></svg>Email</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Bendigo McIvor Motor Inn &amp; Lotus Convention Centre · 45 McIvor Road, Bendigo VIC</span>
+    <span>Concept preview by Claude (an AI). Not the official website.</span>
+  </div>
+</footer>
+
+<nav class="mbar" aria-label="Quick contact">
+  <a class="book-it" href="https://book-directonline.com/properties/BendigoMcIvorMotorInnDirect"><svg><use href="#i-cal"/></svg>Book online</a>
+  <a href="tel:+61354438444"><svg><use href="#i-phone"/></svg>Call</a>
+  <a href="mailto:reception@bendigomcivormotorinn.com.au?subject=Booking%20enquiry"><svg><use href="#i-mail"/></svg>Email</a>
+</nav>
+</body>
+</html>
